@@ -139,36 +139,42 @@ img {
   src: url("../font/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("../font/socialico-webfont.woff") format("woff"), url("../font/socialico-webfont.ttf") format("truetype"), url("../font/socialico-webfont.svg#socialicoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_700regular';
   src: url("../font/museosans_700-webfont.eot");
   src: url("../font/museosans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_700-webfont.woff") format("woff"), url("../font/museosans_700-webfont.ttf") format("truetype"), url("../font/museosans_700-webfont.svg#museo_sans_500regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_500regular';
   src: url("../font/museosans_500-webfont.eot");
   src: url("../font/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_500-webfont.woff") format("woff"), url("../font/museosans_500-webfont.ttf") format("truetype"), url("../font/museosans_500-webfont.svg#museo_sans_500regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_900regular';
   src: url("../font/museosans_900-webfont.eot");
   src: url("../font/museosans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_900-webfont.woff") format("woff"), url("../font/museosans_900-webfont.ttf") format("truetype"), url("../font/museosans_900-webfont.svg#museo_sans_900regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_300regular';
   src: url("../font/museosans-300-webfont.eot");
   src: url("../font/museosans-300-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-300-webfont.woff") format("woff"), url("../font/museosans-300-webfont.ttf") format("truetype"), url("../font/museosans-300-webfont.svg#museo_sans_300regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_100regular';
   src: url("../font/museosans-100-webfont.eot");
   src: url("../font/museosans-100-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-100-webfont.woff") format("woff"), url("../font/museosans-100-webfont.ttf") format("truetype"), url("../font/museosans-100-webfont.svg#museo_sans_100regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .text-columns-2 {
   -webkit-columns: 24px 2;
   -moz-columns: 24px 2;
@@ -240,7 +246,7 @@ img {
   .text-color p {
     color: #545a5f !important; }
 
-.white-text h1, .panel.primary-color h1, .panel.success-color h1, .panel.instructor-panel h1, .panel .panel-heading.primary-color h1, .well.primary-color h1, .podcast-container h1, .white-text h2, .panel.primary-color h2, .panel.success-color h2, .panel.instructor-panel h2, .panel .panel-heading.primary-color h2, .well.primary-color h2, .podcast-container h2, .white-text h3, .panel.primary-color h3, .panel.success-color h3, .panel.instructor-panel h3, .panel .panel-heading.primary-color h3, .well.primary-color h3, .podcast-container h3, .white-text h4, .panel.primary-color h4, .panel.success-color h4, .panel.instructor-panel h4, .panel .panel-heading.primary-color h4, .well.primary-color h4, .podcast-container h4, .white-text h5, .panel.primary-color h5, .panel.success-color h5, .panel.instructor-panel h5, .panel .panel-heading.primary-color h5, .well.primary-color h5, .podcast-container h5, .white-text h6, .panel.primary-color h6, .panel.success-color h6, .panel.instructor-panel h6, .panel .panel-heading.primary-color h6, .well.primary-color h6, .podcast-container h6, .white-text p, .panel.primary-color p, .panel.success-color p, .panel.instructor-panel p, .panel .panel-heading.primary-color p, .well.primary-color p, .podcast-container p, .white-text small, .panel.primary-color small, .panel.success-color small, .panel.instructor-panel small, .panel .panel-heading.primary-color small, .well.primary-color small, .podcast-container small, .white-text li, .panel.primary-color li, .panel.success-color li, .panel.instructor-panel li, .panel .panel-heading.primary-color li, .well.primary-color li, .podcast-container li {
+.white-text h1, .podcast-container h1, .well.primary-color h1, .panel .panel-heading.primary-color h1, .panel.instructor-panel h1, .panel.success-color h1, .panel.primary-color h1, .white-text h2, .podcast-container h2, .well.primary-color h2, .panel .panel-heading.primary-color h2, .panel.instructor-panel h2, .panel.success-color h2, .panel.primary-color h2, .white-text h3, .podcast-container h3, .well.primary-color h3, .panel .panel-heading.primary-color h3, .panel.instructor-panel h3, .panel.success-color h3, .panel.primary-color h3, .white-text h4, .podcast-container h4, .well.primary-color h4, .panel .panel-heading.primary-color h4, .panel.instructor-panel h4, .panel.success-color h4, .panel.primary-color h4, .white-text h5, .podcast-container h5, .well.primary-color h5, .panel .panel-heading.primary-color h5, .panel.instructor-panel h5, .panel.success-color h5, .panel.primary-color h5, .white-text h6, .podcast-container h6, .well.primary-color h6, .panel .panel-heading.primary-color h6, .panel.instructor-panel h6, .panel.success-color h6, .panel.primary-color h6, .white-text p, .podcast-container p, .well.primary-color p, .panel .panel-heading.primary-color p, .panel.instructor-panel p, .panel.success-color p, .panel.primary-color p, .white-text small, .podcast-container small, .well.primary-color small, .panel .panel-heading.primary-color small, .panel.instructor-panel small, .panel.success-color small, .panel.primary-color small, .white-text li, .podcast-container li, .well.primary-color li, .panel .panel-heading.primary-color li, .panel.instructor-panel li, .panel.success-color li, .panel.primary-color li {
   color: white !important; }
 
 .micro-text {
@@ -366,6 +372,7 @@ dl {
 
 ul.check-list-large li p {
   margin-bottom: 10px; }
+
 ul.check-list-large li i {
   background-color: #85C342;
   padding: 5px;
@@ -771,10 +778,12 @@ td.flash-sale {
 .carousel .btns {
   z-index: 10;
   position: absolute; }
+
 .carousel ul {
   margin-left: 24px; }
   .carousel ul li {
     font-size: .7em; }
+
 .carousel ol.carousel-indicators {
   text-align: right;
   bottom: 50px;
@@ -814,14 +823,17 @@ td.flash-sale {
     font-size: 18em;
     text-align: center;
     color: rgba(255, 255, 255, 0.4); }
+
 #home-slider .btn {
   z-index: 3; }
 
 #testimonial-slider .item {
   padding: 24px 0; }
+
 #testimonial-slider ol.carousel-indicators {
   text-align: center;
   bottom: -20px; }
+
 #testimonial-slider .carousel-inner {
   z-index: 0; }
 
@@ -930,10 +942,12 @@ ul.nav-sidebar {
 
 .buy-options .list-group-inner {
   position: relative; }
+
 .buy-options .list-group-item {
   user-select: none;
   border-width: 2px;
   margin-bottom: 10px; }
+
 .buy-options .list-group input[type="checkbox"] {
   display: none; }
   .buy-options .list-group input[type="checkbox"] + .list-group-item {
@@ -946,6 +960,7 @@ ul.nav-sidebar {
     border-color: #1384b2; }
     .buy-options .list-group input[type="checkbox"]:checked + .list-group-item:before {
       color: inherit; }
+
 .buy-options .list-group input[type="radio"] {
   position: absolute;
   top: 23px;
@@ -972,6 +987,7 @@ ul.tabs-boxed li a {
   font-size: 14px;
   opacity: .5;
   cursor: pointer; }
+
 ul.tabs-boxed li.active a {
   color: #08090a;
   opacity: 1; }
@@ -1036,10 +1052,13 @@ ul.tabs-boxed li.active a {
 
 .modal .modal-title {
   color: #138abb; }
+
 .modal .close {
   z-index: 99; }
+
 .modal .btn-lg {
   padding: 24px; }
+
 .modal p.micro-text {
   line-height: 20px; }
 
@@ -1047,6 +1066,7 @@ ul.tabs-boxed li.active a {
   font-size: 0.8em !important;
   position: relative;
   top: -3px; }
+
 .demo-test-modal .btn {
   font-size: 1em; }
 
@@ -1142,6 +1162,7 @@ a {
 .test-toggle-btn .btn-icon:after {
   width: 10px;
   content: "+"; }
+
 .test-toggle-btn.active {
   background-color: #e7f3f8 !important; }
   .test-toggle-btn.active .btn-icon {
@@ -1405,7 +1426,6 @@ ul.logos-list {
     @media (max-width: 768px) {
       ul.logos-list li img {
         height: 40px; } }
-
 .podcast-container {
   display: block;
   background: #0d6183;
@@ -1433,7 +1453,6 @@ ul.logos-list {
       text-align: left;
       top: 0px;
       right: 0px; } }
-
 .audio-player audio {
   border-radius: 100px; }
   .audio-player audio:focus {
@@ -1512,6 +1531,7 @@ img.contact-logo-mobile {
   .main-nav ul.main-links li {
     margin-right: 0;
     font-size: .68em; } }
+
 @media (max-width: 992px) {
   .main-nav ul.main-links li {
     font-size: .52em;
@@ -1534,61 +1554,47 @@ img.contact-logo-mobile {
     padding-bottom: 10px !important; }
   .main-nav .checkout-btn-wrapper {
     top: -1px !important; }
-
   .btn {
     font-size: .8em; }
-
   ul.nav-pills li {
     font-size: .65em; }
-
   .affix {
     display: none; }
-
   .feature-blocks .fa {
     font-size: 3em !important; }
-
   #hidden-menu ul.dropdown-menu {
     top: 30px !important; }
   #hidden-menu .checkout-btn-wrapper a {
     font-size: 0.5em !important; } }
+
 @media (max-width: 767px) {
   section.extra-padding {
     padding: 48px 0 !important; }
-
   #home-slider .item {
     background-image: none !important; }
-
   .no-margin-top-sm {
     margin-top: 0 !important; }
-
   .logo {
     background: url(../images/logo_sm.png);
     width: 185px;
     height: 36px;
     display: block; }
-
   .btn {
     font-size: .7em; }
     .btn.btn-lg {
       padding: 12px; }
-
   body {
     padding-top: 50px; }
-
   section {
     padding: 24px 0; }
-
   h1 {
     font-size: 1.5em;
     line-height: 33.6px; }
-
   h2 {
     font-size: 1.2em;
     line-height: 28.8px; }
-
   p {
     font-size: .8em; }
-
   ul.nav-pills {
     border-bottom: none; }
     ul.nav-pills li {
@@ -1602,18 +1608,14 @@ img.contact-logo-mobile {
           border: none; }
       ul.nav-pills li:hover a {
         border: none; }
-
   .carousel .btns {
     position: relative; }
   .carousel ol.carousel-indicators {
     text-align: center;
     bottom: 5px; }
-
   .feature-blocks .col-sm-3 {
     text-align: left !important; }
-
   #mobile-main-nav .btn {
     font-size: 1em; }
-
   .text-center-sm {
     text-align: center; } }

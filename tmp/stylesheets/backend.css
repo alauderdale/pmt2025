@@ -103,36 +103,42 @@ img {
   src: url("../font/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("../font/socialico-webfont.woff") format("woff"), url("../font/socialico-webfont.ttf") format("truetype"), url("../font/socialico-webfont.svg#socialicoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_700regular';
   src: url("../font/museosans_700-webfont.eot");
   src: url("../font/museosans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_700-webfont.woff") format("woff"), url("../font/museosans_700-webfont.ttf") format("truetype"), url("../font/museosans_700-webfont.svg#museo_sans_500regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_500regular';
   src: url("../font/museosans_500-webfont.eot");
   src: url("../font/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_500-webfont.woff") format("woff"), url("../font/museosans_500-webfont.ttf") format("truetype"), url("../font/museosans_500-webfont.svg#museo_sans_500regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_900regular';
   src: url("../font/museosans_900-webfont.eot");
   src: url("../font/museosans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_900-webfont.woff") format("woff"), url("../font/museosans_900-webfont.ttf") format("truetype"), url("../font/museosans_900-webfont.svg#museo_sans_900regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_300regular';
   src: url("../font/museosans-300-webfont.eot");
   src: url("../font/museosans-300-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-300-webfont.woff") format("woff"), url("../font/museosans-300-webfont.ttf") format("truetype"), url("../font/museosans-300-webfont.svg#museo_sans_300regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'museo_sans_100regular';
   src: url("../font/museosans-100-webfont.eot");
   src: url("../font/museosans-100-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-100-webfont.woff") format("woff"), url("../font/museosans-100-webfont.ttf") format("truetype"), url("../font/museosans-100-webfont.svg#museo_sans_100regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -140,6 +146,7 @@ img {
   src: url(https://example.com/MaterialIcons-Regular.eot);
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype"); }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -263,7 +270,7 @@ p, li {
 
 p {
   font-size: .9em;
-  line-height: 21.81818px; }
+  line-height: 21.8181818182px; }
 
 h1 {
   font-size: 2em;
@@ -693,6 +700,7 @@ table.table {
 
 table.community-average-table tr {
   border: none; }
+
 table.community-average-table td {
   border: none !important; }
 
@@ -718,10 +726,12 @@ table.community-average-table td {
 .carousel .btns {
   z-index: 10;
   position: absolute; }
+
 .carousel ul {
   margin-left: 24px; }
   .carousel ul li {
     font-size: .7em; }
+
 .carousel ol.carousel-indicators {
   text-align: right;
   bottom: 50px;
@@ -761,14 +771,17 @@ table.community-average-table td {
     font-size: 18em;
     text-align: center;
     color: rgba(255, 255, 255, 0.4); }
+
 #home-slider .btn {
   z-index: 3; }
 
 #testimonial-slider .item {
   padding: 24px 0; }
+
 #testimonial-slider ol.carousel-indicators {
   text-align: center;
   bottom: -20px; }
+
 #testimonial-slider .carousel-inner {
   z-index: 0; }
 
@@ -824,10 +837,12 @@ h1.main-page-header {
 
 .radio-group .list-group-inner {
   position: relative; }
+
 .radio-group .list-group-item {
   user-select: none;
   border-width: 2px;
   margin-bottom: 10px; }
+
 .radio-group .list-group input[type="checkbox"] {
   display: none; }
   .radio-group .list-group input[type="checkbox"] + .list-group-item {
@@ -844,6 +859,7 @@ h1.main-page-header {
     .radio-group .list-group input[type="checkbox"]:checked + .list-group-item:before {
       content: "check_circle";
       color: #1384b2; }
+
 .radio-group .list-group input[type="radio"] {
   position: absolute;
   top: 23px;
@@ -863,20 +879,25 @@ h1.main-page-header {
 .list-panel .fa-flip-vertical {
   top: 2px;
   position: relative; }
+
 .list-panel .status i {
   font-size: 24px;
   color: #dddddd;
   position: relative;
   top: 2px; }
+
 .list-panel .status.complete i {
   color: #a8d587; }
+
 .list-panel .actions {
   float: right; }
+
 .list-panel .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0; }
+
 .list-panel .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -919,7 +940,6 @@ form .control-label {
       @media (max-width: 768px) {
         .table-filters .form-group .form-control {
           margin: 10px 0; } }
-
 .alert .alert-icon {
   font-size: 3em; }
 
@@ -994,6 +1014,7 @@ form .control-label {
 .test-toggle-btn .btn-icon:after {
   width: 10px;
   content: "+"; }
+
 .test-toggle-btn.active {
   background-color: #e7f3f8 !important; }
   .test-toggle-btn.active .btn-icon {
@@ -1019,6 +1040,7 @@ section.faq-container h2 {
 @media (max-width: 1200px) {
   .backend-main-nav ul li.dropdown ul.dropdown-menu li a {
     font-size: 0.9em !important; } }
+
 @media (max-width: 992px) {
   .backend-main-nav .logo {
     background-image: url(../images/logo_white_small.png);
@@ -1034,12 +1056,11 @@ section.faq-container h2 {
       margin-bottom: 0; }
   .backend-main-nav ul li.dropdown ul.dropdown-menu li a {
     font-size: 0.8em !important; }
-
   .pull-left-md {
     float: left !important; }
-
   .text-left-md {
     text-align: left; } }
+
 @media (max-width: 767px) {
   .backend-main-nav .navbar-nav {
     margin-top: 0; }
@@ -1061,29 +1082,21 @@ section.faq-container h2 {
     background: none !important; }
     .backend-main-nav ul li.dropdown ul.dropdown-menu li a:hover {
       background: none !important; }
-
   h1.main-page-header {
     margin-bottom: 0 !important; }
-
   .subnav ul.nav-pills.sub-nav-links {
     font-size: .9em; }
   .subnav .page-header {
     margin-top: 0; }
-
   body {
     padding-top: 50px; }
-
   .pull-left-sm {
     float: left !important; }
-
   .no-border-right-sm {
     border-right: none; }
-
   .text-left-sm {
     text-align: left; }
-
   .text-center-sm {
     text-align: center !important; }
-
   .no-padding-left-sm {
     padding-left: 0 !important; } }

@@ -1,0 +1,80 @@
+table.table{
+	font-size:.8em;
+  th{
+  	font-size:.8em;
+    font-family:$bold-font-name;
+    background-color:tint($primary-color,90%)!important;
+    color:$dark-text-color;
+    text-transform: uppercase;
+    padding: 16px 8px !important;
+    &:last-of-type{
+      border-right:none;
+    }
+  }
+	p{
+		line-height:$baseline/1.2;
+	}
+	&.table-striped > tbody > tr:nth-child(odd) > td{
+		background-color:tint($primary-color,95%);
+	}
+	h5{
+		line-height:12px;
+		margin-bottom:$baseline/2;
+	}
+	&.mid-align{
+		td{
+			vertical-align:middle;
+		}
+	}
+	&.bold-table{
+		border:3px solid tint($primary-color,80%);
+		box-shadow:0 0 10px rgba(0,0,0,.2);
+		.btn{
+			font-family:$extra-bold-font-name;
+		}
+	}
+}
+
+table.community-average-table{
+	tr{
+		border:none;
+	}
+	td{
+		border:none!important;
+	}
+}
+
+
+
+//media list
+
+.media-list{
+
+.media-thumbnail{
+	border-bottom:1px solid $gray-color;
+	p{
+		padding: 8px 10px 0px 10px;
+	}
+	a{
+		display: inline-block;
+		padding:15px 0;
+		width: 100%;
+		.btn{
+			margin-top:-39px;
+			margin-right:15px;
+			display:none;
+		}
+		&:hover{
+			background-color: tint($primary-color,97%);
+			.btn{
+				display: block;
+			}
+		}
+	}
+	&:last-of-type{
+		border-bottom:none;
+	}
+}
+
+}
+

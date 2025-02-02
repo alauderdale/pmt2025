@@ -1,0 +1,273 @@
+;;;
+
+"layout": "public",
+"title": "Practice PMP Exams",
+"activeclass": "practice",
+"testiminial_data": "testimonials"
+
+;;;
+
+=partial"/public/shared/page-head-small", locals:{headerClass:"practice-pmp-header"}
+
+%section
+	.container
+		.row
+			.col-lg-12
+				=partial"/public/shared/pmi-badge"
+		.row
+			.col-sm-8
+				%h2
+					Are You Prepared? Professional PMP Practice Exams 
+				.panel.inline-block.price-panel
+					.panel-body
+						%h2.no-margin-bottom
+							%span.bold-font-name.dark-text-color
+								$68.00
+							%small.medium-font-name
+								%span.line-through
+									$99.00 
+								\| 30% off
+						%p.text-danger
+							%i.fa.fa-clock-o
+							%strong
+								24 hours
+							left at this price
+				%p
+					%strong
+						Instant access from any web browser, with nothing to download:   
+				%ul.list-default
+					%li
+						Unlimited access to 1,000+ exceptionally realistic PMP exam practice questions
+					%li
+						Detailed explanations and PMBOK® Guide references for every PMP question
+					%li
+						Includes over Twenty condensed PMP mock exams and Ten Knowledge Area tests based on the latest exam format and PMBOK® Guide Fifth Edition
+					%li
+						Personalized reports, exam dashboard, PMP exam tips, video tutorials and much more included
+					%li
+						New! Easily create your own PMP tests from our database of 1,000+ questions.
+					%li
+						90-day access to professional PMP practice exams for only $59.00.
+				%a.btn.btn-primary{:href=>"demo/show","data-toggle"=>"modal", "data-target"=>"#demoModal"}
+					Try a demo  
+			.col-sm-4
+				.margin-top
+					=image_tag"public/practice/ui_show_1.png", :class=>"img-responsive margin-auto double-margin-bottom" 
+					.text-center
+						%a.btn.btn-default.quarter-margin-bottom{:href=>"/public/checkout"}
+							Register for pmp practice exams 
+							%i.fa.fa-arrow-circle-right{:style=>"left:2px;"}
+						%p.bold-font-name.margin-bottom
+							%small
+								%em
+									%i.fa.fa-plus{:style=>"top:2px;"}
+									Questions updated June 19, 2014
+
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section.off-white
+	.container
+		.row
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					What Our Students are Saying
+		.row
+			.col-sm-12
+				/ =partial"/public/shared/testimonial-slider"
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					See PMTraining in action
+		.row
+			.col-sm-6
+				%h3
+					Test Taking
+				%a.fancybox.fb-video{:href=>"https://www.youtube.com/embed/sDwIofQ1uj8"}
+					=image_tag"public/video-tutorial-one.png", :class=>"img-responsive margin-auto thumbnail" 
+				%p.text-center
+					%em
+						%small
+							Video subtext
+			.col-sm-6
+				%h3
+					Performance Reports
+				%a.fancybox.fb-video{:href=>"https://www.youtube.com/embed/VCacGl9vHCs"}
+					=image_tag"public/video-tutorial-two.png", :class=>"img-responsive margin-auto thumbnail" 
+				%p.text-center
+					%em
+						%small
+							Video subtext
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					Take Realistic PMP Practice Exams and Understand Your Results
+		.row
+			.col-sm-6
+				%h3
+					Understand 
+					%br
+					Your Results
+				%p
+					Quickly understand what PMP study areas require more focus before you take the real exam. Multiple PMP practice tests, comprising hundreds of PMP questions, provide test takers with a realistic performance assessment. 
+				=image_tag"public/practice/img-understand-your-results.jpg", :class=>"img-responsive margin-auto", :height=>"300px" 
+				%p.text-center
+					%em
+						%small
+							Personalized Member Dashboard
+			.col-sm-6
+				%h3
+					Access Multiple Exams & Practice Tests or Create Your Own!
+				%p
+					Access multiple PMP mock exams and practice tests, with the ability to track your performance. Plus, easily create your own custom PMP practice tests using our question database of over 1,000 professionally authored questions.
+				=image_tag"public/practice/img-access-multiple-exams.jpg", :class=>"img-responsive margin-auto" 
+				%p.text-center
+					%em
+						%small
+							Personalized Test Menus Which Track Your Progress
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section.off-white
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					PMP Practice Exams Which Mimic the Real Environment
+		.row
+			.col-sm-6
+				%h3
+					Mimic The Real Testing Environment
+				%p
+					We designed our testing engine to simulate the real PMP testing experience directly within your web browser with no downloading required.
+				=image_tag"public/practice/img-mimic-testing.jpg", :class=>"img-responsive margin-auto", :height=>"300px" 
+				%p.text-center
+					%em
+						%small
+							Member Testing Interface
+			.col-sm-6
+				%h3
+					Save Your Progress
+				%p
+					Mark your responses for review later, return to any test question before getting results, and take the test using the same time limits as the real exam.
+				=image_tag"public/practice/img-save-your-progress.jpg", :class=>"img-responsive margin-auto" 
+				%p.text-center
+					%em
+						%small
+							Realistically Mark Questions for Review
+		.row
+			.col-sm-6
+				%h3
+					Instant Feedback & Analysis
+				%p
+					A scoring report is provided after each PMP practice test, allowing you to see your strengths and weaknesses by each PMP knowledge area and Process Group.
+				=image_tag"public/practice/img-instant-feedback.jpg", :class=>"img-responsive margin-auto", :height=>"300px" 
+				%p.text-center
+					%em
+						%small
+							A detailed summary displays PMP practice test results
+			.col-sm-6
+				%h3
+					Review Your Reasoning
+				%p
+					Review the reasoning behind each PMP test question to understand which responses are correct. PMBOK® Guide page references are included for every explanation.
+				=image_tag"public/practice/img-review-reasoning.jpg", :class=>"img-responsive margin-auto" 
+				%p.text-center
+					%em
+						%small
+							Reasons are provided for each PMP test question response
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					Measure Your PMP Knowledge from Multiple Angles
+		.row
+			.col-sm-6
+				%h3
+					Personalize Your PMP Study Efforts
+				%p
+					The personalized My Performance tab will help you focus your PMP study efforts by analyzing your performance. Each PMP practice test you take is tracked to give you a summary view of your performance trend over time.
+				=image_tag"public/practice/img-personalize-study-efforts.jpg", :class=>"img-responsive margin-auto", :height=>"300px" 
+				%p.text-center
+					%em
+						%small
+							Personalized My Performance
+			.col-sm-6
+				%h3
+					Measure Your PMP Knowledge
+				%p
+					Additional reports rate your performance by PMP Knowledge Area, Process Group, trends over time, and detailed analysis of past test results.
+				=image_tag"public/practice/img-measure-your-knowledge.jpg", :class=>"img-responsive margin-auto" 
+				%p.text-center
+					%em
+						%small
+							Personalized Performance Trends
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section.off-white
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h6.text-center.primary-text-color
+					Prioritized Member Support
+		.row
+			.col-sm-6
+				%h3
+					Walk Through Support
+				%p
+					Our goal is to provide you with as much support necessary in benefiting from the PMTraining test preparation service.Included with every membership is access to our video tutorials which walk you through each of the features our site has to offer.
+				=image_tag"public/practice/img-walk-through.jpg", :class=>"img-responsive margin-auto", :height=>"300px" 
+				%p.text-center
+					%em
+						%small
+							Video Tutorials
+			.col-sm-6
+				%h3
+					Online, Email & Telephone Support
+				%p
+					In addition, we've included other functions to help you make the most of PMTraining, including a personalized dashboard, a snapshot of your account which is always accessible; plus 
+					%a{:href=>"/public/faqs"}
+						FAQs 
+					and 
+					%a{:href=>"/public/about/contact"}
+						Dedicated Support.
+				=image_tag"public/practice/img-email-support.jpg", :class=>"img-responsive margin-auto" 
+				%p.text-center
+					%em
+						%small
+							Personalized Performance Trends
+.container
+	%hr.no-margin-top.no-margin-bottom
+%section.invert-section
+	.container
+		.row
+			.col-sm-6
+				=image_tag"public/practice/system_reqs.png", :class=>"img-responsive margin-auto margin-bottom margin-top", :width=>"300"
+			.col-sm-6	
+				.margin-top
+					%h2
+						System Requirements
+					%p
+						%strong
+							Access to PMP practice exams requires the following:
+					%ul.list-default
+						%li
+							Computer with Internet connection
+						%li
+							Works with all web browsers
+					%p
+						%a.btn.btn-info{:href=>"#"}
+							Try a demo
+						%a.btn.btn-default{:href=>"#"}
+							Register Now
+
+=partial'/public/shared/get-started'

@@ -1,0 +1,161 @@
+%nav.navbar.navbar-default.visible-xs.navbar-fixed-top#mobile-main-nav{role: "navigation"}
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.logo-sm{href: "/"} 
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{href: "#"} 
+            Home
+        %li
+          %a{href: "/public/practice-pmp"} 
+            PMP Practice Exams
+        %li
+          %a{href: "/public/live-pmp"} 
+            Live PMP Classes
+        %li
+          %a{href: "/public/bootcamp"} 
+            PMP Bootcamp
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            About
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href=>"/public/about"}
+                Who we are
+            %li
+              %a{:href=>"/public/about/about-the-pmp-exam"}
+                About the PMP exam
+            %li
+              %a{:href=>"/public/about/books"}
+                Our books and website
+            %li
+              %a{:href=>"/public/about/articles"}
+                PMP articles
+            %li
+              %a{:href=>"/public/about/contact"}
+                Contact
+            %li
+              %a{:href=>"/public/about/newsletter"}
+                Get our newsletter
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            Coporate Training
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href=>"/public/corporate-training"}
+                Coporate training options
+            %li
+              %a{:href=>"/public/corporate-training/corporate-discount"}
+                Enroll multiple students
+            %li
+              %a{:href=>"/public/corporate-training/private-portal"}
+                Private training portal   
+        %li
+          %a.btn.btn-info.navbar-btn{"data-toggle" => "dropdown", :type => "button"}
+            USD
+            %i.fa.fa-caret-down
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                    %span.bold-font-name
+                      AUS $ 
+                    &ensp;Australlian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                    %span.bold-font-name
+                      CAD $ 
+                    &ensp;Canadian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
+                    %span.bold-font-name
+                      EUR € 
+                    &ensp;European Euro
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios4{:name => "optionsRadios", :type => "radio", :value => "option4"}/
+                    %span.bold-font-name
+                      GBP £ 
+                    &ensp;United Kingdom Pound Sterling
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios5{:checked => "checked", :name => "optionsRadios", :type => "radio", :value => "option5"}/
+                    %span.bold-font-name
+                      USD $ 
+                    &ensp;United States Dollar
+        %li.quarter-margin-top
+          %a.btn.btn-success.navbar-btn
+            Checkout
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                    %span.bold-font-name
+                      AUS $ 
+                    &ensp;Australlian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                    %span.bold-font-name
+                      CAD $ 
+                    &ensp;Canadian Dollar
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
+                    %span.bold-font-name
+                      EUR € 
+                    &ensp;European Euro
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios4{:name => "optionsRadios", :type => "radio", :value => "option4"}/
+                    %span.bold-font-name
+                      GBP £ 
+                    &ensp;United Kingdom Pound Sterling
+            %li
+              %a{:href => "#"} 
+                .radio
+                  %label
+                    %input#optionsRadios5{:checked => "checked", :name => "optionsRadios", :type => "radio", :value => "option5"}/
+                    %span.bold-font-name
+                      USD $ 
+                    &ensp;United States Dollar
+        %hr.no-margin-bottom
+      %ul.nav.navbar-nav.mobile-subnav
+        %li
+          %a{:href=>"/public/about/about-the-pmp-exam"}
+            PMP Exam Updates 
+        %li
+          %a{:href=>"/public/login"}
+            Member Login 
+        %li
+          %a{:href=>"/public/about/contact"}
+            Contact & Support

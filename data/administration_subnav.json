@@ -1,0 +1,19 @@
+{
+"link_title_list": [
+	  {"title":"Manage students", 
+	  	"link":"/administration"
+	  },
+	  {"title":"Student Reports", 
+	  	"link":"#"
+	  },
+	  {"title":"Create and Assign Tests", 
+	  	"link":"#"
+	  },
+	  {"title":"My Website Settings", 
+	  	"link":"#"
+	  },
+	  {"title":"Payment Settings", 
+	  	"link":"#"
+	  }
+	]
+}

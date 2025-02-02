@@ -1,0 +1,29 @@
+.modal{
+	.modal-title{
+		color:$primary-color;
+	}
+	.close{
+		z-index: 99;
+	}
+	.btn-lg{
+		padding:$baseline;
+	}
+	p{
+		&.micro-text{
+			line-height:$baseline/1.2;
+		}
+	}
+}
+
+
+.demo-test-modal{
+	.radio label{
+		font-size:.8em!important;
+		position:relative;
+		top:-3px;
+	}
+	.btn{
+		font-size:1em;
+	}
+}
+

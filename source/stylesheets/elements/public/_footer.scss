@@ -1,0 +1,38 @@
+footer#footer{
+	padding:$baseline*2  0;	
+	border-top:1px solid $gray-color;
+	a{
+		border-bottom:none;
+	}
+	.pmi-logo{
+		width: 180px;
+	}
+	ul{
+		li{
+			font-size:.7em;
+			margin-bottom:$baseline/4;
+			&.social-links{
+				float: left;
+				font-size:1.6em;
+				a{
+					&.facebook{
+						color:$primary-color;
+					}
+					&.twitter{
+						color:$link-color;
+					}
+					&.linkedin{
+						color:shade($primary-color,30%);
+					}
+				}
+			}
+			a{
+				@include transition-duration(.1s);
+				color:$text-color;
+				&:hover{
+					color:$link-color;
+				}
+			}
+		}
+	}
+}

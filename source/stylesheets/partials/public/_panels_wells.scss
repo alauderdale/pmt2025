@@ -1,0 +1,90 @@
+.panel-group{
+	font-size:.8em;
+	a{
+		border-bottom:none;
+	}
+}
+
+.panel{
+	border-radius:0;
+	border:1px solid $gray-color;
+	&.border-dashed{
+		border-style:dashed;
+		box-shadow:none;
+	}
+	&.filled{
+		background:#f2f2f2;
+	}
+	&.primary-color{
+			background:tint($primary-color,10%);
+			@extend .white-text;
+		}
+	&.success-color{
+			background:tint($green-color,10%);
+			@extend .white-text;
+		}
+	&.instructor-panel{
+		background:$green-color url('../images/public/icon_instructor.png') no-repeat right;
+		@extend .white-text;
+		.pmi-logo{
+			width: 100%;
+			margin-left:10px;
+			margin-top:60px;
+			border-radius:8px;
+		}
+	}
+	.panel-heading{
+		background:white;
+		h4{
+			font-family:$regular-font-name;
+		}
+		&.primary-color{
+			background:tint($primary-color,20%);
+			@extend .white-text;
+		}
+	}
+	p{
+		margin-bottom:0;
+	}
+}
+
+.small-panels{
+	.panel-heading{
+		padding:3px;
+		padding-left:$baseline/2;
+		h4{
+			font-size:1em;
+			a{
+				&:before{
+					content:"▼";
+					font-size:.8em;
+					color:$link-color;
+				}
+				display:block;
+			}
+		}
+	}
+}
+
+.well{
+	&.primary-color{
+		background:tint($primary-color,20%);
+		@extend .white-text;
+	}
+}
+
+
+.price-panel{
+	border-radius:4px!important;
+	background:#F4F8F9;
+}
+
+
+//shadows
+
+.shadowed-box{
+  background: #FFFFFF;
+border: 1px solid #D8E7EC;
+box-shadow: 0 14px 14px 0 rgba(0,0,0,0.05);
+border-radius: 10px;
+}

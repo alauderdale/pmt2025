@@ -1,0 +1,124 @@
+;;;
+
+"layout": "public",
+"title": "Corporate Discounts",
+"activeclass": "training",
+"subtitle": "Corporate Training Options"
+
+;;;
+
+=partial"/public/shared/page-head-small", locals:{headerClass:"training-pmp-header"}
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				%h2
+					Easily Register Multiple Students for a PMP Course Product
+		.row
+			.col-sm-6
+				%p
+					%strong
+						The fastest way to register multiple students
+				%p
+					Follow the steps below to quickly and securely enroll multiple students in a PMP courseware product.
+			.col-sm-6
+				%p
+					%strong
+						Other Payment and Enterprise Options
+				%ul.list-default
+					%li
+						Download our 
+						%a{href:"http://ssilogic.com/archive/SSI_Corporate_Discount_Order_Form_2012.pdf",target:"_blank"}
+							PDF order form 
+						and submit via email, fax, or postal mail
+					%li
+						Call 1-800-581-9819 to Register by Phone
+
+=partial"/public/corporate-training/how-to-register"
+%section
+	.container
+		.row
+			%h6.text-center
+				Step 1: Complete Student Registration Form
+			%table.table.table-striped.table-responsive.mid-align.table-bordered.bold-table
+				%thead
+					%tr
+						%th.info{:style=>"width:15%;"}
+							%h5.no-margin-bottom
+								Item
+						%th.info{"data-hide"=>"phone"} 
+							%h5.no-margin-bottom
+								Description
+						%th.info{"data-hide"=>"phone",:style=>"width:10%;"} 
+							%h5.no-margin-bottom
+								Normal cost
+						%th.info{"data-hide"=>"phone",:style=>"width:15%;"} 
+							%h5.no-margin-bottom
+								Volume Cost	
+						%th.info{"data-hide"=>"phone"} 
+							
+						%th.info{"data-hide"=>"phone"} 
+							%h5.no-margin-bottom
+								Qty
+							
+				%tbody
+					-3.times do
+						%tr
+							%td
+								%strong
+									PMP Practice Exams 
+								=image_tag'public/Thumbnail.jpg', :class=>"img-responsive"
+							%td 
+								%p
+									Unlimited 90-day access to exceptionally realistic PMP practice exams; 1,000+ realistic exam questions, including 21 condensed PMP mock exams; 10 PMBOK tests; personalized reporting, and more
+							%td 
+								$59.00
+							%td 
+								$53.00 
+								%br
+								%strong
+									%span.text-success
+										10% Discount
+							%td 
+								%a.btn.btn-primary.half-margin-bottom{:href=>"#"}
+									Register Students
+							%td
+								%input.form-control{:type=>"text",:style=>"width:40px;"}
+						%tr.register-form
+							%td
+							%td{"colspan"=>"5"}
+								%p.no-margin-bottom
+									%i.fa.fa-caret-right
+									Enter students below, then you will be taken to the payment form.
+								%table.table.table-striped.table-responsive.no-margin-bottom
+									%thead
+										%th
+										%th
+											Student Email
+										%th
+											Student First Name
+										%th
+											Student Last Name
+									%tbody
+										-3.times.with_index do |i|
+											%tr
+												%td
+													=i+1
+													\.
+												%td
+													%input.form-control
+												%td
+													%input.form-control
+												%td
+													%input.form-control
+										%tr
+											%td
+											%td
+											%td
+											%td{"colspan"=>"2"}
+												%a.btn.btn-default.pull-right{:href=>"#"}
+													Add to cart
+
+				

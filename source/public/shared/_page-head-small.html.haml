@@ -1,0 +1,8 @@
+%section.invert-section.page-header-section{:class=>"#{headerClass ||= 'page-header-element'}"}
+	.container
+		.row
+			.col-lg-12
+				%h2.no-margin-bottom.pull-left
+					=current_page.data.title
+				%h6.no-margin-bottom.pull-right.hidden-xs.half-margin-top.extra-bold-font-name
+					=current_page.data.right_title

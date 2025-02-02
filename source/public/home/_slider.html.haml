@@ -1,0 +1,23 @@
+/ {:style=>"background-image:url(/images/slider/slide-1-bg.png);"}
+#home-slider.carousel.slide{"data-ride" => "carousel"}
+  / Indicators
+  / %ol.carousel-indicators
+  /   %li.active{"data-slide-to" => "0", "data-target" => "#home-slider"}
+  .carousel-inner
+    .item.active
+      .container
+        .row
+          .col-md-6.col-md-push-6
+            %img.max-width.double-margin-bottom{:src=>"/images/hero-image.png", :width=>"500px"}           
+          .col-md-6.col-md-pull-6
+            %h1.bold-font-name
+              Live PMP® Classes Taught Online by Veteran Instructors 
+            %ul.margin-bottom.hero-list
+              -4.times do
+                %li.bold-font-name
+                  =lorem.words(10)
+            .btns.margin-bottom
+              %a.btn.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+                Schedule and pricing
+              %a.btn.btn-default.btn-lg.half-margin-bottom{:href=>"#"}
+                Class overview

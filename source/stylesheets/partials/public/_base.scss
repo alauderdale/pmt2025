@@ -1,0 +1,162 @@
+// baseline
+
+$baseline: 24px;
+
+* {
+	// position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%;
+}
+
+body{
+  font: 100%;
+  font-size:14pt;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width:100%;
+  line-height: $baseline;
+  height:100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  zoom:1;
+}
+
+
+// Clearing
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+img{
+	height:auto;
+}
+
+//backgrounds
+
+.primary-color-bg{
+  background:$primary-color;
+} 
+
+.secondary-color-bg{
+  background:$secondary-color;
+} 
+
+ 
+.white-bg{
+  background:white;
+  h1,h2,h3,h4,h5,p{
+    color:$text-color!important;
+  }
+} 
+
+.off-white-bg{
+  background:$light-gray-color;
+  h1,h2,h3,h4,h5,p{
+    color:$text-color!important;
+  }
+} 
+
+.bg-cover{
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}  
+
+//display
+
+.base-line-height{
+    line-height:$baseline;
+}
+
+.small-line-height{
+    line-height:18px;
+}
+
+.full-width{
+    width:100%;
+}
+
+.max-width{
+    max-width:100%;
+}
+
+.display-block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.inline{
+    display:inline;
+}
+
+//borders
+.border-top{
+  border-top:1px solid $gray-color;
+}
+.border-right{
+  border-right:1px solid $gray-color;
+}
+.border-bottom{
+  border-bottom:1px solid $gray-color;
+}
+.border-left{
+  border-left:1px solid $gray-color;
+}
+
+.logo{
+  background:url(../images/logo.png);
+  background-size:100%;
+  width: 388px;
+  height:50px;
+  display:block;
+}
+
+.logo_two{
+  background:url(../images/public/logo_2.png);
+  background-size:100%;
+  width: 388px;
+  height:35px;
+  display:block;
+}
+
+.logo-sm{
+  background:url(../images/logo_sm.png) no-repeat;
+  padding:0;
+  display:block;
+  background-size:100%;
+  width: 130px;
+  height: 25px;
+  top:15px;
+  margin-left:20px;
+  position:relative;
+  }
+
+.hr-flourish{
+  border:1px solid $tertiary-color;
+}
+
+.affix{
+  top:30px;
+  width:18%;
+}

@@ -1,0 +1,47 @@
+%section.no-padding-top
+	#backend-footer
+		.container
+			.row.border-top
+				.col-sm-12
+					.pull-left.padding-top.full-width
+						%nav
+							%ul.list-inline.pull-left.footer-nav
+								%li
+									© 2014 PMTraining All rights reserved.
+								%li
+									%a{:href=>"/support/faqs"}
+										Support
+								%li
+									%a{:href=>"#"}
+										Live PMP Classes
+								%li
+									%a{:href=>"#"}
+										About the PMP Exam
+								%li
+									%a{:href=>"/account"}
+										My Account
+
+//tests
+
+//show
+#showCustomTestModal.modal{"aria-hidden" => "true", role: "dialog"}
+	.modal-dialog
+		.modal-content
+
+//custom tests
+
+//new
+#newCustomTestModal.modal.fade{"aria-hidden" => "true", role: "dialog"}
+	.modal-dialog
+		.modal-content
+
+//questions
+
+//confirm begin
+#beginTestConfirmModal.modal{"aria-hidden" => "true", role: "dialog"}
+	.modal-dialog
+		.modal-content
+
+//confirm submit
+#confirmSubmitModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm-modal-with-link", :locals=>{:text =>"Are you sure you want to submit your answers?", :link=>"/tests", :btnclass=>"btn-success", :confirm_btn_text=>"Submit"}

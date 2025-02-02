@@ -1,0 +1,208 @@
+
+
+
+
+//lg
+@media (max-width: 1200px) {
+
+  .main-nav{
+		ul.main-links{
+			li{
+				margin-right:0;
+				font-size:.68em;
+			}
+		}
+	}
+
+}
+
+//md
+
+@media (max-width: 992px) {
+
+	.main-nav{
+		ul.main-links{
+			li{
+				font-size:.52em;
+				margin-right:0;
+				a{
+					padding-left:0;
+					padding-right:0;
+				}
+			}
+			.dropdown-menu{
+				top:36px!important;
+				li{
+					font-size:.9em;
+					a{
+						padding-left:15px;
+						padding-right:15px;
+					}
+				}
+			}
+		}
+		ul.sub-links{
+			li{
+				font-size:.5em;
+			}
+		}
+		.btn{
+			font-size:.8em!important;
+			padding:$baseline/4 $baseline/2;
+			padding-bottom:10px!important;
+		}
+
+	.checkout-btn-wrapper{
+		top:-1px!important;
+	}
+
+
+
+
+	}
+
+
+	.btn{
+		font-size:.8em;
+		}
+	ul.nav-pills{
+		li{
+			font-size:.65em;
+		}
+	}
+
+	.affix{
+  	display:none;
+	}
+
+	.feature-blocks{
+		.fa{
+			font-size:3em!important;
+		}
+	}
+
+
+	#hidden-menu{
+		ul.dropdown-menu{
+			top:30px!important;
+		}
+		.checkout-btn-wrapper{
+			a{
+				font-size:.5em!important;
+			}
+		}
+	}
+
+
+}
+
+//sm
+
+@media (max-width: 767px) {
+
+	section.extra-padding{
+	 	padding:$baseline*2 0!important;
+	 }
+
+	#home-slider{
+		.item{
+			background-image:none!important;
+		}
+	}
+
+
+.no-margin-top-sm{
+		margin-top:0!important;
+	}
+
+.logo{
+  background:url(../images/logo_sm.png);
+  width: 185px;
+  height:36px;
+  display:block;
+}
+
+.btn{
+	font-size:.7em;
+		&.btn-lg{
+			padding:$baseline/2;
+		}
+	}
+
+	body{
+	padding-top: 50px;
+	}
+
+	section{
+		padding:$baseline 0;
+	}
+
+	h1{
+		font-size:1.5em;
+		line-height:$baseline*1.4;
+	}
+	h2{
+		font-size:1.2em;
+		line-height:$baseline*1.2;
+	}
+	p{
+		font-size:.8em;
+	}
+
+	ul.nav-pills{
+		border-bottom:none;
+		li{
+			font-size:.6em;
+			a{
+				padding:10px;
+			}
+			&.active{
+				a{
+					padding:10px;
+					border:none;
+					&:hover{
+						border:none;
+					}
+				}
+			}
+			&:hover{
+				a{
+					border:none;
+				}
+			}
+		}
+	}
+
+	.carousel{
+		.btns{
+			position:relative;
+		}
+		ol.carousel-indicators{
+			text-align:center;
+			bottom:5px;
+		}
+	}
+
+	.feature-blocks{
+		.col-sm-3{
+      text-align:left!important;
+    }
+	}
+
+	#mobile-main-nav{
+		.btn{
+			font-size:1em;
+		}
+	}
+	.text-center-sm{
+		text-align:center;
+	}
+
+}
+
+//xs
+
+@media (max-width: 320px) {
+
+
+}

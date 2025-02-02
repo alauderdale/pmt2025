@@ -1,0 +1,263 @@
+.logo-sm{
+	border-bottom:none;
+}
+
+.logo{
+	background-repeat:no-repeat;
+}
+
+.main-nav{
+	padding:$baseline 0;
+	padding-bottom:0;
+	border-bottom:7px solid shade($primary-color,20%);
+	a{
+		border-bottom:none;
+	}
+	ul.sub-links{
+		li{
+			font-size:.65em;
+			font-family:$extra-bold-font-name;
+			padding-right:0px;
+			margin-top:14px;
+			&:after{
+				content:"|";
+			}
+			&:last-of-type{
+					&:after{
+					content:"";
+				}
+			}
+		}
+	}
+	ul.main-links{
+		margin-bottom:0;
+		li{
+			font-family:$medium-font-name;
+			font-size:.8em;
+			margin-right:5px;
+			&:hover > ul.dropdown-menu {
+    			display: block;    
+				}
+			a{
+				padding-bottom:0;
+				margin-bottom:5px;
+				display:block;
+				color:$text-color;
+				@include transition-duration(.1s);
+				&:hover, &:focus{
+					color:$link-color;
+					text-decoration:none;
+				}
+				.caret{
+					color:#bbb;
+				}
+			}
+			&.open{
+				a{
+									position:relative;
+									z-index: 10;
+				}
+			}
+			&.active{
+				background-color:shade($primary-color,20%);
+				.dropdown-menu{
+					li{
+						a{
+							color:$text-color;
+							border-bottom:none;
+						}
+					}
+				}
+				a{
+					color:white;
+				}
+			}
+		}
+		.dropdown-menu{
+				border: 1px solid shade($primary-color,30%);
+				border-top:7px solid shade($primary-color,20%)!important;
+				top: 36px!important;
+				z-index: $baseline;
+				margin-left: -7px;
+				position:absolute;
+				left:auto;
+				border-radius: 0;
+				border-top: 0;
+				cursor:pointer;
+				@include linear-gradient(#fff 0%, #eee 100%);
+				a{
+					&:hover{
+						color:shade($link-color,20%)!important;
+						@include linear-gradient(#f2f2f2 0%, #ddd 100%);
+					}
+				}
+			.dropdown-toggle{
+				padding:0;
+				margin:0;
+				border-bottom:none;
+			}
+			li{
+				margin-right:0;
+				font-size:1em;
+				font-family:$medium-font-name;
+				border:none;
+				a{
+					padding-bottom:5px;
+					padding-top:5px;
+					margin-bottom:0px;
+				}
+			}
+		}
+	}
+	.btn{
+		padding:$baseline/4 $baseline;
+		border:1px solid $gray-color;
+		background:white;
+		color:$text-color;
+		&:hover{
+			background:white;
+			color:$link-color;
+			border-color:$gray-color;
+		}
+		&.active{
+			box-shadow:none;
+			background-color:shade($primary-color,20%)!important;
+			color:white;
+			border-color:shade($primary-color,20%)!important;
+		}
+	}
+
+}
+
+
+.main-nav-top{
+	position:relative;
+	box-shadow:0 1px 3px rgba(0,0,0,.5)!important;
+	ul.main-links{
+		li{
+			border:1px solid $gray-color;
+			border-bottom:none;
+			border-top-right-radius:5px;
+			border-top-left-radius:5px;
+			a{
+				margin-bottom:5px;
+				margin-top:8px;
+			}
+		}
+	}
+	a{
+		padding-left:4px;
+		padding-right:4px;
+	}
+
+	.checkout-btn-wrapper, .currency-btn-wrapper{
+
+		.btn{
+			position:relative;
+			bottom:-3px;
+			padding-bottom:6px;
+			border-bottom-right-radius:0;
+			border-bottom-left-radius:0;
+			font-size:.8em;
+			@include breakpoint(md) {
+				top:4px;
+				font-size:.6em!important;	
+			}
+		}
+
+	}
+
+	.checkout-btn-wrapper{
+
+
+	}
+	.currency-btn-wrapper{
+
+		.btn{
+			font-weight: 500!important;
+			margin-right:4px;
+		}
+		.dropdown-menu{
+			.radio{
+				margin:5px 0;
+			}
+		}
+
+	}
+}
+
+
+#hidden-menu{
+	position:fixed;
+	background-color:white;
+	float: left;
+	width:100%;
+	z-index: 99;
+	display:none;
+	padding-top:8px;
+	border-bottom:1px solid $gray-color;
+	.sale{
+		display:none;
+	}
+	.checkout-btn-wrapper, .currency-btn-wrapper{
+		.btn{
+			padding:3px 10px!important;
+			position:relative;
+			top:-3px;
+			font-size: 1.6rem!important;
+		}
+	}
+	.currency-btn-wrapper{
+		.btn{
+			margin-right:3px;
+		}
+	}
+	ul.dropdown-menu{
+		top:28px!important;
+	}
+	ul.main-links{
+		li{
+			&.active{
+				background:none;
+				a{
+					color:$link-color;
+				}
+			}
+		}
+	}
+}
+
+.sale{
+	background:url(../images/public/sale.png) no-repeat right top;
+}
+
+//dropdowns
+
+ul.dropdown-large{
+	left:0!important;
+	right:0!important;
+	hr{
+		border-color:#bbb;
+	}
+	a{
+		color:$primary-color!important;
+		padding:0!important;
+		&:hover{
+			background:none!important;
+		}
+	}
+	a.btn{
+		font-size:1em;
+		padding:$baseline/4 $baseline!important;
+		margin:0;
+		width:auto!important;
+		&.btn-primary{
+			@extend .btn-primary;
+			color:white!important;
+			&:hover{
+				color:white!important;
+				background:tint($primary-color,20%)!important;
+			}
+		}
+	}
+}

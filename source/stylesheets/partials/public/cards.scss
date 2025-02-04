@@ -68,6 +68,17 @@
 			&.actions{
 				justify-items: center;
 			}
+			&.time{
+				@include breakpoint(lg) {
+					flex-shrink:2;
+				}
+			}
+			&.date{
+				
+			}
+			&.price{
+
+			}
 			@include breakpoint(md) {
 				&.title{
 					margin-bottom:$baseline/2;

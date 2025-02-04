@@ -25,6 +25,7 @@
 			@include breakpoint(md) {
 				display: flex;
 				justify-content: space-between;
+				margin-top:$baseline/2;
 				.card-col{
 					&.price{
 

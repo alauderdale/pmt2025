@@ -32,6 +32,17 @@
 					}
 					&.actions{
 						flex-shrink:2;
+						.urgency-label{
+							font-size: 10px;
+							.urgency-icon{
+								font-size: 15px;
+							}
+						}
+						.enroll-btn{
+							padding:5px 10px;
+							font-size: 14px;
+							font-weight: 700;
+						}
 					}
 				}
 			}
@@ -56,13 +67,15 @@
 			}
 			.info-container{
 				display: flex;
+				@include breakpoint(md) {
+					.icon span{
+						font-size: 16px;
+					}
+				}
 				.info{
 					@include breakpoint(md) {
 						display: inline-flex;
 						column-gap: 8px;
-						p{
-
-						}
 					}
 				}
 			}

@@ -1,4 +1,86 @@
 .container
+  .filters-container
+    .filters-col
+      .dropdown
+        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+          Any days
+          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+            keyboard_arrow_down
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Any days
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Weekends
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Weekdays
+
+      .dropdown
+        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+          Any time
+          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+            keyboard_arrow_down
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{:href => "#"} 
+              .checkbox.quarter-margin-top.quarter-margin-bottom
+                %label
+                  %input#optionsRadios1{ :name => "optionsRadios", :type => "checkbox", :value => "option1"}/
+                  %span.bold-font-name
+                    Mornings 
+                  (8AM-3PM)
+          %li
+            %a{:href => "#"} 
+              .checkbox.quarter-margin-top.quarter-margin-bottom
+                %label
+                  %input#optionsRadios1{ :name => "optionsRadios", :type => "checkbox", :value => "option1"}/
+                  %span.bold-font-name
+                    Afternoons 
+                  (4PM-8PM)
+      .dropdown
+        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+          Any month
+          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+            keyboard_arrow_down
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{:href => "#"} 
+              .radio.quarter-margin-top.quarter-margin-bottom
+                %label
+                  %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
+                  Any month
+          %li
+            %a{:href => "#"} 
+              .radio.quarter-margin-top.quarter-margin-bottom
+                %label
+                  %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+                  January
+          %li
+            %a{:href => "#"} 
+              .radio.quarter-margin-top.quarter-margin-bottom
+                %label
+                  %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
+                  February
+    .filters-col
+      .dropdown
+        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.regular-font-name
+            Sort by:
+          recommended
+          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+            keyboard_arrow_down
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Option
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Option
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              Option
   .class-schedule-cards
     -10.times do
       .class-card
@@ -39,12 +121,12 @@
                 $1398
               $998 USD
           .card-col.actions
-            %a.btn.btn-success.btn-inline
+            %a.btn.btn-success.btn-inline.enroll-btn
               Enroll now
               %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
                 chevron_right
-            %h5.bold-font-name.text-danger.quarter-margin-top.micro-text
-              %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+            %h5.bold-font-name.text-danger.quarter-margin-top.micro-text.urgency-label
+              %span.material-symbols-outlined.urgency-icon{:style=>"vertical-align:middle;"}
                 acute
               %em
                 Selling fast

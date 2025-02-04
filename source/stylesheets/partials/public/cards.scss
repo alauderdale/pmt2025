@@ -67,14 +67,18 @@
 			}
 			&.actions{
 				justify-items: center;
+				
 			}
 			&.time{
-				@include breakpoint(lg) {
-					flex-shrink:2;
-				}
+
 			}
 			&.date{
-				
+				@include breakpoint(lg) {
+					width:110%;
+				}
+				@include breakpoint(md) {
+					width: 100%;
+				}
 			}
 			&.price{
 

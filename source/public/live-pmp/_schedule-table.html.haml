@@ -1,108 +1,50 @@
-%table.table.table-striped.table-responsive.mid-align.table-bordered.bold-table
-  %thead
-    %tr
-      %th.text-center
-        %h5.no-margin-bottom
-          Class Info
-      %th.text-center{"data-hide"=>"phone"} 
-        %h5.no-margin-bottom
-          Class Start Date
-      %th.text-center{"data-hide"=>"phone"} 
-        %h5.no-margin-bottom
-          Class Schedule
-      %th.text-center{"data-hide"=>"phone"} 
-        %h5.no-margin-bottom
-          Class Time
-      %th.text-center{"data-hide"=>"phone"} 
-        %h5.no-margin-bottom
-          Enrollment Price
-      %th 
-
-  %tbody
-    %tr
-      %td.text-center 
-        %strong
-          %a{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
-            View Class Details
-          %h5.margin-top
-            2020 Exam
-            %i.fa.fa-info-circle.light-text-color.tooltip-up{"data-toggle"=>"tooltip", :title=>"Explain this here"}
-      %td.text-center 
-        %strong
-          Monday, July 07, 2014 
-      %td.text-center 
-        Mon / Weds Evenings (6 weeks)
-      %td.text-center 
-        8PM  to 10PM (EST)
-      %td.text-center.flash-sale
-        %span.flash-title
-          FLASH SALE
-        %br
-        %span.flash-savings
-          50% OFF
-        %br
-        %span.flash-price-change
-          %span.line-through.flash-old-price
-            $1,380.00 
-          %span.flash-new-price
-            $100.00
-        %br
-        %span.flash-counter
-          SALE ENDS IN: 23:33:00
-      %td.text-center
-        %a.btn.btn-success{:href=>"/public/checkout"}
-          Enroll Now
-    -4.times do
-      %tr
-        %td.text-center 
-          %strong
-            %a{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
-              View Class Details
-        %td.text-center 
-          %strong
-            Monday, July 07, 2014 
-        %td.text-center 
-          Mon / Weds Evenings (6 weeks)
-        %td.text-center 
-          8PM  to 10PM (EST)
-        %td.text-center 
-          %span.line-through
-            $1299.00 (USD) 
-          %br
-          %span.text-danger
-            Save $405.00 Now 
-          %br
-          %span.text-success
-            $894.00 (USD)
-        %td.text-center
-          %a.btn.btn-success{:href=>"/public/checkout"}
-            Enroll Now
-    %tr
-      %td.text-center 
-        %strong
-          %span.text-muted{:disabled=>"disabled"}
-            View Class Details
-      %td.text-center 
-        %strong
-          Monday, July 07, 2014 
-      %td.text-center 
-        Mon / Weds Evenings (6 weeks)
-      %td.text-center 
-        8PM  to 10PM (EST)
-      %td.text-center 
-        %span.line-through
-          $1299.00 (USD) 
-        %br
-        %span.text-danger
-          Save $405.00 Now 
-        %br
-        %span.text-success
-          $894.00 (USD)
-      %td.text-center
-        .tooltip-up{"data-toggle"=>"tooltip" , :title=>"Due to the popularity of this class, we have reached capacity and can no longer accept new enrollments."}
-          %a.btn.btn-warning{:href=>"/public/checkout", :disabled=>"disabled"}
-            Sold Out
-
-
-
-	
+.container
+  .class-schedule-cards
+    -10.times do
+      .class-card
+        .card-col.title
+          %h4.bold-font-name.quarter-margin-bottom
+            Mon, Feb 3, 2025
+          %h5
+            %a.no-decor{:href=>"#"}
+              Class details
+              %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+                chevron_right
+        .card-col.date
+          .info-container
+            .icon.quarter-margin-right
+              %span.material-symbols-outlined
+                calendar_today
+            .info
+              %p.medium-font-name.dark-text-color
+                Mon-Fri Bootcamp
+              %p.medium-font-name.dark-text-color.micro-text
+                2 days
+        .card-col.time
+          .info-container
+            .icon.quarter-margin-right
+              %span.material-symbols-outlined
+                schedule
+            .info
+              %p.medium-font-name.dark-text-color
+                7AM - 3PM
+              %p.medium-font-name.dark-text-color.micro-text
+                (America/Denver)
+        .price-actions-wrapper
+          .card-col.price
+            %p.bold-font-name.text-danger
+              Save $400 Now
+            %h4.bold-font-name.dark-text-color
+              %span.line-through.light-text-color.micro-text.quarter-margin-right
+                $1398
+              $998 USD
+          .card-col.actions
+            %a.btn.btn-success.btn-inline
+              Enroll now
+              %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+                chevron_right
+            %h5.medium-font-name.text-danger.quarter-margin-top
+              %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+                acute
+              %em
+                Selling fast

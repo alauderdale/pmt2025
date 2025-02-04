@@ -26,64 +26,58 @@
 		.row
 			.col-lg-12
 				%h2.bold-font-name.double-marign-bottom
-					PMP Class Schedule and Pricing
+					Live Virtual PMP Class Schedule and Pricing
 		.row
 			.col-sm-7
-				%ul.list-unstyled
-					%li.margin-bottom
-						.media
-							.pull-left
-								=image_tag"public/icon-computer.svg", :class=>"media-object half-margin-right", :width=>"33px"
-							.media-body 
-								%small
-									%span.extra-bold-font-name
-										Attend class from any PC, Mac 
-									or connected device
-					%li.margin-bottom
-						.media
-							.pull-left
-								=image_tag"public/icon-email.svg", :class=>"media-object half-margin-right", :width=>"35px"
-							.media-body 
-								%small
-									%span.extra-bold-font-name
-										Instant email confirmation  
-									and instructor follow-up after enrollment
-					%li.margin-bottom
-						.media
-							.pull-left
-								=image_tag"public/icon-clock.svg", :class=>"media-object half-margin-right", :width=>"28px"
-							.media-body 
-								%small
-									%span.extra-bold-font-name
-										Includes class materials
-									, 35 Contact Hours from the Project Management Institute (PMI)®, online exam portal and
-									%a{:href=>"/public/live-pmp/included"} 
-										more
-					%li.margin-bottom
-						.media
-							.pull-left
-								=image_tag"public/icon-medal.svg", :class=>"media-object half-margin-right", :width=>"25px"
-							.media-body 
-								%small
-									%span.extra-bold-font-name
-										included with all classes
-									Exam pass guarantee 
+				.row.margin-bottom.margin-top
+					.col-md-6
+						%ul.list-unstyled
+							%li.margin-bottom
+								.media
+									.pull-left
+										=image_tag"public/live/icon-ed.svg", :class=>"media-object half-margin-right", :width=>"50px"
+									.media-body 
+										%small
+											%span.extra-bold-font-name
+												Money back guarantee
+											%br 
+											included with every class offered
+							%li.margin-bottom
+								.media
+									.pull-left
+										=image_tag"public/live/icon-mail.svg", :class=>"media-object half-margin-right", :width=>"50px"
+									.media-body 
+										%small
+											%span.extra-bold-font-name
+												Instant email confirmation
+											%br
+											and class enrollment after checkout
+					.col-md-6
+						%ul.list-unstyled
+							%li.margin-bottom
+								.media
+									.pull-left
+										=image_tag"public/live/icon-teac.svg", :class=>"media-object half-margin-right", :width=>"50px"
+									.media-body 
+										%small
+											%span.extra-bold-font-name
+												Attend live classes 
+											%br 
+											from any web browser or connected device
+							%li.margin-bottom
+								.media
+									.pull-left
+										=image_tag"public/live/icon-person.svg", :class=>"media-object half-margin-right", :width=>"50px"
+									.media-body 
+										%small
+											%span.extra-bold-font-name
+												Includes class materials 
+											%br
+											from the Project Management Institute
 			.col-sm-5 
 				=image_tag"public/video_thumb.png", :class=>"img-responsive margin-auto double-margin-bottom" 
-.container
-	%hr.no-margin-top.no-margin-bottom
-%section
+%section.no-padding-top
 	.container
-		.row
-			.col-lg-12
-				%h6.text-center.primary-text-color
-					New Student Discounts on all Upcoming Classes!
-				.text-center.double-margin-bottom
-					%a.tooltip-up.margin-right{:href=>"/public/about/contact", "data-toggle"=>"tooltip" , :title=>"+ Is there anything preventing you from signing up at this point? SEND Powered by Qualaroo [?]"}
-						Request a Private Class for your Team
-						/ %i.fa.fa-arrow-circle-right{:style=>"left:2px;"}
-					%a{:href=>"#"}
-						New Student Discounts on all Upcoming Classes
 		.row
 			.col-sm-12
 				=partial'/public/live-pmp/schedule-table'

@@ -1,0 +1,84 @@
+//course schedule card
+
+.class-schedule-cards{
+	h1,h2,h3,h4,h5,h6,p{
+		margin:0;
+	}
+	.class-card{
+		margin:10px 0;
+		border:1px solid $gray-color;
+		display: flex;
+		padding:15px;
+		border-radius:5px;
+		box-shadow:0 1px 8px #CDDFE6;
+		&:nth-child(even){
+			background: tint($primary-color,94%);;
+		}
+		@include breakpoint(md) {
+			flex-direction: column;
+			&:nth-child(even){
+				background: white;
+			}
+		}
+		.price-actions-wrapper{
+			display: contents;
+			@include breakpoint(md) {
+				display: flex;
+				justify-content: space-between;
+				.card-col{
+					&.price{
+
+					}
+					&.actions{
+						flex-shrink:2;
+					}
+				}
+			}
+		}
+		.card-col{
+			width:100%;
+			padding:10px;
+			align-self:center;
+			p{
+				font-size: 15px;
+				&.micro-text{
+					font-size: 14px;
+				}
+			}
+			@include breakpoint(lg) {
+				p{
+				font-size: 14px;
+					&.micro-text{
+						font-size: 13px;
+					}
+				}
+			}
+			.info-container{
+				display: flex;
+				.info{
+					@include breakpoint(md) {
+						display: inline-flex;
+						column-gap: 8px;
+						p{
+
+						}
+					}
+				}
+			}
+			&.actions{
+				justify-items: center;
+			}
+			@include breakpoint(md) {
+				&.title{
+					margin-bottom:$baseline/2;
+				}
+				&.time,&.date{
+					padding:0 10px;
+				}
+				&.price{
+					padding-top:$baseline;
+				}
+			}
+		}
+	}
+}

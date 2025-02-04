@@ -61,6 +61,16 @@ a{
 			border-color:shade($gray-color,20%);	
 		}
 	}
+	&.btn-info-dark{
+		background-color:#fff;
+		border-color:$dark-text-color;
+		border-width: 1.5px;
+		color:$dark-text-color;
+		&:hover{
+			background-color:shade(#f2f2f2,10%);
+			border-color:tint($dark-text-color,20%);	
+		}
+	}
 	&.btn-white{
 		background-color:white;
 		color:$primary-color;

@@ -27,9 +27,6 @@
 				justify-content: space-between;
 				margin-top:$baseline/2;
 				.card-col{
-					&.price{
-
-					}
 					&.actions{
 						flex-shrink:2;
 						.urgency-label{
@@ -49,7 +46,7 @@
 		}
 		.card-col{
 			width:100%;
-			padding:10px;
+			padding:5px 12px;
 			align-self:center;
 			p{
 				font-size: 15px;
@@ -96,9 +93,45 @@
 				}
 			}
 			&.price{
-
+				max-width:180px;
+			}
+			&.flash-sale{
+				background:shade($primary-color,60%);
+				border-radius: 4px;
+				position: relative;
+				padding-top:25px;
+				p,h4{
+					color: white;
+					.savings{
+						color:rgba(255,255,255,.7)!important;
+					}
+				}
+				&:after{
+					width:100%;
+					content:"Sale ends Feb 15";
+					color:rgba(255,255,255,.7);
+					font-size:11px;
+					line-height: 13px;
+					text-transform: uppercase;
+					font-family: $bold-font-name;
+				}
+				&:before{
+					position: absolute;
+					top: 5px;
+					left: -5px;
+					content:"Flash sale";
+					background:$warning-color;
+					padding:0px 5px;
+					padding-left:15px;
+					font-family: $extra-bold-font-name;
+					color:$dark-text-color;
+					font-size:13px;
+					line-height: 16px;
+					text-transform: uppercase;
+				}
 			}
 			@include breakpoint(md) {
+				padding:10px 5px;
 				&.title{
 					margin-bottom:$baseline/2;
 				}
@@ -106,7 +139,10 @@
 					padding:0 10px;
 				}
 				&.price{
-					padding-top:$baseline;
+					padding-left:15px;
+				}
+				&.actions{
+					max-width:150px;
 				}
 			}
 		}

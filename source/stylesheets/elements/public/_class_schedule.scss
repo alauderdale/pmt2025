@@ -6,10 +6,23 @@
 		display: inline-flex;
 	}
 	.btn{
-		text-color:$dark-text-color;
-		border-color:$dark-text-color;
 		font-size: 14px;
-		border-width: 1.5px;
 		padding:5px 10px;
+		min-width:150px;
+		.btn-content-wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	@include breakpoint(md) {
+		display: block;
+		.dropdown{
+			display: block;
+			margin-bottom:$baseline/2;
+		}
+		.btn{
+			width:100%;
+		}
 	}
 }

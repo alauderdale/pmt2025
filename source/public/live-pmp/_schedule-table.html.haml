@@ -2,10 +2,12 @@
   .filters-container
     .filters-col
       .dropdown
-        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
-          Any days
-          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
-            keyboard_arrow_down
+        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.btn-content-wrapper
+            %span.text
+              Any days
+            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+              keyboard_arrow_down
         %ul.dropdown-menu{:role => "menu"}
           %li
             %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
@@ -18,10 +20,12 @@
               Weekdays
 
       .dropdown
-        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
-          Any time
-          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
-            keyboard_arrow_down
+        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.btn-content-wrapper
+            %span.text
+              Any time
+            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+              keyboard_arrow_down
         %ul.dropdown-menu{:role => "menu"}
           %li
             %a{:href => "#"} 
@@ -40,10 +44,12 @@
                     Afternoons 
                   (4PM-8PM)
       .dropdown
-        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
-          Any month
-          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
-            keyboard_arrow_down
+        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.btn-content-wrapper
+            %span.text
+              Any month
+            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+              keyboard_arrow_down
         %ul.dropdown-menu{:role => "menu"}
           %li
             %a{:href => "#"} 
@@ -65,12 +71,14 @@
                   February
     .filters-col
       .dropdown
-        .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
-          %span.regular-font-name
-            Sort by:
-          recommended
-          %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
-            keyboard_arrow_down
+        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.btn-content-wrapper
+            %span.text
+              %span.regular-font-name
+                Sort by
+              recommended
+            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+              keyboard_arrow_down
         %ul.dropdown-menu{:role => "menu"}
           %li
             %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
@@ -82,13 +90,60 @@
             %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
               Option
   .class-schedule-cards
+    .class-card
+      .card-col.title
+        %h4.bold-font-name.quarter-margin-bottom
+          Mon, Feb 3, 2025
+        %h5
+          %a.no-decor{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
+            Class details
+            %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+              chevron_right
+      .card-col.date
+        .info-container
+          .icon.quarter-margin-right
+            %span.material-symbols-outlined
+              calendar_today
+          .info
+            %p.medium-font-name.dark-text-color
+              Tue/Thur Bootcamp
+            %p.medium-font-name.dark-text-color.micro-text
+              2 days
+      .card-col.time
+        .info-container
+          .icon.quarter-margin-right
+            %span.material-symbols-outlined
+              schedule
+          .info
+            %p.medium-font-name.dark-text-color
+              7AM - 3PM
+            %p.medium-font-name.dark-text-color.micro-text
+              (America/Denver)
+      .price-actions-wrapper
+        .card-col.price.flash-sale
+          %p.bold-font-name.text-danger
+            Save $400 Now
+          %h4.bold-font-name.dark-text-color
+            %span.line-through.light-text-color.micro-text.quarter-margin-right.savings
+              $1398
+            $998 USD
+        .card-col.actions
+          %a.btn.btn-success.btn-inline.enroll-btn
+            Enroll now
+            %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+              chevron_right
+          %h5.bold-font-name.text-danger.quarter-margin-top.micro-text.urgency-label
+            %span.material-symbols-outlined.urgency-icon{:style=>"vertical-align:middle;"}
+              acute
+            %em
+              Selling fast
     -10.times do
       .class-card
         .card-col.title
           %h4.bold-font-name.quarter-margin-bottom
             Mon, Feb 3, 2025
           %h5
-            %a.no-decor{:href=>"#"}
+            %a.no-decor{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
               Class details
               %span.material-symbols-outlined{:style=>"vertical-align:middle;"}
                 chevron_right
@@ -117,7 +172,7 @@
             %p.bold-font-name.text-danger
               Save $400 Now
             %h4.bold-font-name.dark-text-color
-              %span.line-through.light-text-color.micro-text.quarter-margin-right
+              %span.line-through.light-text-color.micro-text.quarter-margin-right.savings
                 $1398
               $998 USD
           .card-col.actions

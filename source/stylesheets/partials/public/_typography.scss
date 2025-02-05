@@ -195,6 +195,13 @@ $text-column-gutter-width: $baseline;
   }
 }
 
+.heading-text-color{
+  color:$heading-text-color!important;
+  p{
+    color:$heading-text-color!important;
+  }
+}
+
 //font size
 
 .micro-text{

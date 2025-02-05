@@ -1,6 +1,6 @@
 .modal{
 	.modal-title{
-		color:$primary-color;
+		color:$heading-text-color;
 	}
 	.close{
 		z-index: 99;
@@ -24,6 +24,75 @@
 	}
 	.btn{
 		font-size:1em;
+	}
+}
+
+.live-course-detail-modal{
+	.padded{
+		@include breakpoint(md) {
+			padding:5px!important;
+		}
+	}
+	.modal-header{
+		border: none;
+		@include breakpoint(md) {
+			h2{
+				font-size: 22px;
+			}
+		}
+	}
+	.badges{
+		margin-top:-60px;
+		margin-bottom:10px;
+		width:290px;
+		@include breakpoint(md) {
+			width:200px;
+		}
+	}
+	.details-list{
+		.key-value{
+			padding:10px 0;
+		}
+		.key{
+			width:200px;
+			h5{
+				line-height: 1.2em;
+			}
+		}
+		.value{
+			width:240px;
+			
+			h5{
+				line-height: 1.2em;
+			}
+		}
+		@include breakpoint(md) {
+			.key,.value{
+				h5{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	ul.value-list{
+		li{
+			margin-left:10px;
+			margin-bottom:15px;
+			line-height: 1.3em;
+			span{
+				position: relative;
+  				left: 10px;
+			}
+			@include breakpoint(md) {
+				font-size: 12px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	@include breakpoint(md) {
+		.help-number{
+			font-size: 11px;
+		}
 	}
 }
 

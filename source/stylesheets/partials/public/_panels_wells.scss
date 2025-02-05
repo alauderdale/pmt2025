@@ -83,8 +83,14 @@
 //shadows
 
 .shadowed-box{
-  background: #FFFFFF;
-border: 1px solid #D8E7EC;
-box-shadow: 0 14px 14px 0 rgba(0,0,0,0.05);
-border-radius: 10px;
+	background: #FFFFFF;
+	border: 1px solid #D8E7EC;
+	box-shadow: 0 14px 14px 0 rgba(0,0,0,0.05);
+	border-radius: 10px;
+}
+
+
+
+.promo-well{
+	background-color: tint($primary-color,95%)!important;
 }

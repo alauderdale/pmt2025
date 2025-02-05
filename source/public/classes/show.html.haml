@@ -5,82 +5,133 @@
 ;;;
 
 
+.live-course-detail-modal
+	.padded
+		.modal-header.padding-bottom.half-margin-bottom
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button", :style=>"left:10px; bottom:20px;"} ×
+			%h2.modal-title.text-center.bold-font-name
+				Live Online PMP Class (Tues / Thurs Evenings)
+		.modal-body
+			.row
+				.col-sm-6
+					.padding-bottom
+						.total-item.d-flex.border-bottom.justify-space-between.half-padding-top.half-padding-bottom
+							%h5.light-text-color.no-margin-bottom.bold-font-name
+								Original Class Price
+							%h5.light-text-color.no-margin-bottom.text-right.bold-font-name
+								$1000 USD
+						.total-item.d-flex.border-bottom.justify-space-between.half-padding-top.half-padding-bottom
+							%h5.light-text-color.no-margin-bottom.bold-font-name
+								On-Demand Course	
+							%h5.light-text-color.no-margin-bottom.text-right.bold-font-name
+								$1000 USD
+						.total-item.d-flex.border-bottom.justify-space-between.half-padding-top.half-padding-bottom
+							%span
+								%h5.light-text-color.no-margin-bottom.bold-font-name
+									Discount
+								%h5.light-text-color.no-margin-bottom.bold-font-name
+									Final Cost	
+							%span
+								%h5.text-danger.no-margin-bottom.text-right.extra-bold-font-name
+									%span.line-through.light-text-color.bold-font-name.text-right
+										$1,398
+									$400 Off
+								%h5.text-danger.no-margin-bottom.extra-bold-font-name.text-right
+									
+									$1000 USD
+						%p.micro-text.quarter-margin-top.no-margin-bottom
+							Placeholder for Affirm component
 
-.padded
-	.modal-header
-		%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button", :style=>"left:10px; bottom:20px;"} ×
-		%h3.modal-title 
-			Live Online PMP Class (Tues / Thurs Evenings)
-	.modal-body
-		.row
-			.col-sm-6
-				%table.table.mid-align
-					%tbody
-						%tr
-							%td.text-left.light-text-color
-								Class cost
-							%td.text-right.light-text-color
-								$1,200
-						%tr
-							%td.text-left.light-text-color
-								PMI student license
-								%i.fa.fa-info-circle.light-text-color.tooltip-up{"data-toggle"=>"tooltip", :title=>"Explain this here"}
-							%td.text-right.light-text-color
-								$99
 
-						%tr
-							%td.text-left
-								%h3.dark-text-color.bold-font-name
-									Total
-							%td.text-right.light-text-color
-								%h4.no-margin
-									%span.line-through
-										$1,400
-									%span.text-danger
-										20% off
-								%h3.no-margin
-									%span.text-danger
-										$1249
+					.details-list.double-padding-bottom
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									Class time
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									6PM to 8PM (America/Denver)
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									Class days
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									Mon / Weds Evenings
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									Class dates
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									Mon, Nov 29 - Weds, Jan 12
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									Moneyback guarantee
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									Yes
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									Instructor
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									Mike Ikona PMP
+						.key-value.d-flex.justify-space-between
+							.key
+								%h5.no-margin-bottom.bold-font-name.dark-text-color
+									System Requirements
+							.value
+								%h5.no-margin-bottom.medium-font-name.dark-text-color
+									Desktop / mobile web browser
 
-				%p.no-margin-bottom.micro-text
-					%br
-					Class Time: 
-					%strong
-						8PM to 10PM (EST) 
-					%br
-					Class Days: 
-					%strong
-						Tues / Thurs Evenings 
-					%br
-					Class Dates: 
-					%strong
-						Tuesday, Jul 08 - Thursday, Aug 21 
-			.col-sm-6	
-				.well
-					%p.half-margin-bottom
-						%strong	
-							Included with your class enrollment:
-						%ul.list-primary-color
+							
+				.col-sm-6	
+					.well.promo-well.shadowed-box
+						.text-center
+							=image_tag"public/live/badges.png", :class=>"badges"
+						%p.half-margin-bottom
+							%strong	
+								Included with your enrollment:
+						%ul.list-primary-color.value-list
 							%li
-								Live online class taught by PMI R.E.P.
+								%span
+									PMP moneyback guarantee
 							%li
-								Exam pass guarantee
+								%span
+									Official PMP class curriculum from PMI
 							%li
-								All PMP courseware and study materials
+								%span
+									35 PMI Contact Hours needed for the PMP exam
 							%li
-								PMTraining Online exam prep system
+								%span
+									Extensive online class materials
 							%li
-								Focused PMP certification curriculum 
+								%span
+									PM practice exam portal 
 							%li
-								35 PMI Contact Hours included with course
+								%span
+									Live class taught by Premier AT from PMI
+							%li
+								%span
+									Live class taught by Premier AT from PMI
+							%li
+								%span
+									On-Demand PM course with 30 PDUs to keep your future certification valid ($348 USD value)
+						%a.btn.btn-success.btn-block.btn-lg{:href=>"/public/checkout"}   
+							Enroll in this course
+							%span.material-symbols-outlined{:style=>"vertical-align:middle;"}
+								chevron_right 
+					%p.text-center.extra-bold-font-name.help-number
+						Questions? Chat now or call 
+						%span.link-color
+							1-800-581-9819
+							
+						
+			.row.padding-top
+				.col-lg-12
 					
-				=image_tag'pmi_logo.png',:class=>"margin-bottom" 
-		.row
-			.col-lg-12
-				%a.btn.btn-success.btn-block.margin-bottom.btn-lg{:href=>"/public/checkout"}   
-					Enroll Now 
-				%p.micro-text.quarter-margin-bottom
-					%strong
-						Delivered over six weeks, two evenings a week (Tuesdays and Thursdays) for two hours per session!
-				%p.micro-text 
-					Guaranteed to Pass, 35 contact hours included, Course guide, exam application guidance, Online training system included, and much more. Instant email confirmation and instructor follow-up within 1 business day. Experienced Instructor and Project Manager Lee Cooper (PMP, CKM, ITIL) will be conducting this class online. Access software and dial-in provided. 
+					%p.micro-text 
+						Delivered over six weeks, in 2-hour sessions, on each Monday & Wednesday! Guaranteed to pass, this PMP class includes everything you need to get certified. Official PMI class materials, required Contact Hours, practice exam portal, and much more. Instant email confirmation and enrollment info following registration. Veteran instructor Christine Fertl will be conducting this class live.

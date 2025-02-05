@@ -12,7 +12,7 @@ title
 <link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400' rel='stylesheet'>
 <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
 <script src="../../../javascripts/lib/jquery.js"></script><script src="../../../javascripts/lib/bootstrap.js"></script><script src="../../../javascripts/lib/jquery.fancybox.pack.js"></script><script src="../../../javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="../../../javascripts/lib/highcharts/highcharts.js"></script><script src="../../../javascripts/lib/slick.js"></script><script src="../../../javascripts/lib/highcharts/modules/exporting.js"></script><script src="../../../javascripts/lib/footable/footable.js"></script><script src="../../../javascripts/lib/footable/footable.filter.js"></script><script src="../../../javascripts/scripts.js"></script>
-<body class='public public_live-pmp public_live-pmp_student-testimonials public_live-pmp_student-testimonials_index'>
+<body class='public public_live-pmp public_live-pmp_schedule-and-pricing-v3 public_live-pmp_schedule-and-pricing-v3_index'>
 <nav class='navbar navbar-default visible-xs navbar-fixed-top' id='mobile-main-nav' role='navigation'>
 <div class='container-fluid'>
 <div class='navbar-header'>
@@ -1026,21 +1026,7 @@ USD $
 
 <!-- end menu -->
 <div id='mainContents'>
-<section class='invert-section page-header-section live-pmp-header'>
-<div class='container'>
-<div class='row'>
-<div class='col-lg-12'>
-<h2 class='no-margin-bottom pull-left'>
-Live PMP Classes
-</h2>
-<h6 class='no-margin-bottom pull-right hidden-xs half-margin-top extra-bold-font-name'>
-REGISTER BY PHONE 1.800.581.9819
-</h6>
-</div>
-</div>
-</div>
-</section>
-
+<!-- =partial"/public/shared/page-head-small", locals:{headerClass:"live-pmp-header"} -->
 <section class='no-padding-bottom'>
 <div class='container'>
 <div class='row'>
@@ -1051,7 +1037,7 @@ REGISTER BY PHONE 1.800.581.9819
 Class Overview
 </a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='/public/live-pmp/schedule-and-pricing'>
 Schedule & Pricing
 </a>
@@ -1066,7 +1052,7 @@ Included With Class
 Our Guarantee
 </a>
 </li>
-<li class='active'>
+<li class=''>
 <a href='/public/live-pmp/student-testimonials'>
 Student Testimonials
 </a>
@@ -1080,18 +1066,82 @@ Student Testimonials
 <section>
 <div class='container'>
 <div class='row'>
-<div class='col-sm-12'>
-<h2>
-What Our Students are Saying
+<div class='col-lg-12'>
+<h2 class='bold-font-name double-marign-bottom'>
+PMP Class Schedule and Pricing
 </h2>
-<p class='no-margin-bottom'>
-<strong>
-So Effective, We Guarantee You Will Pass the PMP Exam.
-</strong>
-</p>
-<p>
-Our PMP Virtual Classes deliver the same content and materials as the classroom, with a live instructor, in real time, via the Internet.
-</p>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-7'>
+<ul class='list-unstyled'>
+<li class='margin-bottom'>
+<div class='media'>
+<div class='pull-left'>
+<img src="../../../images/public/icon-computer.svg" class="media-object half-margin-right" width="33px" alt="" />
+</div>
+<div class='media-body'>
+<small>
+<span class='extra-bold-font-name'>
+Attend class from any PC, Mac
+</span>
+or connected device
+</small>
+</div>
+</div>
+</li>
+<li class='margin-bottom'>
+<div class='media'>
+<div class='pull-left'>
+<img src="../../../images/public/icon-email.svg" class="media-object half-margin-right" width="35px" alt="" />
+</div>
+<div class='media-body'>
+<small>
+<span class='extra-bold-font-name'>
+Instant email confirmation
+</span>
+and instructor follow-up after enrollment
+</small>
+</div>
+</div>
+</li>
+<li class='margin-bottom'>
+<div class='media'>
+<div class='pull-left'>
+<img src="../../../images/public/icon-clock.svg" class="media-object half-margin-right" width="28px" alt="" />
+</div>
+<div class='media-body'>
+<small>
+<span class='extra-bold-font-name'>
+Includes class materials
+</span>
+, 35 Contact Hours from the Project Management Institute (PMI)®, online exam portal and
+<a href='/public/live-pmp/included'>
+more
+</a>
+</small>
+</div>
+</div>
+</li>
+<li class='margin-bottom'>
+<div class='media'>
+<div class='pull-left'>
+<img src="../../../images/public/icon-medal.svg" class="media-object half-margin-right" width="25px" alt="" />
+</div>
+<div class='media-body'>
+<small>
+<span class='extra-bold-font-name'>
+included with all classes
+</span>
+Exam pass guarantee
+</small>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='col-sm-5'>
+<img src="../../../images/public/video_thumb.png" class="img-responsive margin-auto double-margin-bottom" alt="" />
 </div>
 </div>
 </div>
@@ -1099,739 +1149,1044 @@ Our PMP Virtual Classes deliver the same content and materials as the classroom,
 <div class='container'>
 <hr class='no-margin-top no-margin-bottom'>
 </div>
-<section class='no-padding-top off-white'>
-<div class='container'>
-<div class='row'>
-<div class='col-sm-12'>
-<div class='carousel fade' data-ride='carousel' id='testimonial-slider'>
-<ol class='carousel-indicators'>
-<li class='left' data-slide='prev' data-target='#testimonial-slider'></li>
-<li class='right' data-slide='next' data-target='#testimonial-slider'></li>
-</ol>
-<div class='carousel-inner'>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I was in your class this week. I passed the test today! I’m glad it’s over and I can be an evangelist for this class. In my particular instance, you took me from 0 to passing in 4 days. I conclusively passed every section of the exam, although by the end I was not convinced of my success. Anyway – thank you and you shall hear from more people (at our company) in months to come!
-"
-<footer>
-Doug R., PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I was in your class this week. I passed the test today! I’m glad it’s over and I can be an evangelist for this class. In my particular instance, you took me from 0 to passing in 4 days. I conclusively passed every section of the exam, although by the end I was not convinced of my success. Anyway – thank you and you shall hear from more people (at our company) in months to come!
-"
-<footer>
-Doug R., PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-We were successfull! I say we because I could not have done it without your training. I will e-mail the results tonight or tomorrow. Thanks for everything!
-"
-<footer>
-Jarred Torrance, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-We were successfull! I say we because I could not have done it without your training. I will e-mail the results tonight or tomorrow. Thanks for everything!
-"
-<footer>
-Jarred Torrance, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Passed the PMP exam today. Thanks for you help and your class.
-"
-<footer>
-Mick Burnett, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Passed the PMP exam today. Thanks for you help and your class.
-"
-<footer>
-Mick Burnett, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you very much for all your help and support during the course and after. I have cleared my PMP examination in my first attempt and wanted to share that information with you. I will personally thank Bob and Ron for their wonderful coaching in the class.
-"
-<footer>
-Anand Rad, PMP Pennsylvania, USA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you very much for all your help and support during the course and after. I have cleared my PMP examination in my first attempt and wanted to share that information with you. I will personally thank Bob and Ron for their wonderful coaching in the class.
-"
-<footer>
-Anand Rad, PMP Pennsylvania, USA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Your PMP class distilled the PMBOK down to a level that was understandable and provided real-world examples. The information conveyed allowed me to pass the test the first time! Thanks again...
-"
-<footer>
-Stephen Blalock, PMP VMD Systems INC, Vienna, VA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Your PMP class distilled the PMBOK down to a level that was understandable and provided real-world examples. The information conveyed allowed me to pass the test the first time! Thanks again...
-"
-<footer>
-Stephen Blalock, PMP VMD Systems INC, Vienna, VA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Great class, the tests online were an amazing component in addition to the excellent class. They provided great feedback on progress and where to focus on. A great combination.
-"
-<footer>
-Michael Eyring, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Great class, the tests online were an amazing component in addition to the excellent class. They provided great feedback on progress and where to focus on. A great combination.
-"
-<footer>
-Michael Eyring, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you so much for teaching this PMP class. I passed the PMP exam last week, thanks to you and Tony's great material. All your tips and tricks helped me a lot for the examination. Thanks for the constant support and encouragement. Thank you to you and your wonderful team. Couldn't have done without you all.
-"
-<footer>
-Aparna Smitha, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you so much for teaching this PMP class. I passed the PMP exam last week, thanks to you and Tony's great material. All your tips and tricks helped me a lot for the examination. Thanks for the constant support and encouragement. Thank you to you and your wonderful team. Couldn't have done without you all.
-"
-<footer>
-Aparna Smitha, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I wanted to let you know that I passed the test today. So you have another PMP to add to your alumni list.
-"
-<footer>
-Dan Knight MS, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I wanted to let you know that I passed the test today. So you have another PMP to add to your alumni list.
-"
-<footer>
-Dan Knight MS, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you again for your dedication to ensure your students are as prepared as possible. I wouldn’t have had the results I did if it were not for the quality in the study methodology you are enforcing with your book and supporting materials.
-"
-<footer>
-Mark Bentsen, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you again for your dedication to ensure your students are as prepared as possible. I wouldn’t have had the results I did if it were not for the quality in the study methodology you are enforcing with your book and supporting materials.
-"
-<footer>
-Mark Bentsen, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I was very impressed with the on line class. It’s convenient and at the same time provides more of an in-person feel than the other online sessions I’ve experienced.
-"
-<footer>
-Dan M. PMP - Sr. Project Manager
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I was very impressed with the on line class. It’s convenient and at the same time provides more of an in-person feel than the other online sessions I’ve experienced.
-"
-<footer>
-Dan M. PMP - Sr. Project Manager
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I took the PMP exam last Saturday at the Bedford center and I passed the test! I am so relieved that it's over. The exam was really hard for me. Thank you for the class! I'll be recommending this to all my co-workers who are planning to get their PMP certification.
-"
-<footer>
-Genevive Gener, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I took the PMP exam last Saturday at the Bedford center and I passed the test! I am so relieved that it's over. The exam was really hard for me. Thank you for the class! I'll be recommending this to all my co-workers who are planning to get their PMP certification.
-"
-<footer>
-Genevive Gener, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Susan Garner in Oklahoma City passed the PMP Exam on the first try! Yea! Your content was right on, especially the Earned Value calculations. Thanks for your help and best wishes for continued success!
-"
-<footer>
-Susan R. Garner, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Susan Garner in Oklahoma City passed the PMP Exam on the first try! Yea! Your content was right on, especially the Earned Value calculations. Thanks for your help and best wishes for continued success!
-"
-<footer>
-Susan R. Garner, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-You are the best teacher in the world. We accomplished a lot. I owe you...
-"
-<footer>
-Ken N, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-You are the best teacher in the world. We accomplished a lot. I owe you...
-"
-<footer>
-Ken N, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you for your help yesterday!! I ran through the simulation exam - it showed me where I needed to brush up. I took the test today and Passed!!! Couldn't have done it without your help. Thanks so much!!
-"
-<footer>
-Cheryl Shavel, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-Thank you for your help yesterday!! I ran through the simulation exam - it showed me where I needed to brush up. I took the test today and Passed!!! Couldn't have done it without your help. Thanks so much!!
-"
-<footer>
-Cheryl Shavel, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<div class='container'>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I passed the PMI PMP exam yesterday. I want to thank you for your support in achieving this goal. The material from your class and the extra tools that came with the course definitely prepared me for the exam.
-"
-<footer>
-Jim Cavanaugh, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-6'>
-<div class='media-object testimonial'>
-<div class='pull-left'>
-<img src="../../../images/public/avatar_lg.png" class="img-responsive margin-right margin-top" width="60px" alt="" />
-</div>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote>
-"
-I passed the PMI PMP exam yesterday. I want to thank you for your support in achieving this goal. The material from your class and the extra tools that came with the course definitely prepared me for the exam.
-"
-<footer>
-Jim Cavanaugh, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-<section class='feature-blocks'>
+<section>
 <div class='container'>
 <div class='row'>
 <div class='col-lg-12'>
 <h6 class='text-center primary-text-color'>
-A PMP Course Curriculum Focused on Passing the Exam
+New Student Discounts on all Upcoming Classes!
 </h6>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-6'>
-<div class='padded'>
-<div class='padded'></div>
-<div class='row'>
-<div class='col-sm-3'>
-<i class='fa fa-pencil'></i>
-</div>
-<div class='col-sm-9'>
-<h4>
-Class Taught by PMI Registered Education Provider (R.E.P.)
-</h4>
-<p>
-All courses offered by PMTraining are instructed by PMI Registered Education Providers (R.E.P.s). All class curriculums offered by our course providers have been assessed by PMI, and are preapproved for contact hours as well as PDUs. All classes in our
-<a href='/public/live-pmp/schedule-and-pricing'>
-PMP course schedule
+<div class='text-center double-margin-bottom'>
+<a class='tooltip-up margin-right' data-toggle='tooltip' href='/public/about/contact' title='+ Is there anything preventing you from signing up at this point? SEND Powered by Qualaroo [?]'>
+Request a Private Class for your Team
+<!-- %i.fa.fa-arrow-circle-right{:style=>"left:2px;"} -->
 </a>
-are valid for 35 PMI Contact Hours and PDU Credits.
-</p>
+<a href='#'>
+New Student Discounts on all Upcoming Classes
+</a>
 </div>
 </div>
 </div>
-</div>
-<div class='col-sm-6'>
-<div class='padded'>
-<div class='padded'></div>
 <div class='row'>
-<div class='col-sm-3'>
-<i class='fa fa-clipboard'></i>
-</div>
-<div class='col-sm-9'>
-<h4>
-Focused PMP Certification Curriculum
-</h4>
-<p>
-Each class will intensively cover all areas of the latest PMBOK Guide®, and will instill a comprehensive knowledge of all ten PMBOK Guide® Knowledge Areas, five basic process groups, the Project Framework; and Professional and Social Responsibility. Students will leave with a solid foundation of Project Management, ready to become a PMP.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='invert-section'>
+<div class='col-sm-12'>
 <div class='container'>
-<div class='row'>
-<div class='col-sm-12 text-center'>
-<h2>
-A PMP Class Curriculum Focused on
-<span class='bold-font-name'>
-Passing the Exam
+<div class='filters-container'>
+<div class='filters-col'>
+<div class='dropdown'>
+<div class='btn btn-info-dark dropdown-toggle' data-toggle='dropdown'>
+<span class='btn-content-wrapper'>
+<span class='text'>
+Any days
 </span>
-</h2>
-<a class='btn btn-primary btn-wire btn-lg' href='/public/live-pmp/schedule-and-pricing'>
-Schedule & Pricing
+<span class='material-symbols-outlined icon' style='vertical-align:middle;'>
+keyboard_arrow_down
+</span>
+</span>
+</div>
+<ul class='dropdown-menu' role='menu'>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Any days
 </a>
+</li>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Weekends
+</a>
+</li>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Weekdays
+</a>
+</li>
+</ul>
+</div>
+<div class='dropdown'>
+<div class='btn btn-info-dark dropdown-toggle' data-toggle='dropdown'>
+<span class='btn-content-wrapper'>
+<span class='text'>
+Any time
+</span>
+<span class='material-symbols-outlined icon' style='vertical-align:middle;'>
+keyboard_arrow_down
+</span>
+</span>
+</div>
+<ul class='dropdown-menu' role='menu'>
+<li>
+<a href='#'>
+<div class='checkbox quarter-margin-top quarter-margin-bottom'>
+<label>
+<input id='optionsRadios1' name='optionsRadios' type='checkbox' value='option1'>
+<span class='bold-font-name'>
+Mornings
+</span>
+(8AM-3PM)
+</label>
+</div>
+</a>
+</li>
+<li>
+<a href='#'>
+<div class='checkbox quarter-margin-top quarter-margin-bottom'>
+<label>
+<input id='optionsRadios1' name='optionsRadios' type='checkbox' value='option1'>
+<span class='bold-font-name'>
+Afternoons
+</span>
+(4PM-8PM)
+</label>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class='dropdown'>
+<div class='btn btn-info-dark dropdown-toggle' data-toggle='dropdown'>
+<span class='btn-content-wrapper'>
+<span class='text'>
+Any month
+</span>
+<span class='material-symbols-outlined icon' style='vertical-align:middle;'>
+keyboard_arrow_down
+</span>
+</span>
+</div>
+<ul class='dropdown-menu' role='menu'>
+<li>
+<a href='#'>
+<div class='radio quarter-margin-top quarter-margin-bottom'>
+<label>
+<input id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
+Any month
+</label>
+</div>
+</a>
+</li>
+<li>
+<a href='#'>
+<div class='radio quarter-margin-top quarter-margin-bottom'>
+<label>
+<input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
+January
+</label>
+</div>
+</a>
+</li>
+<li>
+<a href='#'>
+<div class='radio quarter-margin-top quarter-margin-bottom'>
+<label>
+<input id='optionsRadios3' name='optionsRadios' type='radio' value='option3'>
+February
+</label>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='filters-col'>
+<div class='dropdown'>
+<div class='btn btn-info-dark dropdown-toggle' data-toggle='dropdown'>
+<span class='btn-content-wrapper'>
+<span class='text'>
+<span class='regular-font-name'>
+Sort by
+</span>
+recommended
+</span>
+<span class='material-symbols-outlined icon' style='vertical-align:middle;'>
+keyboard_arrow_down
+</span>
+</span>
+</div>
+<ul class='dropdown-menu' role='menu'>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Option
+</a>
+</li>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Option
+</a>
+</li>
+<li>
+<a class='quarter-padding-top quarter-padding-bottom' href='#'>
+Option
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='class-schedule-cards'>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price flash-sale'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Only 4 spots left!
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+<div class='class-card'>
+<div class='card-col title'>
+<h4 class='bold-font-name quarter-margin-bottom'>
+Mon, Feb 3, 2025
+</h4>
+<h5>
+<a class='no-decor' data-target='#showClassModal' data-toggle='modal' href='/public/classes/show'>
+Class details
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+</h5>
+</div>
+<div class='card-col date'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+calendar_today
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+Tue/Thur Bootcamp
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+2 days
+</p>
+</div>
+</div>
+</div>
+<div class='card-col time'>
+<div class='info-container'>
+<div class='icon quarter-margin-right'>
+<span class='material-symbols-outlined'>
+schedule
+</span>
+</div>
+<div class='info'>
+<p class='medium-font-name dark-text-color'>
+7AM - 3PM
+</p>
+<p class='medium-font-name dark-text-color micro-text'>
+(America/Denver)
+</p>
+</div>
+</div>
+</div>
+<div class='price-actions-wrapper'>
+<div class='card-col price'>
+<p class='bold-font-name text-danger'>
+Save $400 Now
+</p>
+<h4 class='bold-font-name dark-text-color'>
+<span class='line-through light-text-color micro-text quarter-margin-right savings'>
+$1398
+</span>
+$998 USD
+</h4>
+</div>
+<div class='card-col actions'>
+<a class='btn btn-success btn-inline enroll-btn'>
+Enroll now
+<span class='material-symbols-outlined' style='vertical-align:middle;'>
+chevron_right
+</span>
+</a>
+<h5 class='bold-font-name text-danger quarter-margin-top micro-text urgency-label'>
+<span class='material-symbols-outlined urgency-icon' style='vertical-align:middle;'>
+acute
+</span>
+<em>
+Selling fast
+</em>
+</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
 </section>
-
 
 </div>
 <!-- end main content -->

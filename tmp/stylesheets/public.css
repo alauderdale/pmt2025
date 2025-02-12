@@ -1113,7 +1113,7 @@ ul.tabs-boxed li.active a {
   .live-course-detail-modal .badges {
     margin-top: -60px;
     margin-bottom: 10px;
-    width: 290px; }
+    width: 270px; }
     @media (max-width: 992px) {
       .live-course-detail-modal .badges {
         width: 200px; } }

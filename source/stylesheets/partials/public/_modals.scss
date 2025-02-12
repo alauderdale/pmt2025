@@ -4,6 +4,20 @@
 	}
 	.close{
 		z-index: 99;
+		border:1px solid $text-color;
+		color: $text-color;
+		// padding:3px 10px;
+		border-radius: 100px;
+		opacity: .7;
+		font-size: 30px;
+		line-height: 1;
+		font-weight: 400;
+		width: 37px;
+		height: 37px;
+		padding: 0px 11px 9px 9px;
+		&:hover{
+			opacity: 1;
+		}
 	}
 	.btn-lg{
 		padding:$baseline;
@@ -12,6 +26,10 @@
 		&.micro-text{
 			line-height:$baseline/1.2;
 		}
+	}
+	.modal-content{
+		border-radius: 20px;
+		box-shadow: none;
 	}
 }
 
@@ -28,6 +46,7 @@
 }
 
 .live-course-detail-modal{
+	border-radius: 100px;
 	.padded{
 		@include breakpoint(md) {
 			padding:5px!important;
@@ -75,13 +94,15 @@
 		}
 	}
 	ul.value-list{
+		  list-style-image:url(../images/public/live/check-blue.svg);
 		li{
-			margin-left:10px;
+			margin-left:21px;
 			margin-bottom:15px;
 			line-height: 1.3em;
+
 			span{
 				position: relative;
-  				left: 10px;
+  				left: 8px;
 			}
 			@include breakpoint(md) {
 				font-size: 12px;

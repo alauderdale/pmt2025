@@ -35,11 +35,7 @@
 								font-size: 15px;
 							}
 						}
-						.enroll-btn{
-							padding:5px 10px;
-							font-size: 14px;
-							font-weight: 700;
-						}
+						
 					}
 				}
 			}
@@ -79,7 +75,17 @@
 			&.actions{
 				justify-items: center;
 				text-align: center;
-				
+				.enroll-btn{
+					min-width: 170px;
+				}
+				@include breakpoint(md) {
+					.enroll-btn{
+						padding:5px 10px;
+						font-size: 14px;
+						font-weight: 700;
+						min-width: 130px;
+					}
+				}
 			}
 			&.time{
 
@@ -108,7 +114,6 @@
 				}
 				&:after{
 					width:100%;
-					content:"Sale ends Feb 15";
 					color:rgba(255,255,255,.7);
 					font-size:11px;
 					line-height: 13px;

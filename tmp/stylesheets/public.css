@@ -1068,13 +1068,29 @@ ul.tabs-boxed li.active a {
   color: #0d6183; }
 
 .modal .close {
-  z-index: 99; }
+  z-index: 99;
+  border: 1px solid #545a5f;
+  color: #545a5f;
+  border-radius: 100px;
+  opacity: .7;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+  width: 37px;
+  height: 37px;
+  padding: 0px 11px 9px 9px; }
+  .modal .close:hover {
+    opacity: 1; }
 
 .modal .btn-lg {
   padding: 24px; }
 
 .modal p.micro-text {
   line-height: 20px; }
+
+.modal .modal-content {
+  border-radius: 20px;
+  box-shadow: none; }
 
 .demo-test-modal .radio label {
   font-size: 0.8em !important;
@@ -1084,54 +1100,52 @@ ul.tabs-boxed li.active a {
 .demo-test-modal .btn {
   font-size: 1em; }
 
-@media (max-width: 992px) {
-  .live-course-detail-modal .padded {
-    padding: 5px !important; } }
-
-.live-course-detail-modal .modal-header {
-  border: none; }
+.live-course-detail-modal {
+  border-radius: 100px; }
   @media (max-width: 992px) {
-    .live-course-detail-modal .modal-header h2 {
-      font-size: 22px; } }
-.live-course-detail-modal .badges {
-  margin-top: -60px;
-  margin-bottom: 10px;
-  width: 290px; }
+    .live-course-detail-modal .padded {
+      padding: 5px !important; } }
+  .live-course-detail-modal .modal-header {
+    border: none; }
+    @media (max-width: 992px) {
+      .live-course-detail-modal .modal-header h2 {
+        font-size: 22px; } }
+  .live-course-detail-modal .badges {
+    margin-top: -60px;
+    margin-bottom: 10px;
+    width: 290px; }
+    @media (max-width: 992px) {
+      .live-course-detail-modal .badges {
+        width: 200px; } }
+  .live-course-detail-modal .details-list .key-value {
+    padding: 10px 0; }
+  .live-course-detail-modal .details-list .key {
+    width: 200px; }
+    .live-course-detail-modal .details-list .key h5 {
+      line-height: 1.2em; }
+  .live-course-detail-modal .details-list .value {
+    width: 240px; }
+    .live-course-detail-modal .details-list .value h5 {
+      line-height: 1.2em; }
   @media (max-width: 992px) {
-    .live-course-detail-modal .badges {
-      width: 200px; } }
-.live-course-detail-modal .details-list .key-value {
-  padding: 10px 0; }
-
-.live-course-detail-modal .details-list .key {
-  width: 200px; }
-  .live-course-detail-modal .details-list .key h5 {
-    line-height: 1.2em; }
-
-.live-course-detail-modal .details-list .value {
-  width: 240px; }
-  .live-course-detail-modal .details-list .value h5 {
-    line-height: 1.2em; }
-
-@media (max-width: 992px) {
-  .live-course-detail-modal .details-list .key h5, .live-course-detail-modal .details-list .value h5 {
-    font-size: 12px; } }
-
-.live-course-detail-modal ul.value-list li {
-  margin-left: 10px;
-  margin-bottom: 15px;
-  line-height: 1.3em; }
-  .live-course-detail-modal ul.value-list li span {
-    position: relative;
-    left: 10px; }
-  @media (max-width: 992px) {
+    .live-course-detail-modal .details-list .key h5, .live-course-detail-modal .details-list .value h5 {
+      font-size: 12px; } }
+  .live-course-detail-modal ul.value-list {
+    list-style-image: url(../images/public/live/check-blue.svg); }
     .live-course-detail-modal ul.value-list li {
-      font-size: 12px;
-      margin-bottom: 10px; } }
-@media (max-width: 992px) {
-  .live-course-detail-modal .help-number {
-    font-size: 11px; } }
-
+      margin-left: 21px;
+      margin-bottom: 15px;
+      line-height: 1.3em; }
+      .live-course-detail-modal ul.value-list li span {
+        position: relative;
+        left: 8px; }
+      @media (max-width: 992px) {
+        .live-course-detail-modal ul.value-list li {
+          font-size: 12px;
+          margin-bottom: 10px; } }
+  @media (max-width: 992px) {
+    .live-course-detail-modal .help-number {
+      font-size: 11px; } }
 form .control-label {
   font-size: .6em;
   color: black !important;
@@ -1269,11 +1283,7 @@ a {
           .class-schedule-cards .class-card .price-actions-wrapper .card-col.actions .urgency-label {
             font-size: 10px; }
             .class-schedule-cards .class-card .price-actions-wrapper .card-col.actions .urgency-label .urgency-icon {
-              font-size: 15px; }
-          .class-schedule-cards .class-card .price-actions-wrapper .card-col.actions .enroll-btn {
-            padding: 5px 10px;
-            font-size: 14px;
-            font-weight: 700; } }
+              font-size: 15px; } }
   .class-schedule-cards .class-card .card-col {
     width: 100%;
     padding: 5px 12px;
@@ -1299,6 +1309,14 @@ a {
     .class-schedule-cards .class-card .card-col.actions {
       justify-items: center;
       text-align: center; }
+      .class-schedule-cards .class-card .card-col.actions .enroll-btn {
+        min-width: 170px; }
+      @media (max-width: 992px) {
+        .class-schedule-cards .class-card .card-col.actions .enroll-btn {
+          padding: 5px 10px;
+          font-size: 14px;
+          font-weight: 700;
+          min-width: 130px; } }
     @media (max-width: 1200px) {
       .class-schedule-cards .class-card .card-col.date {
         width: 110%; } }
@@ -1318,7 +1336,6 @@ a {
           color: rgba(255, 255, 255, 0.7) !important; }
       .class-schedule-cards .class-card .card-col.flash-sale:after {
         width: 100%;
-        content: "Sale ends Feb 15";
         color: rgba(255, 255, 255, 0.7);
         font-size: 11px;
         line-height: 13px;

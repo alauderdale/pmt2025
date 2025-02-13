@@ -168,16 +168,14 @@
               (America/Denver)
       .price-actions-wrapper
         .card-col.price.flash-sale
-          :css
-            .flash-sale:after{
-              content:"Sale ends Feb 12";
-            }
           %p.bold-font-name.text-danger
             Save $400 Now
           %h4.bold-font-name.dark-text-color
             %span.line-through.light-text-color.micro-text.quarter-margin-right.savings
               $1398
             $998 USD
+          %p.sale-ends
+            Sale ends Feb 12
         .card-col.actions
           %a.btn.btn-success.btn-inline.enroll-btn
             Enroll now

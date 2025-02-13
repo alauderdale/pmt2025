@@ -1331,13 +1331,13 @@ a {
         color: white; }
         .class-schedule-cards .class-card .card-col.flash-sale p .savings, .class-schedule-cards .class-card .card-col.flash-sale h4 .savings {
           color: rgba(255, 255, 255, 0.7) !important; }
-      .class-schedule-cards .class-card .card-col.flash-sale:after {
-        width: 100%;
+      .class-schedule-cards .class-card .card-col.flash-sale p.sale-ends {
         color: rgba(255, 255, 255, 0.7);
         font-size: 11px;
         line-height: 13px;
         text-transform: uppercase;
-        font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
+        font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+        margin: 5px 0; }
       .class-schedule-cards .class-card .card-col.flash-sale:before {
         position: absolute;
         top: 5px;

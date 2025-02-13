@@ -1118,15 +1118,11 @@ ul.tabs-boxed li.active a {
       .live-course-detail-modal .badges {
         width: 200px; } }
   .live-course-detail-modal .details-list .key-value {
-    padding: 10px 0; }
-  .live-course-detail-modal .details-list .key {
-    width: 200px; }
-    .live-course-detail-modal .details-list .key h5 {
-      line-height: 1.2em; }
-  .live-course-detail-modal .details-list .value {
-    width: 240px; }
-    .live-course-detail-modal .details-list .value h5 {
-      line-height: 1.2em; }
+    padding: 5px 0; }
+  .live-course-detail-modal .details-list .key h5 {
+    line-height: 1.2em; }
+  .live-course-detail-modal .details-list .value h5 {
+    line-height: 1.2em; }
   @media (max-width: 992px) {
     .live-course-detail-modal .details-list .key h5, .live-course-detail-modal .details-list .value h5 {
       font-size: 12px; } }
@@ -1258,12 +1254,13 @@ a {
   margin: 0; }
 
 .class-schedule-cards .class-card {
-  margin: 10px 0;
+  margin: 16px 0;
   border: 1px solid #dddddd;
   display: flex;
   padding: 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 1px 8px #CDDFE6; }
+  box-shadow: 0 1px 8px #CDDFE6;
+  min-height: 120px; }
   .class-schedule-cards .class-card:nth-child(even) {
     background: #f1f8fb; }
   @media (max-width: 992px) {

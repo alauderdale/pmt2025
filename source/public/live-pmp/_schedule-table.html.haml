@@ -1,25 +1,27 @@
 .container
-  .filters-container.timezone-actions-container
+  .filters-container.timezone-actions-container.quarter-padding-bottom
     .filters-col
-      .dropdown
-        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
-          %span.btn-content-wrapper
-            %span.text
-              Timezone
-              %span.medium-font-name
-                (GMT-06:00) America/North Da...
-            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
-              keyboard_arrow_down
-        %ul.dropdown-menu{:role => "menu"}
-          %li
-            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
-              (GMT-06:00) America/North Dakota/New Salem
-          %li
-            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
-              (GMT-06:00) America/North Dakota/New Salem
-          %li
-            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
-              (GMT-06:00) America/North Dakota/New Salem
+      .d-flex.align-items-baseline
+        %p.no-margin-bottom.extra-bold-font-name.dark-text-color.quarter-margin-right
+          Your time zone:
+        .dropdown
+          .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
+            %span.btn-content-wrapper
+              %span.text
+                %span.medium-font-name
+                  (GMT-06:00) America/North
+              %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+                keyboard_arrow_down
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+                (GMT-06:00) America/North Dakota/New Salem
+            %li
+              %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+                (GMT-06:00) America/North Dakota/New Salem
+            %li
+              %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+                (GMT-06:00) America/North Dakota/New Salem
     .filters-col
       %p.extra-bold-font-name
         %a.d-block-mobile{:href=>"#"}

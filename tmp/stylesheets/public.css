@@ -145,6 +145,9 @@ img {
 .justify-space-between {
   justify-content: space-between; }
 
+.align-items-baseline {
+  align-items: baseline; }
+
 @font-face {
   font-family: 'socialicoregular';
   src: url("../font/socialico-webfont.eot");

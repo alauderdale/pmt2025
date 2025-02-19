@@ -3,13 +3,13 @@
     .filters-col
       .d-flex.align-items-baseline
         %p.no-margin-bottom.extra-bold-font-name.dark-text-color.quarter-margin-right
-          Your time zone:
+          Time zone:
         .dropdown
           .btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown"}
             %span.btn-content-wrapper
               %span.text
                 %span.medium-font-name
-                  (GMT-06:00) America/North
+                  (GMT-07:00) America/Denver
               %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
                 keyboard_arrow_down
           %ul.dropdown-menu{:role => "menu"}
@@ -150,8 +150,7 @@
             %p.medium-font-name.dark-text-color
               7AM - 3PM
             %p.medium-font-name.dark-text-color.micro-text
-              %span.tooltip-highlight{:class=>"tooltip-up",:"data-toggle"=>"tooltip", :title=>"(GMT-06:00) America/North Dakota/New Salem" }
-                America/North...
+              (America/Denver)
       .price-actions-wrapper
         .card-col.price
           %p.bold-font-name.text-danger

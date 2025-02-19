@@ -26,3 +26,11 @@
 		}
 	}
 }
+
+.timezone-actions-container{
+	@include breakpoint(md) {
+		flex-direction: column-reverse;
+		width:100%;
+		display: flex!important;
+	}
+}

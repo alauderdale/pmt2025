@@ -110,6 +110,21 @@ img{
     display:inline;
 }
 
+@include breakpoint(md) {
+
+.d-block-mobile{
+  display: block;
+}
+
+.d-none-mobile{
+  display: none;
+}
+
+
+}
+
+
+
 //borders
 .border-top{
   border-top:1px solid $gray-color;

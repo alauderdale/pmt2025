@@ -1,4 +1,34 @@
 .container
+  .filters-container.timezone-actions-container
+    .filters-col
+      .dropdown
+        .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
+          %span.btn-content-wrapper
+            %span.text
+              Timezone
+              %span.medium-font-name
+                (GMT-06:00) America/North Da...
+            %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+              keyboard_arrow_down
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              (GMT-06:00) America/North Dakota/New Salem
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              (GMT-06:00) America/North Dakota/New Salem
+          %li
+            %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
+              (GMT-06:00) America/North Dakota/New Salem
+    .filters-col
+      %p.extra-bold-font-name
+        %a.d-block-mobile{:href=>"#"}
+          Enroll Multiple students
+        %span.quarter-margin-right.quarter-margin-left.d-none-mobile
+          |
+        %a.d-block-mobile{:href=>"#"}
+          Request Private Class for your Team
+
   .filters-container
     .filters-col
       .dropdown
@@ -118,7 +148,8 @@
             %p.medium-font-name.dark-text-color
               7AM - 3PM
             %p.medium-font-name.dark-text-color.micro-text
-              (America/Denver)
+              %span.tooltip-highlight{:class=>"tooltip-up",:"data-toggle"=>"tooltip", :title=>"(GMT-06:00) America/North Dakota/New Salem" }
+                America/North...
       .price-actions-wrapper
         .card-col.price
           %p.bold-font-name.text-danger

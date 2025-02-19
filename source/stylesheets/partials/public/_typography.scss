@@ -436,6 +436,12 @@ ul.check-list-large{
   background:tint($secondary-color,50%);
 }
 
+//tooltips
+
+.tooltip-highlight{
+  border-bottom:1px dashed $text-color;
+}
+
 
 
 //labels

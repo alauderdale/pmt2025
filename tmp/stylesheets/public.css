@@ -89,6 +89,12 @@ img {
 .inline {
   display: inline; }
 
+@media (max-width: 992px) {
+  .d-block-mobile {
+    display: block; }
+  .d-none-mobile {
+    display: none; } }
+
 .border-top {
   border-top: 1px solid #dddddd; }
 
@@ -445,6 +451,9 @@ ul.check-list-large li i {
 .highlight {
   display: inline-block;
   background: #f8d794; }
+
+.tooltip-highlight {
+  border-bottom: 1px dashed #545a5f; }
 
 .label-feature {
   padding: 8px;
@@ -1741,6 +1750,12 @@ img.contact-logo-mobile {
         margin-bottom: 12px; }
       .filters-container .btn {
         width: 100%; } }
+@media (max-width: 992px) {
+  .timezone-actions-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex !important; } }
+
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {
     margin-right: 0;

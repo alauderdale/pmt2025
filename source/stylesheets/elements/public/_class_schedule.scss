@@ -27,6 +27,22 @@
 	}
 }
 
+.clear-filters{
+	display: inline-block;
+	margin-left:10px;
+	font-family: $bold-font-name;
+	font-size: 16px;
+	@include breakpoint(md) {
+		margin-left: 0;
+		border:2px solid $link-color;
+		padding:4px 10px;
+		border-radius: 4px;
+		width:100%;
+		text-align: center;
+		margin-bottom:30px;
+	}
+}
+
 .timezone-actions-container{
 	@include breakpoint(md) {
 		flex-direction: column-reverse;

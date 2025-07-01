@@ -232,9 +232,9 @@ img {
     color: #138abb !important; }
 
 .secondary-text-color {
-  color: #f1af29 !important; }
+  color: #FFBC00 !important; }
   .secondary-text-color p {
-    color: #f1af29 !important; }
+    color: #FFBC00 !important; }
 
 .white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text h5, .white-text h6, .white-text p, .white-text small, .white-text li {
   color: white !important; }
@@ -411,12 +411,12 @@ a {
       background-color: #42a1c9;
       border-color: #42a1c9; }
   .btn.btn-default {
-    background-color: #f1af29;
-    border-color: #f1af29;
+    background-color: #FFBC00;
+    border-color: #FFBC00;
     color: white; }
     .btn.btn-default:hover {
-      background-color: #f4bf54;
-      border-color: #f4bf54; }
+      background-color: #ffc933;
+      border-color: #ffc933; }
   .btn.btn-info {
     background-color: #f2f2f2;
     border-color: #dddddd;

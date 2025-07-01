@@ -1,0 +1,156 @@
+;;;
+"layout": "public",
+"title": "Home", 
+"activeclass": "home"
+;;;
+
+
+
+%section.invert-section.no-padding-top.no-padding-top.no-padding-bottom
+	=partial'/public/home/slider'
+%section
+	.container
+		.row
+			.col-lg-12
+				.text-center
+					%h5
+						TRUSTED BY SOME OF THE WORLD'S SMARTEST COMPANIES...
+					%img.max-width{:src => "../images/home-logos.png"}
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				%a.podcast-container{:href=>"#"}
+					.media
+						.pull-left
+							%img.media-object.quarter-margin-right{:alt => "...", :src => "../images/podcast.svg", :width=>"60px"}
+						.media-body
+							.row
+								.col-md-10.col-sm-9
+									.label
+										NEW PODCAST
+									%h4.no-margin-bottom
+										Hear how Atkins Global leveraged PMTraining for their organization
+								.col-md-2.col-sm-3
+									.play-button
+										%h5.no-margin-bottom
+											%img.media-object.quarter-margin-right.inline{:alt => "...", :src => "../images/play-now.svg", :width=>"30px"}
+											Play now
+
+
+%section
+	.container
+		.row
+			.col-sm-12
+				.text-center
+					%h2.bold-font-name
+						Don’t take our word for it
+		.row.margin-top
+			.col-md-6
+				.panel.shadowed-box
+					.panel-body.padding-top
+						.col-sm-4
+							=image_tag'medal_prep.png', :class=>"img-responsive margin-auto margin-bottom", :width=>"120"
+						.col-sm-8
+							%p.half-margin-bottom
+								Crush the PM Exam has just named PMtraiing as the 
+								%span.bold-font-name
+									:escaped
+										#1 PMI-ACP prep course 
+								of 2017!
+							%p.bold-font-name
+								%a{:href=>"", :style=>"border:none;"}
+									View the PMP course
+			.col-md-6
+				.panel.shadowed-box
+					.panel-body.padding-top
+						.col-sm-4
+							=image_tag'medal_prep.png', :class=>"img-responsive margin-auto margin-bottom", :width=>"120"
+						.col-sm-8
+							%p.half-margin-bottom
+								Crush the PM Exam has just named PMtraiing as the 
+								%span.bold-font-name
+									:escaped
+										#1 PMI-ACP prep course 
+								of 2017!
+							%p.bold-font-name
+								%a{:href=>"", :style=>"border:none;"}
+									View the PMP course
+		.row
+			.col-lg-12
+				%a{:href=>"#"}
+					%img.max-width{:src => "../images/affirm-banner-1.png"}
+
+%section
+	.container
+		.row
+			.col-sm-2
+				=image_tag'test-1.png', :class=>"img-responsive margin-auto margin-bottom", :width=>"178"
+			.col-sm-8
+				=image_tag'quote.svg', :class=>"img-responsive margin-auto margin-bottom", :width=>"37"
+				%h2.extra-bold-font-name.text-center
+					"Great class, the exam prep portal was an amazing component in addition to the excellent class... A great combination."
+				.info.text-center.double-margin-top
+					.media.inline-block
+						.pull-left.padding-right{:style=>"border-right:1px solid #D4D4D4;"}
+							=image_tag'text-logo.png', :class=>"media-object quarter-margin-right", :width=>"134"
+						
+						.media-body.padding-left.text-left
+							%h4.no-margin-bottom
+								Bernard Gonzales
+							%h5.light-text-color
+								(MBA, PMP)
+			.col-sm-2
+				=image_tag'test-2.png', :class=>"img-responsive margin-auto margin-bottom hidden-xs", :width=>"178"
+
+.container
+	%hr
+%section
+	.container
+		.row
+			.col-sm-5
+				.double-margin-bottom
+					.text-right 
+						=image_tag'arrow-home-1.svg', :class=>"margin-bottom hidden-xs", :width=>"100px"
+					%h2.margin-top.no-margin-top-sm
+						Live Community Performance
+						%span.bold-font-name
+							PMP Exam 
+					%p
+						Live calculation of the top 5 PMP process areas based on 670,516 PMP practice exams taken by PMTraining exam prep students.
+					%a.bold-font-name{:href=>"#"}
+						Call to action
+					
+			.col-sm-1
+			.col-sm-6
+				=partial'/public/home/preformance-table'
+
+.container
+	%hr
+
+
+%section
+	.container
+		.row			
+			.col-sm-5.col-sm-push-7
+				.double-margin-bottom
+					.text-left 
+						=image_tag'arrow-home-2.svg', :class=>"margin-bottom hidden-xs", :width=>"100px"
+					%h2.margin-top.no-margin-top-sm
+						Live Community Performance
+						%span.bold-font-name
+							PMP Exam 
+					%p
+						Live calculation of the top 5 PMP process areas based on 670,516 PMP practice exams taken by PMTraining exam prep students.
+					%a.bold-font-name{:href=>"#"}
+						Call to action
+			.col-sm-1
+			.col-sm-6.col-sm-pull-6
+				=partial'/public/home/preformance-table-2'
+					
+
+=partial'/public/shared/get-started'
+
+
+
+

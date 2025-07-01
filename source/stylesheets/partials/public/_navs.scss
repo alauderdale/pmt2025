@@ -187,4 +187,64 @@ ul.tabs-boxed{
   }
 }
 
+ul.tabs-simple{
+	li{
+		font-family: $bold-font-name;
+		font-size: 16px;
+
+		a{
+			background: none;
+			border:none;
+			color:tint($dark-text-color,50%);
+		}
+		a:focus{
+			background: none;
+		}
+		&:hover{
+			a{
+				background: none;
+				color: $text-color;
+			}
+		}
+		&.active{
+			a{
+				color:$dark-text-color;
+				background: none;
+				border:none;
+				border-bottom:$link-color 3px solid;
+				&:hover{
+					border: none;
+					border-bottom:$link-color 3px solid;
+				}
+			}
+		}
+	}
+	&.light-tabs{
+		border-color:rgba(255,255,255,.3);
+		li{
+			a{
+				color: rgba(255,255,255,.5);
+				&:hover{
+					color:white;
+				}
+			}
+			&.active{
+				a{
+				color: white;
+				border-color:white;
+				}
+			}
+		}
+	}
+}
+
+.scroll-tabs{
+width: 100%;
+overflow: auto;
+white-space: nowrap;
+	.nav-tabs{
+		width: 150%;
+	}
+}
+
 

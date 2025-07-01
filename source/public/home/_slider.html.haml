@@ -1,23 +1,29 @@
-/ {:style=>"background-image:url(/images/slider/slide-1-bg.png);"}
-#home-slider.carousel.slide{"data-ride" => "carousel"}
-  / Indicators
-  / %ol.carousel-indicators
-  /   %li.active{"data-slide-to" => "0", "data-target" => "#home-slider"}
-  .carousel-inner
-    .item.active
-      .container
-        .row
-          .col-md-6.col-md-push-6
-            %img.max-width.double-margin-bottom{:src=>"/images/hero-image.png", :width=>"500px"}           
-          .col-md-6.col-md-pull-6
-            %h1.bold-font-name
-              Live PMP® Classes Taught Online by Veteran Instructors 
-            %ul.margin-bottom.hero-list
-              -4.times do
-                %li.bold-font-name
-                  =lorem.words(10)
-            .btns.margin-bottom
-              %a.btn.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
-                Schedule and pricing
-              %a.btn.btn-default.btn-lg.half-margin-bottom{:href=>"#"}
-                Class overview
+%section#home-hero
+  %video#home-hero-video{autoplay: "", loop: "", muted: ""}
+    %source{src: "../images/hero-movie2.mp4", type: "video/mp4"}
+  .container
+    .row         
+      .col-md-7
+        %h4.bold-font-name.quarter-margin-bottom.overhang
+          Trusted Training for Project Management Success
+        %h1.bold-font-name.margin-bottom
+          Pass your PMP® with Affordable, Expert-Led Prep
+        %ul.margin-bottom.hero-list
+          -3.times do
+            %li.bold-font-name
+              100% Money Back Guarantee
+        
+        %img{:src=>"../images/home-divider.svg"}
+        .media.d-flex.align-items-center.margin-bottom{:style=>"max-width:400px;"}
+          .pull-left
+            %img{:src=>"../images/pmi-logo.svg"}
+          .media-body
+            %p.media-heading.no-margin-bottom.bold-font-name
+              Premier Authorized Training Partner (ATP) of the Project Management Institute®
+        .btns
+          %a.btn.btn-default.btn-lg.half-margin-bottom.quarter-margin-right{:href=>"#"}
+            Primary CTA
+          %a.btn.btn-wire.btn-lg.half-margin-bottom{:href=>"#"}
+            Secondary CTA
+
+              

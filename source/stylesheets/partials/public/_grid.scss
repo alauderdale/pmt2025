@@ -1,1 +1,47 @@
+.flex-row{
+	display: flex;
 
+	.flex-col{
+		flex:1;
+		display: flex;
+	}
+}
+
+
+//for use on the homepage problem statement 
+.ps-row{
+	gap:120px;
+	padding:0 0 60px 0;
+	&.reverse{
+		flex-direction: row-reverse;
+		.flex-col{
+			align-items: end; 
+		}
+	}
+	.flex-col{
+
+		justify-content: center;  /* horizontally */
+		align-items: start;  
+		flex-direction: column; 
+
+		.spot-image{
+			max-width:380px;
+		}
+	}
+	@include breakpoint(md) {
+		display: block;
+		.flex-col{
+			align-items: center!important; 
+			.title{
+				text-align: center;
+			}
+			
+			.spot-image{
+				margin-bottom:20px;
+			}
+			.bullet{
+				width:15px;
+			}
+		}
+	}
+}

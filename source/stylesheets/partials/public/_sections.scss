@@ -2,6 +2,7 @@
 
 section{
   padding:$baseline*2 0;
+
   &.extra-padding{
     padding:$baseline*4 0!important;
   }
@@ -10,6 +11,9 @@ section{
     h1,h2,h3,h4,h5,h6,p,li,small{
       color:white;
     }
+  }
+  &.invert-darker{
+    background-color: shade($primary-color, 30%);
   }
   &.get-started{
   	background:$primary-color url(../images/bg_get_started.png);
@@ -57,6 +61,15 @@ section{
   &.off-blue{
     background-color:#F4F8F9;
   }
+
+  &.gradient-top{
+    @include linear-gradient(0deg, #FFFFFF 0%, #F0FBFF 100%);
+  }
+
+  &.gradient-bottom{
+    @include linear-gradient(0deg, #F0FBFF 100%, #FFFFFF 0%);
+  }
+
   &.feature-blocks{
     .fa{
       font-size:4em;

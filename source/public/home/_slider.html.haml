@@ -1,5 +1,5 @@
 %section#home-hero
-  %video#home-hero-video{autoplay: "", loop: "", muted: ""}
+  %video#home-hero-video{autoplay: "", loop: "", muted: "", playsinline:""}
     %source{src: "../images/hero-movie2.mp4", type: "video/mp4"}
   .container
     .row         
@@ -9,9 +9,12 @@
         %h1.bold-font-name.margin-bottom
           Pass your PMP® with Affordable, Expert-Led Prep
         %ul.margin-bottom.hero-list
-          -3.times do
-            %li.bold-font-name
-              100% Money Back Guarantee
+          %li.bold-font-name
+            100% Money Back Guarantee
+          %li.bold-font-name
+            Officially Licensed PMP Curriculum from PMI
+          %li.bold-font-name
+            Instant access to course materials
         
         %img{:src=>"../images/home-divider.svg"}
         .media.d-flex.align-items-center.margin-bottom{:style=>"max-width:400px;"}

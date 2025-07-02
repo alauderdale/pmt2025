@@ -1,7 +1,59 @@
+.faq-accordian{
+	.panel{
+		border: none;
+		box-shadow: none;
+		padding: 10px 0;
+		border-bottom:1px solid $gray-color;
+		.panel-heading{
+			border: none;
+			a{
+				text-decoration: none!important;
+				display: block;
+				display: flex;
+				&:hover{
+					color: $dark-text-color;
+				}
+				&.collapsed{
+					.icon-wrapper{
+						
+						.faq-icon{
+							rotate: -90deg;
+						}
+					}
+				}
+				.question-wrapper{
+					
+				}
+				.icon-wrapper{
+					margin-right: 10px;
+				}
+			}
+		}
+		.panel-collapse{
+			.panel-body{
+				border: none;
+				margin-left: 20px;
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
+
 #home-hero{
 	background: shade($primary-color,80%);
 	position: relative;
 	z-index: 99;
+	h1{
+		font-size: 48px;
+		line-height: 1.1em;
+		@include breakpoint(md) {
+			font-size: 36px;
+		}
+	}
 	.overhang{
 		color: #99D8F1;
 	}
@@ -140,13 +192,16 @@ ul.logos-list{
 
 
 
+
+
+
 //for use on the homepage problem statement 
 .ps-row{
 	gap:120px;
 	padding:0 0 60px 0;
 	&.reverse{
 		flex-direction: row-reverse;
-		.flex-col{
+		.image-col{
 			align-items: end; 
 		}
 	}
@@ -163,7 +218,10 @@ ul.logos-list{
 	@include breakpoint(md) {
 		display: block;
 		.flex-col{
-			align-items: center!important; 
+			&.image-col{
+				align-items: center!important; 
+			}
+			
 			.title{
 				text-align: center;
 			}

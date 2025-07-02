@@ -22,35 +22,68 @@
 %section.padding-top
 	.container
 		.flex-row.ps-row.reverse
-			.flex-col
+			.flex-col.image-col
 				%img.spot-image{:src => "../images/home-bad.png"}
 			.flex-col
 				%h2.lg.bold-font-name.dark-text-color.half-margin-bottom.title
 					Here’s the thing, exam prep is tough...
-				-3.times do
-					.media.d-flex.align-items-center
-						.pull-left
-							%img.bullet{:src=>"../images/icon-clear.svg"}
-						.media-body
-							%p.no-margin-bottom.dark-text-color.body-large
-								%span.extra-bold-font-name
-									It tests deep knowledge 
-								of complex project management concepts
+
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								It tests deep knowledge 
+							of complex project management concepts
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								The questions are scenario-based
+							and often tricky
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								You’re expected to 
+							think like an experienced project manager under pressure
+				
 		.flex-row.ps-row
-			.flex-col
+			.flex-col.image-col
 				%img.spot-image{:src => "../images/home-good.png"}
 			.flex-col
 				%h2.lg.bold-font-name.dark-text-color.half-margin-bottom.title
 					PM Training™ helps you succeed, guaranteed
-				-3.times do
-					.media.d-flex.align-items-center
-						.pull-left
-							%img.bullet{:src=>"../images/icon-check.svg"}
-						.media-body
-							%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
-								%span.extra-bold-font-name
-									Expert-led courses 
-								aligned with the latest PMP exam content
+
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Expert-led courses 
+							aligned with the latest PMP exam content
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Realistic practice exams
+							that build confidence and skill
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Flexible, self-paced options
+							so you can train on your schedule
 
 
 
@@ -63,25 +96,42 @@
 	.container
 		.row
 			.col-lg-12
-				%h2.lg.bold-font-name.dark-text-color.margin-top.double-margin-bottom
+				%h2.lg.bold-font-name.dark-text-color.margin-top.double-margin-bottom.text-center-sm
 					The smarter way to prep
 		.row
-			-4.times do
-				.col-sm-3
-					%img.half-margin-bottom{:src=>"../images/icon-learn.svg"}
-					%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
-						PMI-Authorized Partner
-					%p
-						Get certified with courses that meet the highest industry standards.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-learn.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					PMI-Authorized Partner
+				%p
+					Get certified with courses that meet the highest industry standards.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-instruct.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Expert Instructors
+				%p
+					Learn from seasoned professionals who know what it takes to pass.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-laptop.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Flexible Learning Options
+				%p
+					Prepare with realistic questions that mirror the real PMP® exam.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-top.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Top-Rated Practice Exams
+				%p
+					Prepare with realistic questions that mirror the real PMP® exam.
 
 
 %section.invert-section.invert-darker
 	.container
 		.row
 			.col-lg-12
-				%h2.lg.bold-font-name.quarter-margin-bottom
+				%h2.lg.bold-font-name.quarter-margin-bottom.text-center-sm
 					Find the right path for you
-				%p.body-large.bold-font-name
+				%p.body-large.bold-font-name.text-center-sm
 					Real 
 					%span{:style=>"color:#FDE0AA;"}
 						exam prep 
@@ -89,7 +139,7 @@
 					%span{:style=>"color:#FDE0AA;"}
 						courses 
 					created by professionals.
-		.row.padding-bottom
+		.row.padding-bottom.quarter-padding-top
 			.col-lg-12
 				#path-component
 					.tabs-container.scroll-tabs
@@ -114,16 +164,34 @@
 									Corporate training
 					.path-content
 						.row
-							-3.times do
-								.col-sm-4
-									.course-card.margin-top
-										%img.half-margin-bottom.max-width{:src=>"../images/course-thumb-default.png"}
-										%p.body-large.dark-text-color.extra-bold-font-name.quarter-margin-bottom
-											Live virtual courses
-										%p.text-color.half-margin-bottom
-											Join expert instructors in real-time, from anywhere.
-										%a.btn.btn-default.btn-lg.btn-block{:href=>"#"}
-											View courses
+
+							.col-sm-4
+								.course-card.margin-top
+									%img.half-margin-bottom.max-width{:src=>"../images/live-courses.png"}
+									%p.body-large.dark-text-color.extra-bold-font-name.quarter-margin-bottom
+										Live virtual courses
+									%p.text-color.half-margin-bottom
+										Join expert instructors in real-time, from anywhere.
+									%a.btn.btn-default.btn-lg.btn-block{:href=>"#"}
+										View schedule
+							.col-sm-4
+								.course-card.margin-top
+									%img.half-margin-bottom.max-width{:src=>"../images/practice-exams.png"}
+									%p.body-large.dark-text-color.extra-bold-font-name.quarter-margin-bottom
+										Real practice exams
+									%p.text-color.half-margin-bottom
+										Simulate the actual exam with questions that match the format and difficulty.
+									%a.btn.btn-default.btn-lg.btn-block{:href=>"#"}
+										Explore exams
+							.col-sm-4
+								.course-card.margin-top
+									%img.half-margin-bottom.max-width{:src=>"../images/on-demand.png"}
+									%p.body-large.dark-text-color.extra-bold-font-name.quarter-margin-bottom
+										On-Demand courses
+									%p.text-color.half-margin-bottom
+										Learn at your own pace, on your own time—24/7 access included.
+									%a.btn.btn-default.btn-lg.btn-block{:href=>"#"}
+										Browse courses
 
 
 
@@ -132,16 +200,16 @@
 		.row
 			.col-md-2
 			.col-md-8
-				%h2.lg.text-center.dark-text-color
+				%h2.lg.text-center.dark-text-color.medium-font-name
 					See why 
 					%span.bold-font-name
 						1,000,000+ 
 					students trust PM Training™ to pass the PMP
 			.col-md-2
-		.row.padding-bottom
+		.row.padding-bottom.padding-top
 			.col-lg-12
 				.trust-widget{:style=>"width:100%; height:130px; background:#DFF0F6;"}
-		.row
+		.row.padding-top
 			.col-md-6
 				.panel.shadowed-box
 					.panel-body.padding-top
@@ -173,31 +241,29 @@
 								%a{:href=>"", :style=>"border:none;"}
 									View the PMP course
 
-%section.extra-padding
+%section
 	.container
 		.row
 			.col-md-4
-				%h2.lg.dark-text-color.bold-font-name
+				%h2.lg.dark-text-color.bold-font-name.text-center-sm
 					Frequently asked questions
 			.col-md-8
-				#accordion.panel-group
-					.panel.panel-default
-						.panel-heading
-							%p.panel-title.body-large.bold-font-name.dark-text-color
-								%a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
-									What is the best way to prepare for the PMP exam?
-						#collapseOne.panel-collapse.collapse
-							.panel-body
-								%p.no-margin-bottom
-									The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
-					.panel.panel-default
-						.panel-heading
-							%h4.panel-title
-								%a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
-									Does PMTraining offer official PMI-approved courses?
-						#collapseTwo.panel-collapse.collapse
-							.panel-body
-								The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+				#accordion.panel-group.faq-accordian
+					-4.times do |count|
+						.panel.panel-default
+							.panel-heading
+								.panel-title
+									%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-#{count}"}
+										.icon-wrapper
+											%span.fa.fa-caret-down.faq-icon
+										.question-wrapper
+											%p.bold-font-name.dark-text-color.body-large
+												What is the best way to prepare for the PMP exam?
+							.panel-collapse.collapse{:id=>"collapse-#{count}"}
+								.panel-body
+									%p.no-margin-bottom
+										The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							
 
 
 
@@ -209,22 +275,42 @@
 				%h2.lg.text-center.dark-text-color.bold-font-name
 					Helpful resources
 		.row
-			-3.times do
-				.col-md-4
-					.resource-card.margin-top
-						%img.half-margin-bottom.max-width{:src=>"../images/course-thumb-default.png"}
-						%p.body-large.dark-text-color.bold-font-name.half-margin-bottom
-							Title of the resource here and can run two lines long if needed
-						%a.extra-bold-font-name{:href=>"#"}
-							Read more ›
+			.col-md-4
+				.resource-card.margin-top
+					%img.half-margin-bottom.max-width{:src=>"../images/resource-podcast.png"}
+					%h6.quarter-margin-bottom
+						Podcast
+					%p.body-large.dark-text-color.bold-font-name.half-margin-bottom
+						How Atkins Global leverages PMTraining for their Organization
+					%a.extra-bold-font-name{:href=>"#"}
+						Listen to podcast ›
+			.col-md-4
+				.resource-card.margin-top
+					%img.half-margin-bottom.max-width{:src=>"../images/resource-training.png"}
+					%h6.quarter-margin-bottom
+						Article
+					%p.body-large.dark-text-color.bold-font-name.half-margin-bottom
+						How to Build PMP Training Programs That Scale Across the Enterprise
+					%a.extra-bold-font-name{:href=>"#"}
+						View article ›
+			.col-md-4
+				.resource-card.margin-top
+					%img.half-margin-bottom.max-width{:src=>"../images/resource-tips.png"}
+					%h6.quarter-margin-bottom
+						Article
+					%p.body-large.dark-text-color.bold-font-name.half-margin-bottom
+						7 Important Tips to Help You Prepare for the PMP Certification Exam
+					%a.extra-bold-font-name{:href=>"#"}
+						View article ›
 %section.invert-section.invert-darker
 	.container
 		.row.padding-top.padding-bottom
 			.col-lg-12
 				.text-center
-					%h1.bold-font-name
+					%h1.bold-font-name.half-margin-bottom
 						Ready to get started?
 					%p.body-large.medium-font-name
 						Subtext explaining the value one more time
-					%a.btn.btn-default.btn-lg{:href=>"#"}
-						Register now for PMP practice exams
+					.padding-top
+						%a.btn.btn-default.btn-lg{:href=>"#"}
+							Register now for PMP practice exams

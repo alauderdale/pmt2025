@@ -67,7 +67,7 @@ section{
   }
 
   &.gradient-bottom{
-    @include linear-gradient(0deg, #F0FBFF 100%, #FFFFFF 0%);
+    @include linear-gradient(0deg, #F0FBFF 0%, #FFFFFF 100%);
   }
 
   &.feature-blocks{

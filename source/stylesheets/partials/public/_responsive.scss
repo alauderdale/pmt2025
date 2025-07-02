@@ -145,13 +145,16 @@
 	h2.lg{
 		font-size:1.3em;
 		line-height:$baseline*1.2;
+		@include breakpoint(sm) {
+			font-size:30px;
+		}
 	}
 
 	h2{
 		font-size:1.2em;
 		line-height:$baseline*1.2;
 	}
-	
+
 	p{
 		font-size:.8em;
 	}

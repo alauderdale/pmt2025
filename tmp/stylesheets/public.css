@@ -1083,6 +1083,13 @@ ul.tabs-simple.light-tabs {
     color: white;
     border-color: white; }
 
+.scroll-tabs {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap; }
+  .scroll-tabs .nav-tabs {
+    width: 200%; }
+
 .panel-group {
   font-size: .8em; }
   .panel-group a {
@@ -1706,7 +1713,8 @@ footer#footer {
 #home-hero {
   background: #041c25;
   position: relative;
-  z-index: 99; }
+  z-index: 99;
+  overflow: hidden; }
   #home-hero h1 {
     font-size: 48px;
     line-height: 1.1em; }

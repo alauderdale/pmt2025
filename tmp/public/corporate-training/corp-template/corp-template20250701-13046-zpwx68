@@ -7,12 +7,12 @@
 <title>
 title
 </title>
-<link href="stylesheets/public.css" rel="stylesheet" />
-<link href='images/favicon.ico' rel='shortcut icon'>
+<link href="/stylesheets/public.css" rel="stylesheet" />
+<link href='/images/favicon.ico' rel='shortcut icon'>
 <link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400' rel='stylesheet'>
 <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
-<script src="javascripts/lib/jquery.js"></script><script src="javascripts/lib/bootstrap.js"></script><script src="javascripts/lib/jquery.fancybox.pack.js"></script><script src="javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="javascripts/lib/highcharts/highcharts.js"></script><script src="javascripts/lib/slick.js"></script><script src="javascripts/lib/highcharts/modules/exporting.js"></script><script src="javascripts/lib/footable/footable.js"></script><script src="javascripts/lib/footable/footable.filter.js"></script><script src="javascripts/scripts.js"></script>
-<body class='index'>
+<script src="/javascripts/lib/jquery.js"></script><script src="/javascripts/lib/bootstrap.js"></script><script src="/javascripts/lib/jquery.fancybox.pack.js"></script><script src="/javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="/javascripts/lib/highcharts/highcharts.js"></script><script src="/javascripts/lib/slick.js"></script><script src="/javascripts/lib/highcharts/modules/exporting.js"></script><script src="/javascripts/lib/footable/footable.js"></script><script src="/javascripts/lib/footable/footable.filter.js"></script><script src="/javascripts/scripts.js"></script>
+<body class='public public_corporate-training public_corporate-training_corp-template'>
 <nav class='navbar navbar-default visible-xs navbar-fixed-top' id='mobile-main-nav' role='navigation'>
 <div class='container-fluid'>
 <div class='navbar-header'>
@@ -325,7 +325,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -383,7 +383,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -434,7 +434,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -486,7 +486,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -537,7 +537,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -642,7 +642,7 @@ USD $
 <div class='pull-left'>
 <a class='logo_two' href='/'></a>
 </div>
-<img src="images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
+<img src="/images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
 <nav class='pull-right'>
 <ul class='list-inline sub-links'>
 <li>
@@ -712,7 +712,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -770,7 +770,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -821,7 +821,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -873,7 +873,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -924,7 +924,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -1026,579 +1026,191 @@ USD $
 
 <!-- end menu -->
 <div id='mainContents'>
-<section class='invert-section no-padding-top no-padding-top no-padding-bottom'>
-<section id='home-hero'>
-<video autoplay='' id='home-hero-video' loop='' muted='' playsinline=''>
-<source src='../images/hero-movie2.mp4' type='video/mp4'>
-</video>
+<section class='invert-section page-header-section training-pmp-header'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-7'>
-<h4 class='bold-font-name quarter-margin-bottom overhang'>
-Trusted Training for Project Management Success
-</h4>
-<h1 class='bold-font-name margin-bottom'>
-Pass your PMP® with Affordable, Expert-Led Prep
-</h1>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-100% Money Back Guarantee
-</li>
-<li class='bold-font-name'>
-Officially Licensed PMP Curriculum from PMI
-</li>
-<li class='bold-font-name'>
-Instant access to course materials
-</li>
-</ul>
-<img class='max-width' src='../images/home-divider.svg'>
-<div class='media d-flex align-items-center margin-bottom' style='max-width:400px;'>
-<div class='pull-left'>
-<img src='../images/pmi-logo.svg'>
-</div>
-<div class='media-body'>
-<p class='media-heading no-margin-bottom bold-font-name'>
-Premier Authorized Training Partner (ATP) of the Project Management Institute®
-</p>
-</div>
-</div>
-<div class='btns'>
-<a class='btn btn-default btn-lg half-margin-bottom quarter-margin-right' href='#'>
-Primary CTA
-</a>
-<a class='btn btn-wire btn-lg half-margin-bottom' href='#'>
-Secondary CTA
-</a>
-</div>
+<div class='col-lg-12'>
+<h2 class='no-margin-bottom pull-left'>
+Corporate Training
+</h2>
+<h6 class='no-margin-bottom pull-right hidden-xs half-margin-top extra-bold-font-name'>
+
+</h6>
 </div>
 </div>
 </div>
 </section>
 
-</section>
-<section>
+<section class='extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-lg-12'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
 <div class='text-center'>
-<h4 class='bold-font-name dark-text-color'>
-Trusted by the world’s smartest teams
-</h4>
-<img class='max-width' src='../images/home-logos.png'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+et vitae dolorum omnis praesentium omnis distinctio ea facilis corrupti ut ex placeat sed ea facere quis deleniti consectetur illo
+</p>
+<a class='btn btn-default' href='#'>
+Start now
+</a>
+</div>
+<div class='row'>
+<div class='col-lg-12 margin-top'>
+<img src="/images/public/corporate_training/hero.png" class="img-responsive margin-auto double-margin-top" width="535px" alt="" />
 </div>
 </div>
+</div>
+<div class='col-md-2'></div>
 </div>
 </div>
 </section>
-<section class='padding-top'>
-<div class='container'>
-<div class='flex-row ps-row reverse'>
-<div class='flex-col image-col'>
-<img class='spot-image' src='../images/home-bad.png'>
-</div>
-<div class='flex-col'>
-<h2 class='lg bold-font-name dark-text-color half-margin-bottom title'>
-Here’s the thing, exam prep is tough...
-</h2>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-It tests deep knowledge
-</span>
-of complex project management concepts
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-The questions are scenario-based
-</span>
-and often tricky
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-You’re expected to
-</span>
-think like an experienced project manager under pressure
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class='flex-row ps-row'>
-<div class='flex-col image-col'>
-<img class='spot-image' src='../images/home-good.png'>
-</div>
-<div class='flex-col'>
-<h2 class='lg bold-font-name dark-text-color half-margin-bottom title'>
-PM Training™ helps you succeed, guaranteed
-</h2>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Expert-led courses
-</span>
-aligned with the latest PMP exam content
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Realistic practice exams
-</span>
-that build confidence and skill
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Flexible, self-paced options
-</span>
-so you can train on your schedule
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='gradient-top'>
+<section class='off-blue extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-lg-12'>
-<h2 class='lg bold-font-name dark-text-color margin-top double-margin-bottom text-center-sm'>
-The smarter way to prep
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/2.png" class="img-responsive margin-auto double-margin-top margin-bottom" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
 </h2>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-learn.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-PMI-Authorized Partner
+<p class='lead2'>
+earum quis rem voluptatibus voluptas occaecati qui et ex illo totam molestias consequatur est consequuntur est sed enim omnis repellat
 </p>
-<p>
-Get certified with courses that meet the highest industry standards.
+<p class='bold-font-name'>
+Our volume discount purchase program includes:
 </p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-instruct.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Expert Instructors
-</p>
-<p>
-Learn from seasoned professionals who know what it takes to pass.
-</p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-laptop.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Flexible Learning Options
-</p>
-<p>
-Prepare with realistic questions that mirror the real PMP® exam.
-</p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-top.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Top-Rated Practice Exams
-</p>
-<p>
-Prepare with realistic questions that mirror the real PMP® exam.
-</p>
-</div>
-</div>
-</div>
-</section>
-<section class='invert-section invert-darker'>
-<div class='container'>
-<div class='row'>
-<div class='col-lg-12'>
-<h2 class='lg bold-font-name quarter-margin-bottom text-center-sm'>
-Find the right path for you
-</h2>
-<p class='body-large bold-font-name text-center-sm'>
-Real
-<span style='color:#FDE0AA;'>
-exam prep
-</span>
-and
-<span style='color:#FDE0AA;'>
-courses
-</span>
-created by professionals.
-</p>
-</div>
-</div>
-<div class='row padding-bottom quarter-padding-top'>
-<div class='col-lg-12'>
-<div id='path-component'>
-<div class='tabs-container scroll-tabs'>
-<ul class='nav nav-tabs tabs-simple light-tabs'>
-<li class='active'>
-<a href='#'>
-PMP®
-</a>
+<ul class='list-default'>
+<li>
+omnis quos culpa et at architecto
 </li>
 <li>
-<a href='#'>
-PfMP
-</a>
+et voluptas consequatur voluptatum voluptas voluptatem
 </li>
 <li>
-<a href='#'>
-CAPM
-</a>
+expedita maiores magni quas sed nostrum
 </li>
 <li>
-<a href='#'>
-PMI-ACP
-</a>
-</li>
-<li>
-<a href='#'>
-PDU bundle
-</a>
-</li>
-<li>
-<a href='#'>
-Corporate training
-</a>
+excepturi vel eveniet aut sunt velit
 </li>
 </ul>
-</div>
-<div class='path-content'>
-<div class='row'>
-<div class='col-sm-4'>
-<div class='course-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/live-courses.png'>
-<p class='body-large dark-text-color extra-bold-font-name quarter-margin-bottom'>
-Live virtual courses
-</p>
-<p class='text-color half-margin-bottom'>
-Join expert instructors in real-time, from anywhere.
-</p>
-<a class='btn btn-default btn-lg btn-block' href='#'>
-View schedule
+<a class='link-underline' href='#'>
+Call to action for this feature
 </a>
-</div>
-</div>
-<div class='col-sm-4'>
-<div class='course-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/practice-exams.png'>
-<p class='body-large dark-text-color extra-bold-font-name quarter-margin-bottom'>
-Real practice exams
-</p>
-<p class='text-color half-margin-bottom'>
-Simulate the actual exam with questions that match the format and difficulty.
-</p>
-<a class='btn btn-default btn-lg btn-block' href='#'>
-Explore exams
-</a>
-</div>
-</div>
-<div class='col-sm-4'>
-<div class='course-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/on-demand.png'>
-<p class='body-large dark-text-color extra-bold-font-name quarter-margin-bottom'>
-On-Demand courses
-</p>
-<p class='text-color half-margin-bottom'>
-Learn at your own pace, on your own time—24/7 access included.
-</p>
-<a class='btn btn-default btn-lg btn-block' href='#'>
-Browse courses
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
 </section>
-<section class='gradient-bottom'>
+<section class='extra-padding'>
 <div class='container'>
-<div class='row padding-top'>
-<div class='col-md-2'></div>
-<div class='col-md-8'>
-<h2 class='lg text-center dark-text-color medium-font-name'>
-See why
-<span class='bold-font-name'>
-1,000,000+
-</span>
-students trust PM Training™ to pass the PMP
-</h2>
-</div>
-<div class='col-md-2'></div>
-</div>
-<div class='row padding-bottom padding-top'>
-<div class='col-lg-12'>
-<div class='trust-widget' style='width:100%; height:130px; background:#DFF0F6;'></div>
-</div>
-</div>
-<div class='row padding-top'>
+<div class='row'>
 <div class='col-md-6'>
-<div class='panel shadowed-box'>
-<div class='panel-body padding-top'>
-<div class='col-sm-4'>
-<img src="images/medal_prep.png" class="img-responsive margin-auto half-margin-bottom" width="120" alt="" />
-</div>
-<div class='col-sm-8'>
-<p class='half-margin-bottom'>
-Crush the PM Exam has just named PMtraiing as the
-<span class='bold-font-name'>
-#1 PMI-ACP prep course
-</span>
-of 2017!
-</p>
-<p class='bold-font-name'>
-<a href='' style='border:none;'>
-View the PMP course
-</a>
-</p>
-</div>
-</div>
+<div class='padded'>
+<img src="/images/public/corporate_training/template/3.png" class="img-responsive margin-auto double-margin-top" width="565px" alt="" />
 </div>
 </div>
 <div class='col-md-6'>
-<div class='panel shadowed-box'>
-<div class='panel-body padding-top'>
-<div class='col-sm-4'>
-<img src="images/medal_prep.png" class="img-responsive margin-auto half-margin-bottom" width="120" alt="" />
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+corporis omnis sint esse temporibus nisi qui voluptate molestiae tempora alias qui voluptatem sit autem eos tempore porro non nobis
+</p>
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
+<div class='half-padding-top'></div>
+<hr>
+<blockquote class='half-margin-bottom no-padding'>
+<em>
+“Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.”
+</em>
+</blockquote>
+<p class='bold-font-name'>
+John Doe, CEO Big Company worldwide
+</p>
 </div>
-<div class='col-sm-8'>
-<p class='half-margin-bottom'>
-Crush the PM Exam has just named PMtraiing as the
-<span class='bold-font-name'>
-#1 PMI-ACP prep course
-</span>
-of 2017!
+</div>
+</div>
+</section>
+<section class='off-blue extra-padding'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/4.png" class="img-responsive margin-auto double-margin-top" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+aut itaque vero sunt voluptatem ut delectus molestias et enim voluptates aut et qui exercitationem omnis illum perferendis exercitationem est
 </p>
 <p class='bold-font-name'>
-<a href='' style='border:none;'>
-View the PMP course
-</a>
+Our volume discount purchase program includes:
 </p>
-</div>
-</div>
-</div>
+<ul class='list-default'>
+<li>
+quo et ut temporibus consequatur beatae
+</li>
+<li>
+similique deleniti molestias tenetur doloribus qui
+</li>
+<li>
+placeat provident omnis repellendus perspiciatis sapiente
+</li>
+<li>
+quos ut qui assumenda placeat et
+</li>
+</ul>
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
 </div>
 </div>
 </div>
 </section>
-<section>
+<section class='extra-padding invert-section'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-4'>
-<h2 class='lg dark-text-color bold-font-name text-center-sm'>
-Frequently asked questions
-</h2>
-</div>
+<div class='col-md-2'></div>
 <div class='col-md-8'>
-<div class='panel-group faq-accordian' id='accordion'>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-0'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What is the best way to prepare for the PMP exam?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-0'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-1'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What is the best way to prepare for the PMP exam?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-1'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-2'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What is the best way to prepare for the PMP exam?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-2'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-3'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What is the best way to prepare for the PMP exam?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-3'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='gradient-top extra-padding'>
-<div class='container'>
-<div class='row'>
-<div class='col-md-12'>
-<h2 class='lg text-center dark-text-color bold-font-name'>
-Helpful resources
-</h2>
-</div>
-</div>
-<div class='row'>
-<div class='col-md-4'>
-<div class='resource-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/resource-podcast.png'>
-<h6 class='quarter-margin-bottom'>
-Podcast
-</h6>
-<p class='body-large dark-text-color bold-font-name half-margin-bottom'>
-How Atkins Global leverages PMTraining for their Organization
-</p>
-<a class='extra-bold-font-name' href='#'>
-Listen to podcast ›
-</a>
-</div>
-</div>
-<div class='col-md-4'>
-<div class='resource-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/resource-training.png'>
-<h6 class='quarter-margin-bottom'>
-Article
-</h6>
-<p class='body-large dark-text-color bold-font-name half-margin-bottom'>
-How to Build PMP Training Programs That Scale Across the Enterprise
-</p>
-<a class='extra-bold-font-name' href='#'>
-View article ›
-</a>
-</div>
-</div>
-<div class='col-md-4'>
-<div class='resource-card margin-top'>
-<img class='half-margin-bottom max-width' src='../images/resource-tips.png'>
-<h6 class='quarter-margin-bottom'>
-Article
-</h6>
-<p class='body-large dark-text-color bold-font-name half-margin-bottom'>
-7 Important Tips to Help You Prepare for the PMP Certification Exam
-</p>
-<a class='extra-bold-font-name' href='#'>
-View article ›
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='invert-section invert-darker'>
-<div class='container'>
-<div class='row padding-top padding-bottom'>
-<div class='col-lg-12'>
 <div class='text-center'>
-<h1 class='bold-font-name half-margin-bottom'>
-Ready to get started?
-</h1>
-<p class='body-large medium-font-name'>
-Subtext explaining the value one more time
+<h2>
+Get started today
+</h2>
+<p class='lead2'>
+Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.
 </p>
-<div class='padding-top'>
-<a class='btn btn-default btn-lg' href='#'>
-Register now for PMP practice exams
+</div>
+<div class='row'>
+<div class='col-lg-1'></div>
+<div class='col-lg-10'>
+<div class='form'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Name'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Phone'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Email'>
+</div>
+<div class='form-group'>
+<textarea class='form-control input-lg' placeholder='Additional comments' rows='8'></textarea>
+</div>
+<a class='btn btn-default btn-block btn-lg' href='#'>
+Submit
 </a>
 </div>
 </div>
+<div class='col-lg-1'></div>
 </div>
+</div>
+<div class='col-md-2'></div>
 </div>
 </div>
 </section>
@@ -1609,7 +1221,7 @@ Register now for PMP practice exams
 <div class='container'>
 <div class='row'>
 <div class='col-sm-3'>
-<img src="images/logo_no_tag.png" alt="" />
+<img src="/images/logo_no_tag.png" alt="" />
 <p>
 <small>
 ©
@@ -1619,7 +1231,7 @@ SSILogic
 2014
 </small>
 </p>
-<img src="images/pmi_logo_3.png" class="pmi-logo" alt="" />
+<img src="/images/pmi_logo_3.png" class="pmi-logo" alt="" />
 <p class='bold-font-name'>
 <small>
 #3962

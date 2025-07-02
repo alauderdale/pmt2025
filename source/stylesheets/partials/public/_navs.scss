@@ -197,7 +197,7 @@ ul.tabs-simple{
 			border:none;
 			color:tint($dark-text-color,50%);
 		}
-		a:focus{
+		a:focus, a:active{
 			background: none;
 		}
 		&:hover{
@@ -207,7 +207,7 @@ ul.tabs-simple{
 			}
 		}
 		&.active{
-			a{
+			a, a:focus, a:active{
 				color:$dark-text-color;
 				background: none;
 				border:none;
@@ -230,10 +230,21 @@ ul.tabs-simple{
 				}
 			}
 			&.active{
-				a{
+				a, a:hover{
 				color: white;
 				border-color:white;
 				}
+			}
+		}
+	}
+	@include breakpoint(sm) {
+		text-align: center;
+		li{
+			font-size: 13px;
+			float: none;
+      display: inline-block;
+			a{
+				padding: 10px 5px;
 			}
 		}
 	}

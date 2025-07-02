@@ -1058,17 +1058,17 @@ ul.tabs-simple li {
     background: none;
     border: none;
     color: #8b8b8b; }
-  ul.tabs-simple li a:focus {
+  ul.tabs-simple li a:focus, ul.tabs-simple li a:active {
     background: none; }
   ul.tabs-simple li:hover a {
     background: none;
     color: #545a5f; }
-  ul.tabs-simple li.active a {
+  ul.tabs-simple li.active a, ul.tabs-simple li.active a:focus, ul.tabs-simple li.active a:active {
     color: #171717;
     background: none;
     border: none;
     border-bottom: #1384b2 3px solid; }
-    ul.tabs-simple li.active a:hover {
+    ul.tabs-simple li.active a:hover, ul.tabs-simple li.active a:focus:hover, ul.tabs-simple li.active a:active:hover {
       border: none;
       border-bottom: #1384b2 3px solid;
       background: none; }
@@ -1079,9 +1079,19 @@ ul.tabs-simple.light-tabs {
     color: rgba(255, 255, 255, 0.5); }
     ul.tabs-simple.light-tabs li a:hover {
       color: white; }
-  ul.tabs-simple.light-tabs li.active a {
+  ul.tabs-simple.light-tabs li.active a, ul.tabs-simple.light-tabs li.active a:hover {
     color: white;
     border-color: white; }
+
+@media (max-width: 768px) {
+  ul.tabs-simple {
+    text-align: center; }
+    ul.tabs-simple li {
+      font-size: 13px;
+      float: none;
+      display: inline-block; }
+      ul.tabs-simple li a {
+        padding: 10px 5px; } }
 
 .scroll-tabs {
   width: 100%;

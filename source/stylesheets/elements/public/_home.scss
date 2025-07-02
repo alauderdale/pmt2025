@@ -47,6 +47,7 @@
 	background: shade($primary-color,80%);
 	position: relative;
 	z-index: 99;
+	overflow: hidden;
 	h1{
 		font-size: 48px;
 		line-height: 1.1em;

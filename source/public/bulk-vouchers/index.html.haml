@@ -26,7 +26,7 @@
 				%p.body-large.no-margin-bottom
 					Purchase vouchers for 2+ employees at a fixed per-seat price. Your team can redeem vouchers later for any public live class in the certification you choose—PMP, CAPM, PgMP, and more.
 			.col-sm-5
-				=partial('buy-block')
+				
 
 
 
@@ -139,7 +139,7 @@
 							-2.times do
 								.col-sm-6
 									.promo-testimonial.border-bottom.margin-bottom
-										.promo-testimonial-header.half-margin-bottom
+										.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
 											.promo-testimonial-avatar
 												.media
 													.pull-left
@@ -150,11 +150,15 @@
 															Jarred T.
 														%p.micro-text.no-margin-bottom.light-text-color
 															PMP
+											.promo-testimonial-verified
+												%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
 										.promo-testimonial-body
 											%p.dark-text-color
 												=lorem.words(40)
 
 			.col-sm-5
+				.buy-block-wrapper
+					=partial('buy-block')
 				
 				
 				

@@ -113,6 +113,9 @@ img {
 .border-left {
   border-left: 1px solid #dddddd; }
 
+.no-border {
+  border: none !important; }
+
 .logo {
   background: url(../images/logo.png);
   background-size: 100%;
@@ -229,6 +232,9 @@ img {
 .text-success {
   color: #85C342; }
 
+.text-danger {
+  color: #A94442; }
+
 .link-color {
   color: #1384b2; }
 
@@ -261,6 +267,11 @@ img {
   .primary-text-color p {
     color: #138abb !important; }
 
+.light-accent-text-color {
+  color: #d0e8f1 !important; }
+  .light-accent-text-color p {
+    color: #d0e8f1 !important; }
+
 .light-text-color {
   color: #767b7f !important; }
   .light-text-color p {
@@ -285,11 +296,32 @@ img {
     color: #0d6183 !important; }
 
 .micro-text {
-  font-size: .7em; }
+  font-size: .7em;
+  line-height: 1.3em; }
+
+.body-large {
+  font-size: 19px;
+  line-height: 1.4em; }
 
 p.body-large {
   font-size: 19px;
-  line-height: 24px; }
+  line-height: 1.4em; }
+
+.body-medium {
+  font-size: 16px;
+  line-height: 1.4em; }
+
+p.body-medium {
+  font-size: 16px;
+  line-height: 1.4em; }
+
+.body-small {
+  font-size: 14px;
+  line-height: 18px; }
+
+p.body-small {
+  font-size: 14px;
+  line-height: 18px; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
@@ -485,6 +517,11 @@ ul.check-list-large li i {
     letter-spacing: 2px;
     color: white;
     margin: 0; }
+
+.label-save {
+  color: #658051;
+  font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
+  background: #e5f2db; }
 
 .margin-auto {
   margin: 0 auto; }
@@ -1117,6 +1154,14 @@ ul.tabs-simple.light-tabs {
     background: #2b96c2; }
   .panel.success-color {
     background: #91c955; }
+  .panel.success-gradient {
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #F3F7EF));
+    background-image: -webkit-linear-gradient(top, white, #F3F7EF);
+    background-image: -moz-linear-gradient(top, white, #F3F7EF);
+    background-image: -ms-linear-gradient(top, white, #F3F7EF);
+    background-image: -o-linear-gradient(top, white, #F3F7EF);
+    background-image: linear-gradient(top, white, #F3F7EF); }
   .panel.instructor-panel {
     background: #85C342 url("../images/public/icon_instructor.png") no-repeat right; }
     .panel.instructor-panel .pmi-logo {
@@ -1243,6 +1288,12 @@ form .control-label {
   font-size: .6em;
   color: black !important;
   font-family: "museo_sans_500regular", Helvetica, Arial, sans-serif; }
+
+.input-dark {
+  background-color: #fff;
+  border-color: #171717;
+  border-width: 1.5px;
+  color: #171717; }
 
 a {
   color: #1384b2; }
@@ -1951,6 +2002,29 @@ img.contact-logo-mobile {
     flex-direction: column-reverse;
     width: 100%;
     display: flex !important; } }
+
+.buy-block-wrapper {
+  position: relative; }
+
+.buy-block {
+  padding: 40px;
+  padding-top: 0px;
+  position: relative;
+  top: -300px; }
+  @media (max-width: 992px) {
+    .buy-block {
+      padding: 0; } }
+  @media (max-width: 768px) {
+    .buy-block {
+      height: auto; } }
+  .buy-block h1, .buy-block h2, .buy-block h3, .buy-block h4, .buy-block h5, .buy-block h6, .buy-block p {
+    color: #171717 !important; }
+  .buy-block .buy-block-card {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: white; }
 
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {

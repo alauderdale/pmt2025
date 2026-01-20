@@ -42,7 +42,11 @@
 
 
 .buy-block-container{
-
+	position: relative;
+	top:-340px;
+	@include breakpoint(sm) {
+		top:0;
+	}
 }
 
 

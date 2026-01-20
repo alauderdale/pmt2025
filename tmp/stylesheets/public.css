@@ -2037,6 +2037,12 @@ img.contact-logo-mobile {
       flex: 0 0 100%;
       max-width: 100%;
       order: 1; } }
+.buy-block-container {
+  position: relative;
+  top: -340px; }
+  @media (max-width: 768px) {
+    .buy-block-container {
+      top: 0; } }
 .buy-block-wrapper {
   position: sticky;
   top: 50px; }

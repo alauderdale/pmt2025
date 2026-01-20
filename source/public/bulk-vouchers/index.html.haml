@@ -35,7 +35,10 @@
 	.container{:style=>"position:relative;"}
 
 		.row{:style=>"position:relative;"}
-			.col-sm-7
+			.col-sm-5.col-sm-push-7
+				.buy-block-wrapper
+					=partial('buy-block')
+			.col-sm-7.col-sm-pull-5
 				.promo-section.border-bottom.padding-bottom
 					%p.body-large.dark-text-color.bold-font-name.promo-header.half-margin-bottom
 						Project Management Institute® Authorized Training Partner (ATP)
@@ -156,9 +159,7 @@
 											%p.dark-text-color
 												=lorem.words(40)
 
-			.col-sm-5
-				.buy-block-wrapper
-					=partial('buy-block')
+			
 				
 				
 				

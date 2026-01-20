@@ -6,6 +6,14 @@ $(document).ready(function(){
     $myGroup.find('.collapse.in').collapse('hide');
   });
 
+
+  //jquery sticky
+  // $('.buy-block-container').stickyHeadersRelative('.buy-block-wrapper', {
+  //         stickyClass: 'working'
+  //         }
+  //     });
+
+
 	 //fancybox
 	$('.fancybox').fancybox();
 	

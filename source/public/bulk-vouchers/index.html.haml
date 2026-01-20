@@ -32,12 +32,12 @@
 
 
 %section
-	.container{:style=>"position:relative;"}
-
-		.row{:style=>"position:relative;"}
+	.container
+		.row
 			.col-sm-5.col-sm-push-7
-				.buy-block-wrapper
-					=partial('buy-block')
+				.buy-block-container
+					.buy-block-wrapper
+						=partial('buy-block')
 			.col-sm-7.col-sm-pull-5
 				.promo-section.border-bottom.padding-bottom
 					%p.body-large.dark-text-color.bold-font-name.promo-header.half-margin-bottom
@@ -82,11 +82,9 @@
 								
 								.media-body.text-left
 									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Fast, easy ordering
-										%span.text-color.regular-font-name
-											\: Purchase in minutes
+										Choose your course type + quantity
 									%p.half-margin-bottom
-										Buy training for multiple employees in minutes—no scheduling back-and-forth.
+										Select the certification your team needs (PMP, CAPM, PgMP, etc.) and purchase 2+ seats.
 				.promo-section.border-bottom.padding-bottom.padding-top
 					.panel.success-gradient.no-margin-bottom
 						.panel-body.padded
@@ -158,6 +156,7 @@
 										.promo-testimonial-body
 											%p.dark-text-color
 												=lorem.words(40)
+		.row.buy-block-stop{:style=>"width:100%; height:10px; background:red;"}
 
 			
 				

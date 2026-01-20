@@ -2016,7 +2016,8 @@ img.contact-logo-mobile {
       padding: 0; } }
   @media (max-width: 768px) {
     .buy-block {
-      height: auto; } }
+      top: 0;
+      padding: 0px 30px 40px 30px; } }
   .buy-block h1, .buy-block h2, .buy-block h3, .buy-block h4, .buy-block h5, .buy-block h6, .buy-block p {
     color: #171717 !important; }
   .buy-block .buy-block-card {

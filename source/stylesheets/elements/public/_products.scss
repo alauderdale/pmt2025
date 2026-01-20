@@ -44,6 +44,7 @@
 .buy-block-container{
 	position: relative;
 	top:-340px;
+	margin-bottom:-340px;
 	@include breakpoint(sm) {
 		top:0;
 	}

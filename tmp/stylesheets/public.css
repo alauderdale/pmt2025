@@ -2039,7 +2039,8 @@ img.contact-logo-mobile {
       order: 1; } }
 .buy-block-container {
   position: relative;
-  top: -340px; }
+  top: -340px;
+  margin-bottom: -340px; }
   @media (max-width: 768px) {
     .buy-block-container {
       top: 0; } }

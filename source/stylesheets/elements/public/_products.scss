@@ -48,7 +48,7 @@
 	@include breakpoint(sm) {
 		top:0;
 		margin-bottom:0px;
-		
+
 	}
 }
 
@@ -57,20 +57,38 @@
 .buy-block-wrapper{
 	position: sticky;
 	top:50px;
+	padding:0 0 0 20px;
+	@include breakpoint(sm) {
+		padding:0px 10px 40px 10px;
+	}
 }
 
 
 .buy-block{
-	padding:0 0 0 20px;
+	
 	position: relative;
-	// top: -300px;
+	overflow: hidden;
+	&.sale-tag:before{
+		position: absolute;
+		right:-25px;
+		top: 10px;
+		content:"Sale";
+		font-size: 16px;
+		text-align: center;
+		text-transform: uppercase;
+		background: $danger-color;
+		font-family: $bold-font-name;
+		width:100px;
+		color: white;
+		padding:2px 0;
+		rotate: 45deg;
+	}
 
 	@include breakpoint(md) {
 		padding:0;
 	}
 	@include breakpoint(sm) {
 		top:0;
-		padding:0px 10px 40px 10px;
 	}
 	h1,h2,h3,h4,h5,h6,p{
 		color: $dark-text-color!important;

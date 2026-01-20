@@ -2043,21 +2043,38 @@ img.contact-logo-mobile {
   margin-bottom: -340px; }
   @media (max-width: 768px) {
     .buy-block-container {
-      top: 0; } }
+      top: 0;
+      margin-bottom: 0px; } }
 .buy-block-wrapper {
   position: sticky;
-  top: 50px; }
-
+  top: 50px;
+  padding: 0 0 0 20px; }
+  @media (max-width: 768px) {
+    .buy-block-wrapper {
+      padding: 0px 10px 40px 10px; } }
 .buy-block {
-  padding: 0 0 0 20px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .buy-block.sale-tag:before {
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    content: "Sale";
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #A94442;
+    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+    width: 100px;
+    color: white;
+    padding: 2px 0;
+    rotate: 45deg; }
   @media (max-width: 992px) {
     .buy-block {
       padding: 0; } }
   @media (max-width: 768px) {
     .buy-block {
-      top: 0;
-      padding: 0px 10px 40px 10px; } }
+      top: 0; } }
   .buy-block h1, .buy-block h2, .buy-block h3, .buy-block h4, .buy-block h5, .buy-block h6, .buy-block p {
     color: #171717 !important; }
   .buy-block .buy-block-card {

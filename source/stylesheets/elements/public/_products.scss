@@ -1,0 +1,30 @@
+
+
+.buy-block{
+	padding:40px;
+	padding-top:0px;
+	height: 0;
+	position: sticky;
+	@include breakpoint(md) {
+		padding:0;
+	}
+	@include breakpoint(sm) {
+		height: auto;
+	}
+	h1,h2,h3,h4,h5,h6,p{
+		color: $dark-text-color!important;
+	}
+	.buy-block-card{
+		border:1px solid $gray-color;
+		border-radius:5px;
+		box-shadow:0 1px 8px rgba(0,0,0,.2);
+		padding:20px;
+		background:white;
+	}
+	&.buy-block-vouchers{
+
+	}
+	&.buy-block-fixed{
+
+	}
+}

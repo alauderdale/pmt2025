@@ -122,6 +122,10 @@ $text-column-gutter-width: $baseline;
   color:$green-color;
 }
 
+.text-danger{
+  color:$danger-color;
+}
+
 .link-color{
   color:$link-color;
 }
@@ -168,6 +172,13 @@ $text-column-gutter-width: $baseline;
   }
 }
 
+.light-accent-text-color{
+  color:tint($primary-color,80%)!important;
+  p{
+    color:tint($primary-color,80%)!important;
+  }
+}
+
 .light-text-color{
   color:tint($text-color,20%)!important;
   p{
@@ -206,15 +217,45 @@ $text-column-gutter-width: $baseline;
 
 .micro-text{
   font-size:.7em;
+  line-height: 1.3em;
 }
 
 
 //font base
 
+.body-large{
+    font-size:19px;
+    line-height: 1.4em;
+  }
+
 p{
   &.body-large{
     font-size:19px;
-    line-height: 24px;
+    line-height: 1.4em;
+  }
+}
+
+.body-medium{
+    font-size:16px;
+    line-height: 1.4em;
+  }
+
+p{
+  &.body-medium{
+    font-size:16px;
+    line-height: 1.4em;
+  }
+}
+
+.body-small{
+    font-size:14px;
+    line-height: 18px;
+  }
+
+p{
+  &.body-small{
+    font-size:14px;
+    line-height: 18px;
   }
 }
 
@@ -460,4 +501,13 @@ ul.check-list-large{
       color:white;
       margin:0;
   }
+}
+
+//labels
+
+.label-save{
+  color:shade($success-color,40%);
+  font-family: $extra-bold-font-name;
+  background: tint($success-color,70%);
+
 }

@@ -1,0 +1,45 @@
+.buy-block.sale-tag
+	.buy-block-card
+		%img.full-width{:src=>"/images/public/thumb-bulk-vouchers.png"}
+		.price.d-flex.justify-space-between.padding-top.padding-bottom
+			.price-left.medium-font-name
+				%span.line-through.light-text-color.body-large.quarter-margin-right
+					$1,398
+				%span.text-danger{:style=>"font-size:30px;"}
+					$898
+				%span.dark-text-color.bold-font-name.body-medium
+					\/yr
+			.price-right
+				.label.label-success.label-save
+					Save 20%
+		.forms
+			.selector.half-margin-bottom
+				%p.body-small.dark-text-color.quarter-margin-bottom
+					Course type
+				.dropdown
+					.btn.btn-info-dark.dropdown-toggle.d-flex.justify-space-between{"data-toggle" => "dropdown", "style"=>"padding:8px;"}
+						%span.btn-content-wrapper
+							%span.text.medium-font-name
+								PMP
+						%span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
+							keyboard_arrow_down
+					%ul.dropdown-menu.full-width{:role => "menu"}
+						%li
+							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
+								Option
+			.selector
+				%p.body-small.dark-text-color.quarter-margin-bottom
+					Quantity
+				%input.form-control.input-lg.input-dark{:type=>"text", :placeholder=>"100"}
+				%p.micro-text.quarter-margin-top.text-right
+					2 seats minimum
+		%a.btn.btn-lg.btn-block.btn-default{:href=>"#"}
+			Add to cart
+		%p.micro-text.text-center.half-margin-top.no-margin-bottom
+			Voucher codes emailed immediately after checkout
+	.text-center.half-margin-top
+		%img.max-width{:src=>"/images/public/buy-block-sizzle.png"}
+		%p.dark-text-color.bold-font-name.half-margin-top.no-margin-bottom
+			Questions? Chat now or call 
+			%span.link-color
+				1-800-581-9819

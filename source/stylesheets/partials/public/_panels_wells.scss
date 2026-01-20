@@ -23,6 +23,10 @@
 			background:tint($green-color,10%);
 			@extend .white-text;
 		}
+	&.success-gradient{
+			@include linear-gradient(white,#F3F7EF);
+			
+		}
 	&.instructor-panel{
 		background:$green-color url('../images/public/icon_instructor.png') no-repeat right;
 		@extend .white-text;

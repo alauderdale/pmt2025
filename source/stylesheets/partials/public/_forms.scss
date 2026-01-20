@@ -5,3 +5,10 @@ form{
 		font-family:$medium-font-name;
 	}
 }
+
+.input-dark{
+	background-color:#fff;
+	border-color:$dark-text-color;
+	border-width: 1.5px;
+	color:$dark-text-color;
+}

@@ -139,6 +139,10 @@ img{
   border-left:1px solid $gray-color;
 }
 
+.no-border{
+  border:none!important;
+}
+
 .logo{
   background:url(../images/logo.png);
   background-size:100%;

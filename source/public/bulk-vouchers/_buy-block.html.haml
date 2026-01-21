@@ -16,23 +16,15 @@
 			.selector.half-margin-bottom
 				%p.body-small.dark-text-color.quarter-margin-bottom
 					Course type
-				.dropdown
-					.btn.btn-info-dark.dropdown-toggle.d-flex.justify-space-between{"data-toggle" => "dropdown", "style"=>"padding:8px;"}
-						%span.btn-content-wrapper
-							%span.text.medium-font-name
-								PMP
-						%span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
-							keyboard_arrow_down
-					%ul.dropdown-menu.full-width{:role => "menu"}
-						%li
-							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
-								PMP
-						%li
-							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
-								CAPM
-						%li
-							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
-								PgMP
+				%select.form-control.input-lg.input-dark
+					%option
+						PMP
+					%option
+						CAPM
+					%option
+						PgMP
+
+					
 			.selector
 				%p.body-small.dark-text-color.quarter-margin-bottom
 					Quantity

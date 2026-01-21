@@ -2112,6 +2112,9 @@ img.contact-logo-mobile {
     padding: 20px;
     background: white; }
 
+.promo-testimonial-header .media-body {
+  margin-top: 8px; }
+
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {
     margin-right: 0;

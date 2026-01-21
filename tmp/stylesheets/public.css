@@ -2048,7 +2048,7 @@ img.contact-logo-mobile {
   @media (max-width: 768px) {
     .buy-block-container {
       top: -300px;
-      margin-bottom: -300px; } }
+      margin-bottom: -280px; } }
 .buy-block-wrapper {
   position: sticky;
   top: 50px;

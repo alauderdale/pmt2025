@@ -3,11 +3,11 @@
 		%img.full-width{:src=>"/images/public/thumb-bulk-vouchers.png"}
 		.price.d-flex.justify-space-between.padding-top.padding-bottom
 			.price-left.medium-font-name
-				%span.line-through.light-text-color.body-large.quarter-margin-right
+				%span.line-through.light-text-color.body-large.quarter-margin-right.old-price-text
 					$1,398
-				%span.text-danger{:style=>"font-size:30px;"}
+				%span.text-danger.price-text
 					$898
-				%span.dark-text-color.bold-font-name.body-medium
+				%span.dark-text-color.bold-font-name.body-medium.seat-text
 					\/seat
 			.price-right
 				.label.label-success.label-save
@@ -26,7 +26,13 @@
 					%ul.dropdown-menu.full-width{:role => "menu"}
 						%li
 							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
-								Option
+								PMP
+						%li
+							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
+								CAPM
+						%li
+							%a.quarter-padding-top.quarter-padding-bottom{:href => "#"}
+								PgMP
 			.selector
 				%p.body-small.dark-text-color.quarter-margin-bottom
 					Quantity

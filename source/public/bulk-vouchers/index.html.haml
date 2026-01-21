@@ -15,7 +15,7 @@
 
 
 
-%section.invert-section.invert-darker
+%section.invert-section.invert-darker.product-header
 	.container
 		.row
 			.col-sm-7
@@ -45,44 +45,97 @@
 						%p.body-large.dark-text-color.bold-font-name.promo-header
 							Course features
 						.row
-							-2.times do
-								.col-sm-6
-									%ul.list-checks.no-margin-bottom
-										-3.times do
-											%li.half-margin-bottom{:style=>"font-size:1em;"}
-												%p.no-margin-bottom.dark-text-color
-													Live, instructor-led certification training
+							.col-sm-6
+								%ul.list-checks.no-margin-bottom
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											Live, instructor-led certification training
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											PMI® ATP-approved curriculum
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											Official PMI® authorized courseware
+							.col-sm-6
+								%ul.list-checks.no-margin-bottom
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											Interactive online classroom experience
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											Support from enrollment to exam day
+									%li.half-margin-bottom{:style=>"font-size:1em;"}
+										%p.no-margin-bottom.dark-text-color
+											100% money-back guarantee
 											
 					.promo-section.border-bottom.padding-bottom.padding-top
 						%p.body-large.dark-text-color.bold-font-name.promo-header
 							Why buy class vouchers?
 						.row
-							-3.times do
-								.media
-									.pull-left
-										%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
-									
-									.media-body.text-left
-										%p.no-margin-bottom.dark-text-color.bold-font-name
-											Fast, easy ordering
-											%span.text-color.regular-font-name
-												\: Purchase in minutes
-										%p.half-margin-bottom
-											Buy training for multiple employees in minutes—no scheduling back-and-forth.
+							.media
+								.pull-left
+									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Fast, easy ordering
+										%span.text-color.regular-font-name
+											\: Purchase in minutes
+									%p.half-margin-bottom
+										Buy training for multiple employees in minutes—no scheduling back-and-forth.
+							.media
+								.pull-left
+									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Simple bulk pricing
+										%span.text-color.regular-font-name
+											\: Fixed per-seat pricing
+									%p.half-margin-bottom
+										Fixed per-seat pricing makes budgeting and reimbursement painless.
+							.media
+								.pull-left
+									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Flexible for employees
+										%span.text-color.regular-font-name
+											\: Redeem anytime
+									%p.half-margin-bottom
+										Employees redeem vouchers when they’re ready and choose a class date that fits their schedule.
 					.promo-section.border-bottom.padding-bottom.padding-top
 						%p.body-large.dark-text-color.bold-font-name.promo-header
 							How it works
 						.row
-							-3.times do
-								.media
-									.pull-left
-										%img.half-margin-left{:src=>"/images/public/icon-1.svg", :width=>"30px"}
-									
-									.media-body.text-left
-										%p.no-margin-bottom.dark-text-color.bold-font-name
-											Choose your course type + quantity
-										%p.half-margin-bottom
-											Select the certification your team needs (PMP, CAPM, PgMP, etc.) and purchase 2+ seats.
+							.media
+								.pull-left
+									%img.half-margin-left{:src=>"/images/public/icon-1.svg", :width=>"30px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Choose your course type + quantity
+									%p.half-margin-bottom
+										Select the certification your team needs (PMP, CAPM, PgMP, etc.) and purchase 2+ seats.
+							.media
+								.pull-left
+									%img.half-margin-left{:src=>"/images/public/icon-2.svg", :width=>"30px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Receive voucher codes instantly
+									%p.half-margin-bottom
+										After checkout, you’ll receive voucher codes and redemption instructions by email.
+							.media
+								.pull-left
+									%img.half-margin-left{:src=>"/images/public/icon-3.svg", :width=>"30px"}
+								
+								.media-body.text-left
+									%p.no-margin-bottom.dark-text-color.bold-font-name
+										Employees enroll when ready
+									%p.half-margin-bottom
+										Employees redeem their code and enroll in a public live class date for the selected certification.
 					.promo-section.border-bottom.padding-bottom.padding-top
 						.panel.success-gradient.no-margin-bottom
 							.panel-body.padded
@@ -95,32 +148,101 @@
 											94% 
 										of students recommend PMTraining
 									.row.double-margin-top
-										-2.times do
-											.col-sm-6
-												.margin-bottom
-													%img.half-margin-bottom{:src=>"/images/public/badge-customer.svg", :width=>"135px"}
-													%p.micro-text.light-text-color
-														All PMTraining classes use PMI-approved materials. Our content is continuously reviewed and quality-checked across both live and online learning.
+										.col-sm-6
+											.margin-bottom
+												%img.half-margin-bottom{:src=>"/images/public/badge-customer.svg", :width=>"135px"}
+												%p.micro-text.light-text-color
+													All PMTraining classes use PMI-approved materials. Our content is continuously reviewed and quality-checked across both live and online learning.
+										.col-sm-6
+											.margin-bottom
+												%img.half-margin-bottom{:src=>"/images/public/badge-success.svg", :width=>"135px"}
+												%p.micro-text.light-text-color
+													Enroll in any live PMP class with our 100% money-back guarantee. Expert instructors + proven curriculum + modern tools—everything you need to pass. Guaranteed.
 					.promo-section.border-bottom.padding-bottom.padding-top
 						%p.body-large.dark-text-color.bold-font-name.promo-header.quarter-margin-bottom
 							Frequently asked questions
 						%p
 							Answers to our most frequently asked questions related to vouchers
 						#accordion.panel-group.faq-accordian.no-margin-bottom
-							-4.times do |count|
-								.panel.panel-default.no-border
-									.panel-heading.no-padding.no-border
-										.panel-title
-											%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-#{count}"}
-												.icon-wrapper
-													%span.fa.fa-caret-down.faq-icon
-												.question-wrapper
-													%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
-														What is the best way to prepare for the PMP exam?
-									.panel-collapse.collapse{:id=>"collapse-#{count}"}
-										.panel-body.no-padding-left
-											%p.no-margin-bottom
-												The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-1"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													What is the best way to prepare for the PMP exam?
+								.panel-collapse.collapse{:id=>"collapse-1"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-2"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													How soon do we receive vouchers after checkout?
+								.panel-collapse.collapse{:id=>"collapse-2"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-3"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													Is there a minimum number of seats?
+								.panel-collapse.collapse{:id=>"collapse-3"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-4"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													Do vouchers expire?
+								.panel-collapse.collapse{:id=>"collapse-4"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-5"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													Can we transfer a voucher to someone else?
+								.panel-collapse.collapse{:id=>"collapse-5"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
+							.panel.panel-default.no-border
+								.panel-heading.no-padding.no-border
+									.panel-title
+										%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-6"}
+											.icon-wrapper
+												%span.fa.fa-caret-down.faq-icon
+											.question-wrapper
+												%p.bold-font-name.dark-text-color.body-medium.no-margin-bottom
+													How do employees redeem?
+								.panel-collapse.collapse{:id=>"collapse-6"}
+									.panel-body.no-padding-left
+										%p.no-margin-bottom
+											The best way to prepare for the PMP exam is through a structured training course that includes live instruction, realistic practice exams, and materials aligned with the latest PMI exam content outline.
 					.promo-section.border-bottom.padding-bottom.padding-top
 						.text-center
 							%p.body-large.dark-text-color.bold-font-name.promo-header
@@ -133,27 +255,80 @@
 							%p.body-medium
 								%img{:src=>"/images/public/testimonial-stars.svg", :width=>"96px"}
 								Real reviews, real results
-						-2.times do
-							.row
-								-2.times do
-									.col-sm-6
-										.promo-testimonial.border-bottom.margin-bottom
-											.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
-												.promo-testimonial-avatar
-													.media
-														.pull-left
-															%img{:src=>"/images/public/testimonial-avatar.svg", :width=>"50px"}
-														
-														.media-body.text-left
-															%p.body-small.no-margin-bottom.dark-text-color.bold-font-name
-																Jarred T.
-															%p.micro-text.no-margin-bottom.light-text-color
-																PMP
-												.promo-testimonial-verified
-													%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
-											.promo-testimonial-body
-												%p.dark-text-color
-													=lorem.words(40)
+						.row
+							.col-sm-6
+								.promo-testimonial.border-bottom.margin-bottom
+									.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
+										.promo-testimonial-avatar
+											.media
+												.pull-left
+													%img{:src=>"/images/public/testimonial-avatar.svg", :width=>"50px"}
+												
+												.media-body.text-left
+													%p.body-small.no-margin-bottom.dark-text-color.bold-font-name
+														Jarred T.
+													%p.micro-text.no-margin-bottom.light-text-color
+														PMP
+										.promo-testimonial-verified
+											%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
+									.promo-testimonial-body
+										%p.dark-text-color
+											“Thank you for your help yesterday!! I ran through the simulation exam - it showed me where I needed to brush up. I took the test today and Passed!!!"
+							.col-sm-6
+								.promo-testimonial.border-bottom.margin-bottom
+									.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
+										.promo-testimonial-avatar
+											.media
+												.pull-left
+													%img{:src=>"/images/public/testimonial-avatar.svg", :width=>"50px"}
+												
+												.media-body.text-left
+													%p.body-small.no-margin-bottom.dark-text-color.bold-font-name
+														Sydney F.
+													%p.micro-text.no-margin-bottom.light-text-color
+														PMP
+										.promo-testimonial-verified
+											%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
+									.promo-testimonial-body
+										%p.dark-text-color
+											"Providing this valuable online book free of charge to members. The content is insightful, well-organized, and highly beneficial."
+						.row
+							.col-sm-6
+								.promo-testimonial.border-bottom.margin-bottom
+									.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
+										.promo-testimonial-avatar
+											.media
+												.pull-left
+													%img{:src=>"/images/public/testimonial-avatar.svg", :width=>"50px"}
+												
+												.media-body.text-left
+													%p.body-small.no-margin-bottom.dark-text-color.bold-font-name
+														Blake V.
+													%p.micro-text.no-margin-bottom.light-text-color
+														PMP
+										.promo-testimonial-verified
+											%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
+									.promo-testimonial-body
+										%p.dark-text-color
+											"Technical glitches with the system are the downside. Dr. Peterson’s teachings have been the plus. I would give Dr. Peterson a 5 star rating and the technical issues a 2-3."
+							.col-sm-6
+								.promo-testimonial.border-bottom.margin-bottom
+									.promo-testimonial-header.half-margin-bottom.d-flex.justify-space-between
+										.promo-testimonial-avatar
+											.media
+												.pull-left
+													%img{:src=>"/images/public/testimonial-avatar.svg", :width=>"50px"}
+												
+												.media-body.text-left
+													%p.body-small.no-margin-bottom.dark-text-color.bold-font-name
+														Jane T.
+													%p.micro-text.no-margin-bottom.light-text-color
+														PMP
+										.promo-testimonial-verified
+											%img.max-width{:src=>"/images/public/verified-review.svg", :width=>"100px"}
+									.promo-testimonial-body
+										%p.dark-text-color
+											"The purchase was easy and the access was instantaneous. Great work put into integrating billing, product and communication."
 				.pg-col.pg-buy-block.buy-block-container
 					.buy-block-wrapper
 						=partial('buy-block')

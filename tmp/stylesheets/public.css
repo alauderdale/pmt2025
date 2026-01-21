@@ -2037,21 +2037,28 @@ img.contact-logo-mobile {
       flex: 0 0 100%;
       max-width: 100%;
       order: 1; } }
+@media (max-width: 768px) {
+  .product-header {
+    padding-bottom: 300px; } }
+
 .buy-block-container {
   position: relative;
   top: -340px;
   margin-bottom: -340px; }
   @media (max-width: 768px) {
     .buy-block-container {
-      top: 0;
-      margin-bottom: 0px; } }
+      top: -300px;
+      margin-bottom: -300px; } }
 .buy-block-wrapper {
   position: sticky;
   top: 50px;
-  padding: 0 0 0 20px; }
-  @media (max-width: 768px) {
+  padding: 0 40px; }
+  @media (max-width: 1200px) {
     .buy-block-wrapper {
-      padding: 0px 10px 40px 10px; } }
+      padding: 0; } }
+  @media (max-width: 992px) {
+    .buy-block-wrapper {
+      padding: 0; } }
 .buy-block {
   position: relative;
   overflow: hidden; }
@@ -2069,6 +2076,27 @@ img.contact-logo-mobile {
     color: white;
     padding: 2px 0;
     rotate: 45deg; }
+  @media (max-width: 992px) {
+    .buy-block .old-price-text {
+      font-size: 14px; } }
+  .buy-block .price-text {
+    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+    @media (max-width: 992px) {
+      .buy-block .price-text {
+        font-size: 20px; } }
+    @media (max-width: 768px) {
+      .buy-block .price-text {
+        font-size: 30px; } }
+  .buy-block .seat-text {
+    position: relative;
+    right: 4px; }
+    @media (max-width: 992px) {
+      .buy-block .seat-text {
+        font-size: 14px; } }
+  @media (max-width: 992px) {
+    .buy-block .label-save {
+      font-size: 12px; } }
   @media (max-width: 992px) {
     .buy-block {
       padding: 0; } }

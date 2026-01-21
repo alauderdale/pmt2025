@@ -39,6 +39,12 @@
 }
 
 
+.product-header{
+	@include breakpoint(sm) {
+		padding-bottom: 300px;
+	}
+}
+
 
 
 .buy-block-container{
@@ -46,8 +52,8 @@
 	top:-340px;
 	margin-bottom:-340px;
 	@include breakpoint(sm) {
-		top:0;
-		margin-bottom:0px;
+		top:-300px;
+		margin-bottom:-300px;
 
 	}
 }
@@ -57,9 +63,15 @@
 .buy-block-wrapper{
 	position: sticky;
 	top:50px;
-	padding:0 0 0 20px;
+	padding:0 40px;
+	@include breakpoint(lg) {
+		padding: 0;
+	}
+	@include breakpoint(md) {
+		padding: 0;
+	}
 	@include breakpoint(sm) {
-		padding:0px 10px 40px 10px;
+		
 	}
 }
 
@@ -82,6 +94,37 @@
 		color: white;
 		padding:2px 0;
 		rotate: 45deg;
+	}
+
+	.old-price-text{
+		@include breakpoint(md) {
+			font-size:14px;
+		}
+	}
+
+	.price-text{
+		font-family: $bold-font-name;
+		font-size:30px;
+		@include breakpoint(md) {
+			font-size:20px;
+		}
+		@include breakpoint(sm) {
+			font-size:30px;
+		}
+	}
+
+	.seat-text{
+		position: relative;
+		right:4px;
+		@include breakpoint(md) {
+			font-size:14px;
+		}
+	}
+
+	.label-save{
+		@include breakpoint(md) {
+		font-size:12px;
+		}
 	}
 
 	@include breakpoint(md) {

@@ -1,0 +1,40 @@
+.shopping-cart{
+	position: relative;
+}
+
+.checkout-split {
+  position: relative;
+}
+
+.checkout-split::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #f5f6f7;
+  z-index: -1;
+
+  /* default / mobile: full width bg */
+  width: 100%;
+}
+
+/* keep content above */
+.checkout-split .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Desktop and up: background = left outside-gutter + 7/12 of container */
+@media (min-width: 992px) {
+  .checkout-split::before {
+    width: calc((100vw - 970px) / 2 + (970px * 7 / 12));
+  }
+}
+
+/* Large and up: same formula but with 1170px container */
+@media (min-width: 1200px) {
+  .checkout-split::before {
+    width: calc((100vw - 1170px) / 2 + (1170px * 7 / 12));
+  }
+}

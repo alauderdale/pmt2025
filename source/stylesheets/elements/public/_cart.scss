@@ -320,6 +320,10 @@ a.order-expander-outter{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    .tooltip-inner{
+      width: 150px;
+
+    }
   }
 
   input.form-control {

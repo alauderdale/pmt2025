@@ -7,16 +7,16 @@
 <title>
 title
 </title>
-<link href="../../../stylesheets/public.css" rel="stylesheet" />
-<link href='../../../images/favicon.ico' rel='shortcut icon'>
-<link href='../../../images/favicon.ico' rel='shortcut icon'>
+<link href="/stylesheets/public.css" rel="stylesheet" />
+<link href='/images/favicon.ico' rel='shortcut icon'>
+<link href='/images/favicon.ico' rel='shortcut icon'>
 <link href='https://fonts.googleapis.com' rel='preconnect'>
 <link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
 <link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap' rel='stylesheet'>
 <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
-<script src="../../../javascripts/lib/jquery.js"></script><script src="../../../javascripts/lib/bootstrap.js"></script><script src="../../../javascripts/lib/jquery.fancybox.pack.js"></script><script src="../../../javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="../../../javascripts/lib/highcharts/highcharts.js"></script><script src="../../../javascripts/lib/slick.js"></script><script src="../../../javascripts/lib/highcharts/modules/exporting.js"></script><script src="../../../javascripts/lib/footable/footable.js"></script><script src="../../../javascripts/lib/footable/footable.filter.js"></script><script src="../../../javascripts/scripts.js"></script>
+<script src="/javascripts/lib/jquery.js"></script><script src="/javascripts/lib/bootstrap.js"></script><script src="/javascripts/lib/jquery.fancybox.pack.js"></script><script src="/javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="/javascripts/lib/highcharts/highcharts.js"></script><script src="/javascripts/lib/slick.js"></script><script src="/javascripts/lib/highcharts/modules/exporting.js"></script><script src="/javascripts/lib/footable/footable.js"></script><script src="/javascripts/lib/footable/footable.filter.js"></script><script src="/javascripts/scripts.js"></script>
 
-<body class='public public_about-the-pmp-exam public_about-the-pmp-exam_requirements public_about-the-pmp-exam_requirements_index'>
+<body class='public public_corporate-training public_corporate-training_corp-template'>
 <nav class='navbar navbar-default visible-xs navbar-fixed-top' id='mobile-main-nav' role='navigation'>
 <div class='container-fluid'>
 <div class='navbar-header'>
@@ -329,7 +329,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -387,7 +387,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -438,7 +438,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -490,7 +490,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -541,7 +541,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -646,7 +646,7 @@ USD $
 <div class='pull-left'>
 <a class='logo_two' href='/'></a>
 </div>
-<img src="../../../images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
+<img src="/images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
 <nav class='pull-right'>
 <ul class='list-inline sub-links'>
 <li>
@@ -716,7 +716,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -774,7 +774,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -825,7 +825,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -877,7 +877,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -928,7 +928,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../../images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -1030,12 +1030,12 @@ USD $
 
 <!-- end menu -->
 <div id='mainContents'>
-<section class='invert-section page-header-section about-pmp-header'>
+<section class='invert-section page-header-section training-pmp-header'>
 <div class='container'>
 <div class='row'>
 <div class='col-lg-12'>
 <h2 class='no-margin-bottom pull-left'>
-About the PMP Exam
+Corporate Training
 </h2>
 <h6 class='no-margin-bottom pull-right hidden-xs half-margin-top extra-bold-font-name'>
 
@@ -1045,482 +1045,176 @@ About the PMP Exam
 </div>
 </section>
 
-<section class='no-padding-bottom'>
+<section class='extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-lg-12'>
-<ul class='nav nav-pills'>
-<li class=''>
-<a href='/public/about'>
-Who We Are
+<div class='col-md-2'></div>
+<div class='col-md-8'>
+<div class='text-center'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+nostrum dolor a totam voluptatem in sequi dicta voluptas repudiandae molestias aperiam ut error fugiat beatae modi non quasi dolorum
+</p>
+<a class='btn btn-default' href='#'>
+Start now
 </a>
+</div>
+<div class='row'>
+<div class='col-lg-12 margin-top'>
+<img src="/images/public/corporate_training/hero.png" class="img-responsive margin-auto double-margin-top" width="535px" alt="" />
+</div>
+</div>
+</div>
+<div class='col-md-2'></div>
+</div>
+</div>
+</section>
+<section class='off-blue extra-padding'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/2.png" class="img-responsive margin-auto double-margin-top margin-bottom" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+vero ea omnis consequatur et deserunt eius quas voluptatem et recusandae non aut odio quisquam laudantium voluptatibus magnam molestiae omnis
+</p>
+<p class='bold-font-name'>
+Our volume discount purchase program includes:
+</p>
+<ul class='list-default'>
+<li>
+quisquam qui amet et ullam pariatur
 </li>
-<li class=''>
-<a href='/public/about/courseware'>
-Our PMP Courseware
-</a>
+<li>
+dolorum et veritatis vel voluptas quidem
 </li>
-<li class='active'>
-<a href='/public/about-the-pmp-exam'>
-About the PMP Exam
-</a>
+<li>
+molestias ipsum laborum quam et expedita
 </li>
-<li class=''>
-<a href='/public/about/customers'>
-Our Customers
-</a>
-</li>
-<li class=''>
-<a href='/public/about/books'>
-More SSL Logic Products
-</a>
+<li>
+exercitationem natus autem blanditiis aut pariatur
 </li>
 </ul>
-
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
 </div>
 </div>
 </div>
 </section>
-<section>
+<section class='extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-sm-9'>
+<div class='col-md-6'>
+<div class='padded'>
+<img src="/images/public/corporate_training/template/3.png" class="img-responsive margin-auto double-margin-top" width="565px" alt="" />
+</div>
+</div>
+<div class='col-md-6'>
 <h2>
-PMP Exam Requirements
+I’m the headline for this feature
 </h2>
-<p>
-The PMP examination is open to all project managers who meet the eligibility requirements, dictated by the PMP Handbook, published by the PMI (Project Management Institute).
+<p class='lead2'>
+illum aut consequatur non et natus explicabo non quo distinctio fuga accusamus reiciendis est quo iure quae quia magni enim
 </p>
-<p>
-<strong>
-The PMP examination is open to all project managers who meet the eligibility requirements, dictated by the PMP Handbook, published by the PMI (Project Management Institute).
-</strong>
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
+<div class='half-padding-top'></div>
+<hr>
+<blockquote class='half-margin-bottom no-padding'>
+<em>
+“Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.”
+</em>
+</blockquote>
+<p class='bold-font-name'>
+John Doe, CEO Big Company worldwide
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class='off-blue extra-padding'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/4.png" class="img-responsive margin-auto double-margin-top" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+ad veniam facere quis inventore est ab molestias dolorum ipsam possimus aliquid quidem itaque corporis fugiat a et non similique
+</p>
+<p class='bold-font-name'>
+Our volume discount purchase program includes:
 </p>
 <ul class='list-default'>
 <li>
-A secondary degree (high school diploma or associate's degree) and a minimum of five years of professional project management experience, including 7,500 hours that were spent leading a project.
+nostrum quo dolores illo ipsam accusamus
 </li>
 <li>
-At least 35 contact hours of formal project management education
-</li>
-<p class='no-margin-bottom'>
-OR
-</p>
-<li>
-A four-year degree (bachelor's degree) and a minimum of three years of project management experience, including 4,500 hours that were spent leading a project.
+et quis numquam voluptatem sint minima
 </li>
 <li>
-At least 35 contact hours of formal project management education
+est et ut quis commodi et
+</li>
+<li>
+quia aliquam et voluptatem dolor dignissimos
 </li>
 </ul>
-<p>
-In addition, all PMP applicants must agree to PMI's Code of Ethics and Professional Conduct.
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class='extra-padding invert-section'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
+<div class='text-center'>
+<h2>
+Get started today
+</h2>
+<p class='lead2'>
+Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.
 </p>
-<p>
-These PMP eligibility requirements are important in maintaining the professionalism and level of caliber established at the Project Management Institute. If you have not met any of these requirements, make it a professional goal, in order to eventually become PMP certified.
-</p>
-<p>
-<strong>
-Citations:
-</strong>
-<a href='http://www.pmi.org/en/Certification/~/media/PDF/Certifications/pdc_pmphandbook.ashx' target='_blank'>
-*http://www.pmi.org/en/Certification/~/media/PDF/Certifications/pdc_pmphandbook.ashx
+</div>
+<div class='row'>
+<div class='col-lg-1'></div>
+<div class='col-lg-10'>
+<div class='form'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Name'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Phone'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Email'>
+</div>
+<div class='form-group'>
+<textarea class='form-control input-lg' placeholder='Additional comments' rows='8'></textarea>
+</div>
+<a class='btn btn-default btn-block btn-lg' href='#'>
+Submit
 </a>
-</p>
 </div>
-<div class='col-sm-3'>
-<ul class='nav-sidebar'>
-<li class=''>
-<a href='/public/about-the-pmp-exam/'>
-Overview
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/benifits'>
-Benefits of PMP Certification
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/cost'>
-Cost of PMP Exam
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/value'>
-Is PMP Certification Worth it?
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/salaries'>
-PMP Certified Salaries
-</a>
-</li>
-<li class='active'>
-<a href='/public/about-the-pmp-exam/requirements'>
-PMP Exam Requirements
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/scores'>
-PMP Passing Scores & Averages
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/certification'>
-Value of PMP Certification
-</a>
-</li>
-<li class=''>
-<a href='/public/about-the-pmp-exam/what'>
-What is the PMP Exam?
-</a>
-</li>
-</ul>
-
-<hr>
-<div class='margin-bottom'>
-<h6 class='text-center' style='text-transform:none;'>
-Our corporate clients include:
-</h6>
-<div class='carousel fade' data-ride='carousel' id='logo-slider'>
-<div class='carousel-inner'>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-atkins.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
 </div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-calibre.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
+<div class='col-lg-1'></div>
 </div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-ciena.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
 </div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-dell.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-edwel.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-effectus.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-gp.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-ibm.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-icgpm.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-itsm.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-lockheed.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-merck.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-mti.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-oakton.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-pbsj.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-pinnacle.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-pmcenters.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-pmcollege.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-qpc.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-rtek.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-siemens.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-sitespower.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-sra.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-sungard.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-teched360.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-trainingcamp.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-trainingclasses.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-ucla.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-<div class='item'>
-<img src="../../../images/public/logo-slider/client-verizon.gif" class="img-responsive margin-auto" alt="" />
-<div class='clearfix'></div>
-</div>
-</div>
-</div>
-</div>
-
-<h6 class='text-center'>
-What Our Students Say
-</h6>
-<div class='testimonial-list'>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-I was in your class this week. I passed the test today! I’m glad it’s over and I can be an evangelist for this class. In my particular instance, you took me from 0 to passing in 4 days. I conclusively passed every section of the exam, although by the end I was not convinced of my success. Anyway – thank you and you shall hear from more people (at our company) in months to come!
-"
-<footer>
-Doug R., PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-We were successfull! I say we because I could not have done it without your training. I will e-mail the results tonight or tomorrow. Thanks for everything!
-"
-<footer>
-Jarred Torrance, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Passed the PMP exam today. Thanks for you help and your class.
-"
-<footer>
-Mick Burnett, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Thank you very much for all your help and support during the course and after. I have cleared my PMP examination in my first attempt and wanted to share that information with you. I will personally thank Bob and Ron for their wonderful coaching in the class.
-"
-<footer>
-Anand Rad, PMP Pennsylvania, USA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Your PMP class distilled the PMBOK down to a level that was understandable and provided real-world examples. The information conveyed allowed me to pass the test the first time! Thanks again...
-"
-<footer>
-Stephen Blalock, PMP VMD Systems INC, Vienna, VA
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Great class, the tests online were an amazing component in addition to the excellent class. They provided great feedback on progress and where to focus on. A great combination.
-"
-<footer>
-Michael Eyring, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Thank you so much for teaching this PMP class. I passed the PMP exam last week, thanks to you and Tony's great material. All your tips and tricks helped me a lot for the examination. Thanks for the constant support and encouragement. Thank you to you and your wonderful team. Couldn't have done without you all.
-"
-<footer>
-Aparna Smitha, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-I wanted to let you know that I passed the test today. So you have another PMP to add to your alumni list.
-"
-<footer>
-Dan Knight MS, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Thank you again for your dedication to ensure your students are as prepared as possible. I wouldn’t have had the results I did if it were not for the quality in the study methodology you are enforcing with your book and supporting materials.
-"
-<footer>
-Mark Bentsen, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-I was very impressed with the on line class. It’s convenient and at the same time provides more of an in-person feel than the other online sessions I’ve experienced.
-"
-<footer>
-Dan M. PMP - Sr. Project Manager
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-I took the PMP exam last Saturday at the Bedford center and I passed the test! I am so relieved that it's over. The exam was really hard for me. Thank you for the class! I'll be recommending this to all my co-workers who are planning to get their PMP certification.
-"
-<footer>
-Genevive Gener, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Susan Garner in Oklahoma City passed the PMP Exam on the first try! Yea! Your content was right on, especially the Earned Value calculations. Thanks for your help and best wishes for continued success!
-"
-<footer>
-Susan R. Garner, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-You are the best teacher in the world. We accomplished a lot. I owe you...
-"
-<footer>
-Ken N, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-Thank you for your help yesterday!! I ran through the simulation exam - it showed me where I needed to brush up. I took the test today and Passed!!! Couldn't have done it without your help. Thanks so much!!
-"
-<footer>
-Cheryl Shavel, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-<div class='media-object testimonial half-margin-bottom'>
-<div class='media-body'>
-<div class='media-heading'>
-<blockquote class='no-margin'>
-"
-I passed the PMI PMP exam yesterday. I want to thank you for your support in achieving this goal. The material from your class and the extra tools that came with the course definitely prepared me for the exam.
-"
-<footer>
-Jim Cavanaugh, PMP
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-
-</div>
+<div class='col-md-2'></div>
 </div>
 </div>
 </section>
@@ -1531,7 +1225,7 @@ Jim Cavanaugh, PMP
 <div class='container'>
 <div class='row'>
 <div class='col-sm-3'>
-<img src="../../../images/logo_no_tag.png" alt="" />
+<img src="/images/logo_no_tag.png" alt="" />
 <p>
 <small>
 ©
@@ -1541,7 +1235,7 @@ SSILogic
 2014
 </small>
 </p>
-<img src="../../../images/pmi_logo_3.png" class="pmi-logo" alt="" />
+<img src="/images/pmi_logo_3.png" class="pmi-logo" alt="" />
 <p class='bold-font-name'>
 <small>
 #3962

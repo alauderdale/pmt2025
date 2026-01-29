@@ -2554,6 +2554,8 @@ a.order-expander-outter {
     align-items: center;
     justify-content: center;
     cursor: pointer; }
+    .checkout-input-with-help .checkout-help .tooltip-inner {
+      width: 150px; }
   .checkout-input-with-help input.form-control {
     padding-right: 40px; }
 

@@ -92,9 +92,10 @@
 										.form-group
 											.checkout-input-with-help
 												%input.form-control.input-lg{ type: "text", placeholder: "Security code" }
-												%span.checkout-help 
-													%i.material-symbols-outlined
+												%span.checkout-help
+													%i.material-symbols-outlined.tooltip-up{"data-toggle"=>"tooltip", "data-placement"=>"top", :title=>"The 3–4 digit code printed on your card."}
 														help
+											
 
 								.form-group
 									%input.form-control.input-lg{ type: "text", placeholder: "Name on card" }

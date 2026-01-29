@@ -14,7 +14,7 @@
 					.summary-info-row
 						%span.bold-font-name.d-flex
 							Order summary
-							%i.material-icons.expand-icon
+							%i.material-symbols-outlined.expand-icon
 								keyboard_arrow_down
 						.checkout-total-nums
 							%span.checkout-total-old 
@@ -122,13 +122,13 @@
 						.checkout-summary-list-outter
 							.scroll-for-more
 								Scroll for more items
-								%i.material-icons
+								%i.material-symbols-outlined
 									arrow_downward
 							.checkout-summary-list
 								- 6.times do
 									.checkout-summary-item
 										%a.checkout-remove{:href=>"#", aria: { label: "Remove item" } } 
-											%i.material-icons
+											%i.material-symbols-outlined
 												cancel
 										.checkout-thumb
 											%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}

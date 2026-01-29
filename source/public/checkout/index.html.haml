@@ -8,18 +8,19 @@
 
 .checkout-page
 	.hidden-md.hidden-lg
-		.order-expander
-			.container.order-expander-container
-				.summary-info-row
-					%span.bold-font-name.d-flex
-						Order summary
-						%i.material-icons
-							keyboard_arrow_down
-					.checkout-total-nums
-						%span.checkout-total-old 
-							$4,494
-						%span.checkout-total-new 
-							$3,894
+		%a.order-expander-outter{:href=>"#"}
+			.order-expander
+				.container.order-expander-container
+					.summary-info-row
+						%span.bold-font-name.d-flex
+							Order summary
+							%i.material-icons.expand-icon
+								keyboard_arrow_down
+						.checkout-total-nums
+							%span.checkout-total-old 
+								$4,494
+							%span.checkout-total-new 
+								$3,894
 	.checkout-split
 		.container.checkout-container
 			.row.checkout-row.checkout-row--mobile-reverse
@@ -113,30 +114,34 @@
 
 
 
-				.col-xs-12.col-md-5.checkout-right
+				.col-xs-12.col-md-5.checkout-right.summary-closed
 					.checkout-right-inner
 						.visible-md.visible-lg
 							%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
 								Summary
-
-						.checkout-summary-list
-							- 6.times do
-								.checkout-summary-item
-									%a.checkout-remove{:href=>"#", aria: { label: "Remove item" } } 
-										%i.material-icons
-											cancel
-									.checkout-thumb
-										%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}
-									.checkout-item-meta
-										%div.checkout-item-name 
-											Live online PMP class or a title that runs two lines long
-										%div.checkout-item-sub 
-											Mar 02–Mar 04, 8AM–3PM
-									.checkout-item-price
-										%div.checkout-item-old 
-											$1,498
-										%div.checkout-item-new 
-											$1,298
+						.checkout-summary-list-outter.scroll-overflow
+							.scroll-for-more
+								Scroll for more items
+								%i.material-icons
+									arrow_downward
+							.checkout-summary-list
+								- 6.times do
+									.checkout-summary-item
+										%a.checkout-remove{:href=>"#", aria: { label: "Remove item" } } 
+											%i.material-icons
+												cancel
+										.checkout-thumb
+											%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}
+										.checkout-item-meta
+											%div.checkout-item-name 
+												Live online PMP class or a title that runs two lines long
+											%div.checkout-item-sub 
+												Mar 02–Mar 04, 8AM–3PM
+										.checkout-item-price
+											%div.checkout-item-old 
+												$1,498
+											%div.checkout-item-new 
+												$1,298
 
 						=partial"checkout-totals"
 						.visible-md.visible-lg

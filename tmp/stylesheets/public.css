@@ -2442,6 +2442,14 @@ img.contact-logo-mobile {
         width: 41.666667%;
         order: 0; } }
   @media (max-width: 992px) {
+    .checkout-row--mobile-reverse .checkout-right {
+      max-height: 2000px;
+      transition: max-height 0.35s ease, opacity 0.2s ease;
+      opacity: 1; }
+      .checkout-row--mobile-reverse .checkout-right.summary-closed {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden; }
     .checkout-row--mobile-reverse .checkout-left {
       padding-top: 24px;
       border-top: 1px solid #DDDDDD; } }
@@ -2453,6 +2461,11 @@ img.contact-logo-mobile {
   @media (min-width: 992px) {
     .checkout-left-inner {
       padding: 18px 24px 0 8px; } }
+a.order-expander-outter {
+  text-decoration: none !important; }
+  a.order-expander-outter.expanded .expand-icon {
+    rotate: 180deg; }
+
 .order-expander {
   width: 100%;
   border-bottom: 1px solid #DDDDDD;
@@ -2464,6 +2477,8 @@ img.contact-logo-mobile {
     display: flex;
     justify-content: space-between;
     font-size: 14px; }
+    .order-expander .summary-info-row .checkout-total-new {
+      font-size: 18px; }
 
 .checkout-right-inner {
   padding: 18px 18px 0; }
@@ -2549,12 +2564,36 @@ img.contact-logo-mobile {
   margin: 10px 0 0;
   font-size: 14px; }
 
+.checkout-summary-list-outter {
+  position: relative; }
+  .checkout-summary-list-outter .scroll-for-more {
+    display: none; }
+  .checkout-summary-list-outter.scroll-overflow .scroll-for-more {
+    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+    display: flex;
+    font-size: 13px;
+    background: #eeeef0;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 80px);
+    color: #171717;
+    z-index: 1; }
+    .checkout-summary-list-outter.scroll-overflow .scroll-for-more i {
+      font-size: 18px;
+      align-self: center; }
+    @media (max-width: 992px) {
+      .checkout-summary-list-outter.scroll-overflow .scroll-for-more {
+        display: none; } }
 .checkout-summary-list {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 10px;
   margin-bottom: 12px;
   max-height: 220px;
-  overflow: scroll; }
+  overflow: scroll;
+  position: relative; }
   @media (max-width: 992px) {
     .checkout-summary-list {
       max-height: 100%; } }

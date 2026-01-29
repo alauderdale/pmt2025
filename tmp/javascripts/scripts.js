@@ -7,11 +7,19 @@ $(document).ready(function(){
   });
 
 
-  //jquery sticky
-  // $('.buy-block-container').stickyHeadersRelative('.buy-block-wrapper', {
-  //         stickyClass: 'working'
-  //         }
-  //     });
+  // toggle checkout expander
+
+
+  $(document).on('click', '.order-expander-outter', function (e) {
+    e.preventDefault();
+
+    var $summary = $('.checkout-right');
+    var $btn = $(this);
+
+    $summary.toggleClass('summary-closed');
+    $btn.toggleClass('expanded');
+  });
+
 
 
 	 //fancybox

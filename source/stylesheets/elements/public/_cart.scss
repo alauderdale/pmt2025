@@ -173,7 +173,8 @@ $screen-lg: 1200px;
 
 	@include breakpoint(md) {
 		.checkout-right{
-			padding-bottom: $baseline;
+			// height: 0;
+			// overflow: hidden;
 		}
 		.checkout-left{
 			
@@ -202,8 +203,9 @@ $screen-lg: 1200px;
 	width:100%;
 	border-bottom:1px solid $border-color;
 	padding: 20px 0px;
-	background:$bg-left ;
 	color:$dark-text-color;
+	margin-bottom:-2px;
+	background: shade($bg-left,3%);
 	.summary-info-row{
 	  display: flex;
 	  justify-content: space-between;
@@ -217,6 +219,13 @@ $screen-lg: 1200px;
   @media (min-width: $screen-md) {
     padding: 18px 8px 0 28px;
   }
+
+  //adjusting padding for expander
+  @include breakpoint(md) {
+  	padding-top:10px;
+  	padding-bottom: 18px;
+  }
+
 }
 
 

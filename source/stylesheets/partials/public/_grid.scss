@@ -1,4 +1,8 @@
 
+
+
+
+
 /* =========================
    FLEX GRID (Bootstrap-like)
    ========================= */
@@ -172,5 +176,55 @@
 
 .align-self-center{
   align-self: center;
+}
+
+
+
+
+
+
+//for use on the homepage problem statement 
+.ps-row{
+  gap:120px;
+  padding:0 0 60px 0;
+  flex-wrap: nowrap;
+  display: flex;
+  &.reverse{
+    flex-direction: row-reverse;
+    .image-col{
+      align-items: end; 
+    }
+  }
+  .ps-flex-col{
+
+    justify-content: center;  /* horizontally */
+    align-items: start;  
+    flex-direction: column; 
+    flex: 1;
+    display: flex;
+
+    .spot-image{
+      max-width:380px;
+    }
+  }
+  @include breakpoint(md) {
+    display: block;
+    .ps-flex-col{
+       
+      &.image-col{
+        align-items: center!important;
+      }
+      .title{
+        text-align: center;
+      }
+      
+      .spot-image{
+        margin-bottom:20px;
+      }
+      .bullet{
+        width:15px;
+      }
+    }
+  }
 }
 

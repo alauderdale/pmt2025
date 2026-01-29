@@ -1,0 +1,40 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title 
+      title
+    = stylesheet_link_tag "public"
+    %link{href: "/images/favicon.ico", rel: "shortcut icon"}
+    %link{href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400", rel: "stylesheet"}
+    / %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
+    = partial "layouts/public/scripts"
+    %body{:class => page_classes, :style=>"padding-top:0;"}
+      .checkout-header
+        .container.checkout-header-container
+          .checkout-header-inner
+            .checkout-logo
+              %a{ href: "/" }
+                %img{ src: "/images/public/pmt-logo-no-tag.svg", alt: "PMTraining" }
+
+            .checkout-header-right
+              %a.checkout-continue{ href: "#" } 
+                Continue shopping
+      /end menu
+      #mainContents
+        = yield
+      /end main content
+      .checkout-footer
+        .container.checkout-footer-container
+          .checkout-footer-inner
+            .checkout-footer-left
+              © 2026 PM Training All rights reserved.
+
+            .checkout-footer-right
+              %a{ href: "#" } 
+                Privacy Policy
+              %a{ href: "#" } 
+                Terms of Service
+      

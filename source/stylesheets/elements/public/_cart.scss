@@ -2,11 +2,90 @@
 // Checkout styles (scoped)
 // ============================
 
+
 $bg-left: #FAFBFD;
 
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
+
+
+//header
+
+.checkout-header-container, .checkout-footer-container, .order-expander-container{
+	padding: 0 25px;
+	@include breakpoint(md) {
+		padding: 0 35px;
+	}
+}
+
+.checkout-header {
+	background: #fff;
+	border-bottom: 1px solid #e6e8eb;
+	padding: 14px 0;
+
+
+	.checkout-header-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.checkout-logo img {
+		height: 28px;
+
+		@media (min-width: 992px) {
+			height: 32px;
+		}
+	}
+
+	.checkout-header-right {
+		font-size: 16px;
+	}
+
+	.checkout-continue {
+		font-family: $bold-font-name;
+	}
+}
+
+
+//footer
+
+.checkout-footer {
+	background: #fff;
+	border-top: 1px solid $border-color;
+	padding: 18px 0 26px;
+	font-size: 12px;
+	color: $text-color;
+	font-family: $regular-font-name;
+
+	.checkout-footer-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	a {
+		margin-left: 6px;
+		color: $text-color;
+		&:hover {
+		}
+	}
+
+	.footer-sep {
+		margin: 0 6px;
+		color: #d1d5db;
+	}
+}
+
+
+
+
+//page inners
+
+
 
 .checkout-page {
 	font-family: $medium-font-name;
@@ -19,6 +98,10 @@ $screen-lg: 1200px;
 .checkout-split {
   position: relative;
   padding: 20px 0;
+
+  @include breakpoint(sm) {
+  	padding-top: 0;
+  }
 
   // full-bleed left background (mobile default: off or full, your choice)
   &::before {
@@ -57,8 +140,49 @@ $screen-lg: 1200px;
   }
 }
 
+//reverse columns on mobile
 
 
+.checkout-row--mobile-reverse {
+	display: flex;
+	flex-direction: column;
+
+
+	.checkout-left,
+	.checkout-right {
+		float: none; // override BS3 floats
+		width: 100%;
+	}
+
+	// Reverse ONLY on mobile
+	.checkout-left  { order: 2; }
+	.checkout-right { order: 1; }
+
+	// Restore normal layout at desktop
+	@media (min-width: 992px) {
+		display: block;
+
+		.checkout-left,
+		.checkout-right {
+			float: left;
+		}
+
+		.checkout-left  { width: 58.333333%; order: 0; }
+		.checkout-right { width: 41.666667%; order: 0; }
+	}
+
+	@include breakpoint(sm) {
+		.checkout-right{
+			padding-bottom: $baseline;
+		}
+		.checkout-left{
+			background: $bg-left;
+			padding-top: $baseline;
+			border-top:1px solid $border-color;
+		}
+	}
+
+}
 
 
 .checkout-left-inner {
@@ -67,6 +191,19 @@ $screen-lg: 1200px;
   @media (min-width: $screen-md) {
     padding: 18px 24px 0 8px;
   }
+}
+
+.order-expander{
+	width:100%;
+	border-bottom:1px solid $border-color;
+	padding: 20px 0px;
+	background:$bg-left ;
+	color:$dark-text-color;
+	.summary-info-row{
+	  display: flex;
+	  justify-content: space-between;
+	  font-size: 14px;
+	}
 }
 
 .checkout-right-inner {
@@ -108,30 +245,6 @@ $screen-lg: 1200px;
   }
 }
 
-.checkout-express-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-
-  @media (max-width: ($screen-sm - 1)) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.checkout-express-btn {
-  height: 44px;
-  border-radius: 6px;
-  border: 1px solid $border-color;
-  font-weight: 700;
-  font-size: 14px;
-
-  &--apple { background: #000; color: #fff; border-color: #000; }
-  &--paypal { background: #ffe065; color: #123; border-color: #ffe065; }
-  &--paylater { background: #f3f4f6; color: #222; }
-  &--amazon { background: #f7d37a; color: #111; border-color: #f7d37a; text-transform: lowercase; }
-  &--venmo { background: #4aa3df; color: #fff; border-color: #4aa3df; text-transform: lowercase; }
-  &--gpay { background: #000; color: #fff; border-color: #000; }
-}
 
 .checkout-card {
   padding-top: 4px;
@@ -206,6 +319,11 @@ $screen-lg: 1200px;
   border-bottom: 1px solid $border-color;
   padding-bottom: 10px;
   margin-bottom: 12px;
+  max-height: 220px;
+  overflow: scroll;
+  @include breakpoint(md) {
+	max-height: 100%;
+  }
 }
 
 .checkout-summary-item {
@@ -292,9 +410,6 @@ $screen-lg: 1200px;
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid $border-color;
-  
-
-
 
 }
 
@@ -334,7 +449,10 @@ $screen-lg: 1200px;
   border-radius: 8px;
   background: $yellow-color;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 18px!important;
+  @include breakpoint(sm) {
+
+  }
 }
 
 .checkout-secure {
@@ -361,48 +479,33 @@ $screen-lg: 1200px;
 }
 
 
-.checkout-testimonial {
-  padding-top: 12px;
-}
 
-.checkout-quote {
-  font-size: 12px;
-  line-height: 1.45;
-  margin: 0 0 10px;
-}
 
-.checkout-reviewer {
-  display: flex;
-  align-items: center;
+
+// This is placeholder
+
+.checkout-express-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+
+  @media (max-width: ($screen-sm - 1)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.checkout-avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  background: #d1d5db;
-}
 
-.checkout-reviewer-name {
-  font-weight: 900;
-  font-size: 12px;
-}
+.checkout-express-btn {
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid $border-color;
+  font-weight: 700;
+  font-size: 14px;
 
-.checkout-stars {
-  color: $yellow-color;
-  letter-spacing: 1px;
-  font-size: 12px;
-  margin-top: 2px;
-}
-
-.checkout-verified {
-  display: inline-block;
-  margin-top: 4px;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid $yellow-color;
-  color: #8a5a00;
-  font-size: 10px;
-  font-weight: 900;
+  &--apple { background: #000; color: #fff; border-color: #000; }
+  &--paypal { background: #ffe065; color: #123; border-color: #ffe065; }
+  &--paylater { background: #f3f4f6; color: #222; }
+  &--amazon { background: #f7d37a; color: #111; border-color: #f7d37a; text-transform: lowercase; }
+  &--venmo { background: #4aa3df; color: #fff; border-color: #4aa3df; text-transform: lowercase; }
+  &--gpay { background: #000; color: #fff; border-color: #000; }
 }

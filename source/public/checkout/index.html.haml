@@ -1,15 +1,28 @@
 ;;;
 
-"layout": "public",
+"layout": "checkout",
 "title": "Checkout"
 
 ;;;
 
 
 .checkout-page
+	.hidden-md.hidden-lg
+		.order-expander
+			.container.order-expander-container
+				.summary-info-row
+					%span.bold-font-name.d-flex
+						Order summary
+						%i.material-icons
+							keyboard_arrow_down
+					.checkout-total-nums
+						%span.checkout-total-old 
+							$4,494
+						%span.checkout-total-new 
+							$3,894
 	.checkout-split
 		.container.checkout-container
-			.row.checkout-row
+			.row.checkout-row.checkout-row--mobile-reverse
 				.col-xs-12.col-md-7.checkout-left
 					.checkout-left-inner
 						.checkout-hero
@@ -93,14 +106,20 @@
 								%p.checkout-affirm-sub
 									Starting at $103/mo.
 									%a{ href: "#", role: "button" } Check your purchasing power
+						.hidden-md.hidden-lg
+							=partial"checkout-totals"
+							=partial"complete-checkout-action"
+
+
 
 				.col-xs-12.col-md-5.checkout-right
 					.checkout-right-inner
-						%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
-							Summary
+						.visible-md.visible-lg
+							%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
+								Summary
 
 						.checkout-summary-list
-							- 3.times do
+							- 6.times do
 								.checkout-summary-item
 									%a.checkout-remove{:href=>"#", aria: { label: "Remove item" } } 
 										%i.material-icons
@@ -118,57 +137,9 @@
 										%div.checkout-item-new 
 											$1,298
 
-						.checkout-totals
-							.checkout-totals-row
-								%span 
-									Subtotal (3 items)
-								%strong.bold-font-name
-									$4,494
-							.checkout-totals-row
-								%span 
-									Promo discount
-								%strong.checkout-discount.bold-font-name
-									\-$600
+						=partial"checkout-totals"
+						.visible-md.visible-lg
+							=partial"complete-checkout-action"
+						
 
-							.checkout-total-row
-								%span.bold-font-name
-									Total:
-								.checkout-total-nums
-									%span.checkout-total-old 
-										$4,494
-									%span.checkout-total-new 
-										$3,894
-
-							.checkout-savings-pill 
-								You save 
-								%span.extra-bold-font-name
-									$600 
-								today!
-
-						%button.btn.btn-default.btn-lg.checkout-cta{ type: "button" } 
-							Complete registration
-
-						.checkout-secure
-							%span.checkout-lock 
-								%i.material-icons
-									lock
-							%span 
-								Your payment is secure
-
-						.checkout-badges
-							%img{:src=>"/images/public/checkout/checkout-badges.png", :width=>"260px"}
-
-						.checkout-testimonial
-							%p.checkout-quote
-								“Providing this valuable online book free of charge to members. The content is insightful,
-								well-organized, and highly beneficial.”
-							.checkout-reviewer
-								.checkout-avatar
-								.checkout-reviewer-meta
-									%div.checkout-reviewer-name 
-										Jarred T.
-									.checkout-stars 
-										★★★★★
-									%span.checkout-verified 
-										VERIFIED REVIEW
 

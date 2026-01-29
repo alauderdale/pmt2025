@@ -99,7 +99,7 @@ $screen-lg: 1200px;
   position: relative;
   padding: 20px 0;
 
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
   	padding-top: 0;
   }
 
@@ -171,14 +171,19 @@ $screen-lg: 1200px;
 		.checkout-right { width: 41.666667%; order: 0; }
 	}
 
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		.checkout-right{
 			padding-bottom: $baseline;
 		}
 		.checkout-left{
-			background: $bg-left;
+			
 			padding-top: $baseline;
 			border-top:1px solid $border-color;
+		}
+	}
+	@include breakpoint(sm) {
+		.checkout-left{
+			background: $bg-left;
 		}
 	}
 

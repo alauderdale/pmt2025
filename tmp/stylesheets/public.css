@@ -2392,7 +2392,7 @@ img.contact-logo-mobile {
 .checkout-split {
   position: relative;
   padding: 20px 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .checkout-split {
       padding-top: 0; } }
   .checkout-split::before {
@@ -2441,13 +2441,15 @@ img.contact-logo-mobile {
       .checkout-row--mobile-reverse .checkout-right {
         width: 41.666667%;
         order: 0; } }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .checkout-row--mobile-reverse .checkout-right {
       padding-bottom: 24px; }
     .checkout-row--mobile-reverse .checkout-left {
-      background: #FAFBFD;
       padding-top: 24px;
       border-top: 1px solid #DDDDDD; } }
+  @media (max-width: 768px) {
+    .checkout-row--mobile-reverse .checkout-left {
+      background: #FAFBFD; } }
 .checkout-left-inner {
   padding: 8px 18px 0; }
   @media (min-width: 992px) {

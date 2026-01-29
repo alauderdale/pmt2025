@@ -6,13 +6,169 @@
 ;;;
 
 
+.checkout-page
+	.checkout-split
+		.container.checkout-container
+			.row.checkout-row
+				.col-xs-12.col-md-7.checkout-left
+					.checkout-left-inner
+						.checkout-hero
+							%h3.bold-font-name
+								You’re one step away from leveling up your career!
 
-.shopping-cart
-	%section.checkout-split
-		.container
-			.flex-row
-				.flex-col-12.flex-col-md-7
-					=lorem.words(100)
-				.flex-col-12.flex-col-md-5
-					=lorem.words(100)
+						.checkout-block
+							%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+								Student details
+							%p.body-small
+								Following checkout, your account will be activated and an email receipt will be dispatched.
+
+							.row.checkout-field-row
+								.col-xs-12.col-sm-6
+									.form-group
+										%input.form-control.input-lg{ type: "text", placeholder: "Student first name" }
+								.col-xs-12.col-sm-6
+									.form-group
+										%input.form-control.input-lg{ type: "text", placeholder: "Student last name" }
+
+							.form-group
+								%input.form-control.input-lg{ type: "email", placeholder: "Student email" }
+
+
+							.form-group
+								%input.form-control.input-lg{ type: "tel", placeholder: "Contact phone" }
+
+						.checkout-block
+							%p.body-large.dark-text-color.bold-font-name.no-margin-bottom
+								Payment details
+
+							.checkout-divider
+								%span.checkout-divider-label 
+									Express checkout
+
+							.checkout-express-grid
+								%button.btn.checkout-express-btn.checkout-express-btn--apple{ type: "button" } 
+									Apple Pay
+								%button.btn.checkout-express-btn.checkout-express-btn--paypal{ type: "button" } 
+									PayPal
+								%button.btn.checkout-express-btn.checkout-express-btn--paylater{ type: "button" } 
+									Pay Later
+								%button.btn.checkout-express-btn.checkout-express-btn--amazon{ type: "button" } 
+									amazon pay
+								%button.btn.checkout-express-btn.checkout-express-btn--venmo{ type: "button" } 
+									venmo
+								%button.btn.checkout-express-btn.checkout-express-btn--gpay{ type: "button" }
+									G Pay
+
+							.checkout-divider
+								%span.checkout-divider-label 
+									Or
+
+							.checkout-card
+								.form-group
+									.checkout-input-with-icons
+										%input.form-control.input-lg{ type: "text", placeholder: "Card number" }
+										.checkout-card-icons
+											%img{:src=>"/images/public/checkout/checkout-cards.svg", :width=>"160px"}
+
+								.row
+									.col-xs-12.col-sm-6
+										.form-group
+											%input.form-control.input-lg{ type: "text", placeholder: "Expiration DD/MM/YYYY" }
+									.col-xs-12.col-sm-6
+										.form-group
+											.checkout-input-with-help
+												%input.form-control.input-lg{ type: "text", placeholder: "Security code" }
+												%span.checkout-help ?
+
+								.form-group
+									%input.form-control.input-lg{ type: "text", placeholder: "Name on card" }
+
+							.checkout-divider
+								%span.checkout-divider-label 
+									Pay later with Affirm
+
+							.checkout-affirm
+								%button.btn.checkout-affirm-btn{ type: "button" } 
+									affirm Monthly payments
+								%p.checkout-affirm-sub
+									Starting at $103/mo.
+									%a{ href: "#", role: "button" } Check your purchasing power
+
+				.col-xs-12.col-md-5.checkout-right
+					.checkout-right-inner
+						%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
+							Summary
+
+						.checkout-summary-list
+							- 3.times do
+								.checkout-summary-item
+									%a.checkout-remove{:href=>"#", aria: { label: "Remove item" } } 
+										%i.material-icons
+											cancel
+									.checkout-thumb
+										%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}
+									.checkout-item-meta
+										%div.checkout-item-name 
+											Live online PMP class or a title that runs two lines long
+										%div.checkout-item-sub 
+											Mar 02–Mar 04, 8AM–3PM
+									.checkout-item-price
+										%div.checkout-item-old 
+											$1,498
+										%div.checkout-item-new 
+											$1,298
+
+						.checkout-totals
+							.checkout-totals-row
+								%span 
+									Subtotal (3 items)
+								%strong.bold-font-name
+									$4,494
+							.checkout-totals-row
+								%span 
+									Promo discount
+								%strong.checkout-discount.bold-font-name
+									\-$600
+
+							.checkout-total-row
+								%span.bold-font-name
+									Total:
+								.checkout-total-nums
+									%span.checkout-total-old 
+										$4,494
+									%span.checkout-total-new 
+										$3,894
+
+							.checkout-savings-pill 
+								You save 
+								%span.extra-bold-font-name
+									$600 
+								today!
+
+						%button.btn.btn-default.btn-lg.checkout-cta{ type: "button" } 
+							Complete registration
+
+						.checkout-secure
+							%span.checkout-lock 
+								%i.material-icons
+									lock
+							%span 
+								Your payment is secure
+
+						.checkout-badges
+							%img{:src=>"/images/public/checkout/checkout-badges.png", :width=>"260px"}
+
+						.checkout-testimonial
+							%p.checkout-quote
+								“Providing this valuable online book free of charge to members. The content is insightful,
+								well-organized, and highly beneficial.”
+							.checkout-reviewer
+								.checkout-avatar
+								.checkout-reviewer-meta
+									%div.checkout-reviewer-name 
+										Jarred T.
+									.checkout-stars 
+										★★★★★
+									%span.checkout-verified 
+										VERIFIED REVIEW
 

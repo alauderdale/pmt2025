@@ -2567,10 +2567,13 @@ a.order-expander-outter {
 .checkout-summary-list-outter {
   position: relative; }
   .checkout-summary-list-outter .scroll-for-more {
-    display: none; }
-  .checkout-summary-list-outter.scroll-overflow .scroll-for-more {
-    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+    cursor: default;
     display: flex;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    text-align: center;
+    pointer-events: none;
+    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
     font-size: 13px;
     background: #eeeef0;
     text-align: center;
@@ -2581,12 +2584,16 @@ a.order-expander-outter {
     left: calc(50% - 80px);
     color: #171717;
     z-index: 1; }
-    .checkout-summary-list-outter.scroll-overflow .scroll-for-more i {
-      font-size: 18px;
-      align-self: center; }
+    .checkout-summary-list-outter .scroll-for-more i {
+      font-size: 14px;
+      align-self: center;
+      margin-left: 8px; }
     @media (max-width: 992px) {
-      .checkout-summary-list-outter.scroll-overflow .scroll-for-more {
+      .checkout-summary-list-outter .scroll-for-more {
         display: none; } }
+    .checkout-summary-list-outter .scroll-for-more.visible {
+      opacity: 1; }
+
 .checkout-summary-list {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 10px;

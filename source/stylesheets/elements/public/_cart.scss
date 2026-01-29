@@ -356,32 +356,36 @@ a.order-expander-outter{
   position: relative;
   //show only when there are items below the fold
     .scroll-for-more{
-    	display: none;
-    }
-
-    &.scroll-overflow{
-  	.scroll-for-more{
-    font-family: $bold-font-name;
-		display: flex;
-		font-size: 13px;
-		background: shade($bg-left,5%);
-		text-align: center;
-		padding: 5px 20px;
-		border-radius: 100px;
-		position: absolute;
-		bottom: 10px;
-		left: calc(50% - 80px);
-		color: $dark-text-color;
-		z-index: 1;
+      cursor: default;
+      display: flex;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      text-align: center;
+      pointer-events: none;
+      font-family: $bold-font-name;
+      font-size: 13px;
+      background: shade($bg-left,5%);
+      text-align: center;
+      padding: 5px 20px;
+      border-radius: 100px;
+      position: absolute;
+      bottom: 10px;
+      left: calc(50% - 80px);
+      color: $dark-text-color;
+      z-index: 1;
       i{
-        font-size: 18px;
+        font-size: 14px;
         align-self: center;
+        margin-left: 8px;
       }
       @include breakpoint(md) {
+        //hide on mobile
         display: none;
       }
-  	}
-  } 
+      &.visible{
+        opacity: 1;
+      }
+    }
 }
 
 

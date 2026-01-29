@@ -21,6 +21,28 @@ $(document).ready(function(){
   });
 
 
+  //only show "scroll for more items" at the top of the scroll
+
+  $(function () {
+    var $summaryList = $('.checkout-summary-list'); // the scrollable div
+    var $scrollHint  = $('.scroll-for-more');       // the hint OUTSIDE
+
+    function updateScrollHint() {
+      if ($summaryList.scrollTop() === 0) {
+        $scrollHint.addClass('visible');
+      } else {
+        $scrollHint.removeClass('visible');
+      }
+    }
+
+    // Listen to scroll on the summary panel
+    $summaryList.on('scroll', updateScrollHint);
+
+    // Run once on load
+    updateScrollHint();
+  });
+
+
 
 	 //fancybox
 	$('.fancybox').fancybox();

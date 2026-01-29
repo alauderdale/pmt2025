@@ -458,6 +458,20 @@ img {
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; }
+
 .text-columns-2 {
   -webkit-columns: 24px 2;
   -moz-columns: 24px 2;
@@ -2536,14 +2550,10 @@ a.order-expander-outter {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border-radius: 999px;
-    border: 1px solid #DDDDDD;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 12px;
-    background: #fff; }
+    cursor: pointer; }
   .checkout-input-with-help input.form-control {
     padding-right: 40px; }
 
@@ -2617,9 +2627,9 @@ a.order-expander-outter {
   color: #989c9f;
   position: relative;
   top: 10px; }
-  .checkout-remove .material-icons {
-    font-size: 16px;
-    line-height: 16px; }
+  .checkout-remove i {
+    font-size: 17px;
+    line-height: 17px; }
 
 .checkout-thumb {
   width: 70px;

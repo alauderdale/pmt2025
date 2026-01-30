@@ -21,3 +21,20 @@ form{
 		color: $danger-color;
 	}
 }
+
+
+
+/* iOS: prevent input zoom */
+@supports (-webkit-touch-callout: none) {
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	textarea,
+	select,
+	.form-control {
+		font-size: 16px !important;
+	}
+}

@@ -1564,6 +1564,19 @@ form .control-label {
   .form-helper.error {
     color: #A94442; }
 
+/* iOS: prevent input zoom */
+@supports (-webkit-touch-callout: none) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  textarea,
+  select,
+  .form-control {
+    font-size: 16px !important; } }
+
 a {
   color: #1384b2; }
   a:hover {
@@ -2373,12 +2386,12 @@ img.contact-logo-mobile {
     align-items: center;
     justify-content: space-between; }
   .checkout-header .checkout-logo img {
-    height: 28px; }
+    height: 25px; }
     @media (min-width: 992px) {
       .checkout-header .checkout-logo img {
-        height: 32px; } }
+        height: 30px; } }
   .checkout-header .checkout-header-right {
-    font-size: 16px; }
+    font-size: 14px; }
   .checkout-header .checkout-continue {
     font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
 

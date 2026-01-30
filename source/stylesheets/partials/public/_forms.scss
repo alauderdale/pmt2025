@@ -16,7 +16,8 @@ form{
 
 
 .form-helper{
-	font-size: 12px;
+	font-size: 13px;
+	font-family: $bold-font-name;
 	&.error{
 		color: $danger-color;
 	}

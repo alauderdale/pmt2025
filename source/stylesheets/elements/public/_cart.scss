@@ -71,6 +71,7 @@ $screen-lg: 1200px;
 		margin-left: 6px;
 		color: $text-color;
 		&:hover {
+      color: $dark-text-color;
 		}
 	}
 
@@ -538,9 +539,11 @@ a.order-expander-outter{
   line-height: 16px;
   display: flex;
   justify-content: center;
-
+  span{
+    align-self: center;
+  }
   .checkout-lock { 
-  	.material-icons{
+  	i{
   		font-size: 18px;
   		margin-right: 4px;
   	}

@@ -1560,7 +1560,8 @@ form .control-label {
   color: #171717; }
 
 .form-helper {
-  font-size: 12px; }
+  font-size: 13px;
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
   .form-helper.error {
     color: #A94442; }
 
@@ -2411,6 +2412,8 @@ img.contact-logo-mobile {
   .checkout-footer a {
     margin-left: 6px;
     color: #545a5f; }
+    .checkout-footer a:hover {
+      color: #171717; }
   .checkout-footer .footer-sep {
     margin: 0 6px;
     color: #d1d5db; }
@@ -2738,7 +2741,9 @@ a.order-expander-outter {
   line-height: 16px;
   display: flex;
   justify-content: center; }
-  .checkout-secure .checkout-lock .material-icons {
+  .checkout-secure span {
+    align-self: center; }
+  .checkout-secure .checkout-lock i {
     font-size: 18px;
     margin-right: 4px; }
 

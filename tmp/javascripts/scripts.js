@@ -56,6 +56,8 @@ $(document).ready(function(){
 
 	$('.tooltip-up').tooltip({html:true});
 
+  $('.bas-tooltip').tooltip({html:true});
+
 
 	///responsive tables!!!
 	$('table').footable();
@@ -65,7 +67,16 @@ $(document).ready(function(){
 
 	$('.carousel').carousel({
   	interval: 4000
-	})
+	});
+
+  $('.checkout-testimonial-carousel').carousel({
+    interval: 4000
+  });
+
+
+
+
+
 
 	$(window).scroll(function(){
 

@@ -1,0 +1,14 @@
+#checkout-testimonial-slider.checkout-testimonial-carousel.slide{"data-ride" => "carousel"}
+
+	.carousel-inner.margin-top
+		.item.active
+			=partial"checkout-testimonial"
+		.item
+			=partial"checkout-testimonial"
+		.item
+			=partial"checkout-testimonial"
+	.padding-top
+		.carousel-indicators
+			.indicator.active{"data-target"=>"#checkout-testimonial-slider", "data-slide-to"=>"0" }
+			.indicator{"data-target"=>"#checkout-testimonial-slider", "data-slide-to"=>"1" }
+			.indicator{"data-target"=>"#checkout-testimonial-slider", "data-slide-to"=>"2" }

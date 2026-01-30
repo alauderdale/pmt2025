@@ -67,7 +67,16 @@ $(document).ready(function(){
 
 	$('.carousel').carousel({
   	interval: 4000
-	})
+	});
+
+  $('.checkout-testimonial-carousel').carousel({
+    interval: 4000
+  });
+
+
+
+
+
 
 	$(window).scroll(function(){
 

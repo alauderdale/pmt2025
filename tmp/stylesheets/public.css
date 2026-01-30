@@ -1559,6 +1559,11 @@ form .control-label {
   border-width: 1.5px;
   color: #171717; }
 
+.form-helper {
+  font-size: 12px; }
+  .form-helper.error {
+    color: #A94442; }
+
 a {
   color: #1384b2; }
   a:hover {
@@ -2729,6 +2734,23 @@ a.order-expander-outter {
   justify-content: center;
   padding: 10px 0 20px;
   border-bottom: 1px solid #DDDDDD; }
+
+.checkout-testimonial-carousel {
+  position: relative; }
+  .checkout-testimonial-carousel .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 5px; }
+    .checkout-testimonial-carousel .carousel-indicators .indicator {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background: #d1d1d1;
+      border-radius: 100px; }
+      .checkout-testimonial-carousel .carousel-indicators .indicator:hover {
+        background: #8b8b8b; }
+      .checkout-testimonial-carousel .carousel-indicators .indicator.active {
+        background: #171717; }
 
 .checkout-express-grid {
   display: grid;

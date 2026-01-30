@@ -556,6 +556,31 @@ a.order-expander-outter{
 
 
 
+.checkout-testimonial-carousel{
+  position: relative;
+
+  .carousel-indicators{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    .indicator{
+      cursor: pointer;
+      width:10px;
+      height: 10px;
+      background: tint($dark-text-color,80%);
+      border-radius: 100px;
+      &:hover{
+        background: tint($dark-text-color,50%);
+      }
+      &.active{
+        background: $dark-text-color;
+      }
+    }
+  }
+}
+
+
+
 
 
 // This is placeholder

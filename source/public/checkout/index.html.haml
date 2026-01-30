@@ -44,8 +44,10 @@
 									.form-group
 										%input.form-control.input-lg{ type: "text", placeholder: "Student last name" }
 
-							.form-group
+							.form-group.has-error
 								%input.form-control.input-lg{ type: "email", placeholder: "Student email" }
+								%span.form-helper.error
+									Enter a valid email
 
 
 							.form-group
@@ -149,6 +151,6 @@
 						=partial"checkout-totals"
 						.visible-md.visible-lg
 							=partial"complete-checkout-action"
+							=partial"test-slider"
 						
-
 

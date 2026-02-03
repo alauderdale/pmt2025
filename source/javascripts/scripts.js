@@ -10,7 +10,7 @@ $(document).ready(function(){
   // toggle checkout expander
 
 
-  $(document).on('click', '.order-expander-outter', function (e) {
+  $(document).on('click', '.order-expander-outer', function (e) {
     e.preventDefault();
 
     var $summary = $('.checkout-right');

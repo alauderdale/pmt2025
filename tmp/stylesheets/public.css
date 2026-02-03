@@ -2496,9 +2496,9 @@ img.contact-logo-mobile {
   @media (min-width: 992px) {
     .checkout-left-inner {
       padding: 18px 24px 0 8px; } }
-a.order-expander-outter {
+a.order-expander-outer {
   text-decoration: none !important; }
-  a.order-expander-outter.expanded .expand-icon {
+  a.order-expander-outer.expanded .expand-icon {
     rotate: 180deg; }
 
 .order-expander {

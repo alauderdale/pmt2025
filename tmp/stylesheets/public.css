@@ -1461,6 +1461,10 @@ ul.tabs-simple.light-tabs {
   border-radius: 4px !important;
   background: #F4F8F9; }
 
+.panel-success {
+  border: 1px solid #a8d587;
+  background: #fdfefd; }
+
 .shadowed-box {
   background: #FFFFFF;
   border: 1px solid #D8E7EC;
@@ -1666,6 +1670,12 @@ a {
       border-color: #9dcf68; }
   .btn.btn-lg {
     padding: 12px 24px; }
+  .btn.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .btn.btn-icon i {
+      margin-right: 6px; }
 
 .post h3 a {
   border-bottom: none; }
@@ -2644,6 +2654,8 @@ a.order-expander-outer {
   gap: 10px;
   align-items: top;
   padding: 10px 0; }
+  .checkout-summary-item.no-remove {
+    grid-template-columns: 70px 1fr auto; }
 
 .checkout-remove {
   padding: 0;
@@ -2728,7 +2740,6 @@ a.order-expander-outer {
 
 .checkout-cta {
   width: 100%;
-  height: 56px;
   border-radius: 8px;
   background: #ffd266;
   font-weight: 900;
@@ -2808,6 +2819,19 @@ a.order-expander-outer {
     background: #000;
     color: #fff;
     border-color: #000; }
+
+.account-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px; }
+
+.survey-panel {
+  background: #e7f3f8;
+  border: none; }
+
+.confirm-panel {
+  padding: 18px; }
 
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {

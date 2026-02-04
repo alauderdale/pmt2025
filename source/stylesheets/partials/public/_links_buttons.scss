@@ -103,6 +103,14 @@ a{
 	&.btn-lg{
 		padding:$baseline/2 $baseline;
 	}
+	&.btn-icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		i{
+			margin-right:6px;
+		}
+	}
 }
 
 .post{

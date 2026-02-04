@@ -410,6 +410,9 @@ a.order-expander-outer{
   gap: 10px;
   align-items: top;
   padding: 10px 0;
+  &.no-remove{
+    grid-template-columns: 70px 1fr auto;
+  }
 }
 
 .checkout-remove {
@@ -522,7 +525,6 @@ a.order-expander-outer{
 
 .checkout-cta {
   width: 100%;
-  height: 56px;
   border-radius: 8px;
   background: $yellow-color;
   font-weight: 900;
@@ -612,4 +614,28 @@ a.order-expander-outer{
   &--amazon { background: #f7d37a; color: #111; border-color: #f7d37a; text-transform: lowercase; }
   &--venmo { background: #4aa3df; color: #fff; border-color: #4aa3df; text-transform: lowercase; }
   &--gpay { background: #000; color: #fff; border-color: #000; }
+}
+
+
+//checkout confirm
+
+
+.account-info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  .info-item{
+
+  }
+}
+
+
+.survey-panel{
+  background: tint($primary-color,90%);
+  border:none;
+}
+
+.confirm-panel{
+  padding: 18px;
 }

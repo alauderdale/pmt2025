@@ -1,87 +1,116 @@
 ;;;
 
-"layout": "public",
-"title": "Checkout",
-"subtitle": "Checkout",
-"testiminial_data": "testimonials"
+"layout": "checkout",
+"title": "Checkout"
 
 ;;;
 
-=partial"/public/shared/page-head-small", locals:{headerClass:"checkout-pmp-header"}
+
+.checkout-page
+	.hidden-md.hidden-lg
+		%a.order-expander-outer{:href=>"#"}
+			.order-expander
+				.container.order-expander-container
+					.summary-info-row
+						%span.bold-font-name.d-flex
+							Your purchase
+							%i.material-symbols-outlined.expand-icon
+								keyboard_arrow_down
+						.checkout-total-nums
+							%span.checkout-total-old 
+								$4,494
+							%span.checkout-total-new 
+								$3,894
+	.checkout-split
+		.container.checkout-container
+			.row.checkout-row.checkout-row--mobile-reverse
+				.col-xs-12.col-md-7.checkout-left
+					.checkout-left-inner
+						.checkout-hero
+							%h3.bold-font-name.d-flex
+								%img.quarter-margin-right{:src=>"/images/public/checkout/check.svg"}
+								Thank you
+						.checkout-block
+							.panel.confirm-panel.panel-success
+								%p.quarter-margin-bottom.bold-font-name.dark-text-color
+									Your account is activated.
+								%p.body-small.no-margin-bottom
+									%span.bold-font-name
+										We’ve emailed your login details.
+									check spam if you don’t see it. 
+									%a{:href=>"#"}
+										Visit login page
+							.panel.confirm-panel
+								%p.half-margin-bottom.bold-font-name.dark-text-color
+									Account summary
+								.account-info
+
+									.info-item
+										%p.body-small.dark-text-color.bold-font-name.no-margin-bottom
+											First name
+										%p.body-small.no-margin-bottom
+											John
+									.info-item
+										%p.body-small.dark-text-color.bold-font-name.no-margin-bottom
+											Last name
+										%p.body-small.no-margin-bottom
+											Doe
+									.info-item
+										%p.body-small.dark-text-color.bold-font-name.no-margin-bottom
+											Email
+										%p.body-small.no-margin-bottom
+											johndoe.com
+									.info-item
+										%p.body-small.dark-text-color.bold-font-name.no-margin-bottom
+											Password
+										%p.body-small.no-margin-bottom
+											Pa$$word123
+							%a.btn.btn-primary.btn-lg.btn-block.half-margin-bottom{:href=>"#"}
+								Continue
+							%a.btn.btn-info.btn-lg.btn-block.btn-icon{:href=>"#"}
+								%i.material-symbols-outlined.expand-icon
+									print
+								Print page
+							.checkout-divider
+								%span.checkout-divider-label 
+									Before you go…
+							.panel.confirm-panel.survey-panel
+								%p.quarter-margin-bottom.bold-font-name.dark-text-color
+									How did you hear about us?
+								%select.form-control
+									%option
+										PMI.org
+								.text-right.quarter-margin-top
+									%a.btn.btn-link.no-padding-right{:href=>"#"}
+										Submit
 
 
-%section
-	.container
-		.row
-			.col-sm-9
-				%h2
-					Confirm Your information & Complete Checkout
-				%ul.list-default
-					%li
-						An email will be dispatched with access instructions and payment receipt 
-					%li
-						Your account will be activated in our system
-					%li
-						The payment method submitted will be charged
-						%span.bold-font-name.text-success
-							$894.00 
-						USD
-				%a.btn.btn-lg.btn-block.btn-default{:href=>"/public/checkout/finished"}
-					Complete Registration
-					%i.fa.fa-arrow-circle-right
-				%hr
-				.well
-					%h6
-						New Account information
-					%dl.dl-horizontal
-						%dt
-							Email address
-						%dd
-							john@doe.com
-						%dt
-							First Name
-						%dd
-							John
-						%dt
-							Last Name
-						%dd
-							Doe
-					%h6
-						Payment Information
-					%dl.dl-horizontal
-						%dt
-							Card Type
-						%dd
-							Visa
-						%dt
-							Card Number
-						%dd
-							xxxx-xxxx-xxxx-0099
-						%dt
-							Expiration Date
-						%dd
-							Feb. 2014
-						%dt
-							CVV2 Code
-						%dd
-							333
-						%dt
-							Chardholder Name
-						%dd
-							John Doe
-				%hr
-				%p.small-line-height
-					%small
-						Following checkout, your account will be activated in our system and a receipt email will be dispatched. Use of our products is in accordance with our 
-						%a{:href=>""}
-							Terms of service
-						guidelines. By completing checkout, you are allowing PMTraining to verify and charge your payment method in the ammount of $894.00(US).
-
-			.col-sm-3
-				%h6.text-center
-					What Our Students Say 
-				=partial"/public/shared/testimonial-list", locals: {test_num: 4}
+						
 
 
 
-				
+				.col-xs-12.col-md-5.checkout-right.summary-closed
+					.checkout-right-inner
+						.visible-md.visible-lg
+							%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
+								Your purchase
+						.checkout-summary-list-outter
+							.checkout-summary-list{:style=>"max-height:100%;"}
+								- 3.times do
+									.checkout-summary-item.no-remove
+										.checkout-thumb
+											%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}
+										.checkout-item-meta
+											%div.checkout-item-name 
+												Live online PMP class or a title that runs two lines long
+											%div.checkout-item-sub 
+												Mar 02–Mar 04, 8AM–3PM
+										.checkout-item-price
+											%div.checkout-item-old 
+												$1,498
+											%div.checkout-item-new 
+												$1,298
+
+						=partial"checkout-totals"
+						
+

@@ -2607,9 +2607,9 @@ a.order-expander-outer {
   margin: 10px 0 0;
   font-size: 14px; }
 
-.checkout-summary-list-outter {
+.checkout-summary-list-outer {
   position: relative; }
-  .checkout-summary-list-outter .scroll-for-more {
+  .checkout-summary-list-outer .scroll-for-more {
     cursor: default;
     display: flex;
     opacity: 0;
@@ -2627,14 +2627,14 @@ a.order-expander-outer {
     left: calc(50% - 80px);
     color: #171717;
     z-index: 1; }
-    .checkout-summary-list-outter .scroll-for-more i {
+    .checkout-summary-list-outer .scroll-for-more i {
       font-size: 14px;
       align-self: center;
       margin-left: 8px; }
     @media (max-width: 992px) {
-      .checkout-summary-list-outter .scroll-for-more {
+      .checkout-summary-list-outer .scroll-for-more {
         display: none; } }
-    .checkout-summary-list-outter .scroll-for-more.visible {
+    .checkout-summary-list-outer .scroll-for-more.visible {
       opacity: 1; }
 
 .checkout-summary-list {

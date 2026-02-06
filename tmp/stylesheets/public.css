@@ -2641,9 +2641,7 @@ a.order-expander-outer {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 10px;
   margin-bottom: 12px;
-  min-height: 220px;
-  max-height: 400px;
-  height: 30vh;
+  max-height: 25vh;
   overflow: scroll;
   position: relative; }
   @media (max-width: 992px) {

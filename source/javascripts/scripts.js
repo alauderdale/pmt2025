@@ -23,24 +23,60 @@ $(document).ready(function(){
 
   //only show "scroll for more items" at the top of the scroll
 
-  $(function () {
-    var $summaryList = $('.checkout-summary-list'); // the scrollable div
-    var $scrollHint  = $('.scroll-for-more');       // the hint OUTSIDE
 
-    function updateScrollHint() {
-      if ($summaryList.scrollTop() === 0) {
-        $scrollHint.addClass('visible');
-      } else {
-        $scrollHint.removeClass('visible');
-      }
-    }
+//only show "scroll for more items" at the top of the scroll
+    $(function () {
+        var $summaryList = $(".checkout-summary-list");
+        var $scrollHint = $(".scroll-for-more");
 
-    // Listen to scroll on the summary panel
-    $summaryList.on('scroll', updateScrollHint);
+        function updateScrollHint() {
+            if (!$summaryList.length || !$scrollHint.length) {
+                return;
+            }
 
-    // Run once on load
-    updateScrollHint();
-  });
+            // Check if there's actually scrollable content
+            var hasOverflow = $summaryList[0].scrollHeight > $summaryList[0].clientHeight;
+
+            if (hasOverflow && $summaryList.scrollTop() === 0) {
+                // Position hint at bottom of .checkout-summary-list
+                var listHeight = $summaryList.outerHeight();
+
+                // Set position (hint is ~35px tall with padding)
+                $scrollHint[0].style.top = (listHeight - 40) + "px"; // Fixed offset for hint height
+                $scrollHint.addClass("visible");
+            } else {
+                $scrollHint.removeClass("visible");
+            }
+        }
+
+        // Listen to scroll on the summary panel
+        $summaryList.on("scroll", updateScrollHint);
+
+        // Run once on load
+        updateScrollHint();
+
+        // Re-run on window resize
+        $(window).on("resize", updateScrollHint);
+    });
+
+  // $(function () {
+  //   var $summaryList = $('.checkout-summary-list'); // the scrollable div
+  //   var $scrollHint  = $('.scroll-for-more');       // the hint OUTSIDE
+
+  //   function updateScrollHint() {
+  //     if ($summaryList.scrollTop() === 0) {
+  //       $scrollHint.addClass('visible');
+  //     } else {
+  //       $scrollHint.removeClass('visible');
+  //     }
+  //   }
+
+  //   // Listen to scroll on the summary panel
+  //   $summaryList.on('scroll', updateScrollHint);
+
+  //   // Run once on load
+  //   updateScrollHint();
+  // });
 
 
 

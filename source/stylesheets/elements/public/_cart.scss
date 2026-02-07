@@ -370,10 +370,14 @@ a.order-expander-outer{
       padding: 5px 20px;
       border-radius: 100px;
       position: absolute;
-      bottom: 10px;
       left: calc(50% - 80px);
       color: $dark-text-color;
       z-index: 1;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      bottom: auto !important; /* Remove bottom positioning */
       i{
         font-size: 14px;
         align-self: center;

@@ -95,8 +95,8 @@
 							%p.body-large.quarter-margin-bottom.bold-font-name.dark-text-color
 								Your purchase
 						.checkout-summary-list-outer
-							.checkout-summary-list{:style=>"max-height:100%;"}
-								- 3.times do
+							.checkout-summary-list{:style=>"max-height:100%; overflow:auto;"}
+								- 6.times do
 									.checkout-summary-item.no-remove
 										.checkout-thumb
 											%img{:src=>"/images/public/checkout/Practice-exam-PMP.png"}

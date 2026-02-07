@@ -386,6 +386,9 @@ img {
   top: 30px;
   width: 18%; }
 
+.overflow-hidden {
+  overflow: hidden !important; }
+
 @font-face {
   font-family: 'socialicoregular';
   src: url("../font/socialico-webfont.eot");

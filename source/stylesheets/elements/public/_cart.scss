@@ -398,7 +398,8 @@ a.order-expander-outer{
   // min-height: 220px;
   // max-height: 400px;
   max-height: 25vh;
-  overflow: scroll;
+  overflow: auto;
+  overflow-x:hidden ;
   position: relative;
 
   @include breakpoint(md) {

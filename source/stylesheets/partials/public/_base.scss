@@ -186,4 +186,27 @@ img{
 }
 
 
+.flex-media-object{
+  display: flex;
+  gap:16px;
+
+  .flex-media-item{
+
+  }
+  .flex-media-body{
+
+
+  }
+  &.flex-media-object-align-center{
+    align-items: center;
+  }
+}
+
+
+
+
+.base-border-radius{
+  border-radius: $baseline/4;
+}
+
 

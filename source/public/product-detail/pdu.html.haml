@@ -15,17 +15,18 @@
 
 
 
-%section.invert-section.invert-darker.product-header
+%section.invert-section.invert-darker.product-header#product-hero
 	.container
 		.product-grid
 			.pg-row
 				.pg-col.pg-content
 					%p.body-large.bold-font-name.quarter-margin-bottom.light-accent-text-color
-						Buy Class Vouchers
+						Professional Development Units (PDUs)®
 					%h1.bold-font-name.half-margin-bottom
-						Train your team on their schedule
+						On-Demand PDU Courses Available 24/7
 					%p.body-large.no-margin-bottom
-						Purchase vouchers for 2+ employees at a fixed per-seat price. Your team can redeem vouchers later for any public live class in the certification you choose—PMP, CAPM, PgMP, and more.
+						Reinforce key project management concepts, learn modern best practices, and earn up to 60 PMP® PDUs. Access unlimited studio-quality lessons, study materials, exercises, and PM tools from any device.
+					
 				
 
 
@@ -38,110 +39,119 @@
 				.pg-col.pg-content
 					.promo-section.border-bottom.padding-bottom
 						%p.body-large.dark-text-color.bold-font-name.promo-header.half-margin-bottom
-							Project Management Institute® Authorized Training Partner (ATP)
-						%img{:src=>"/images/public/icons-2.png", :width=>"330px"}
+							Pre-approved by PMI® up to 60 PDUs
+						.flex-media-object.flex-media-object-align-center
+							.flex-media-item
+								%img.media-object.quarter-margin-right{:alt => "...", :src => "/images/pmi-logo.svg", :width=>"67px"}
+							.flex-media-body
+								%p.no-margin-bottom.dark-text-color.medium-font-name
+									Premier Authorized Training Partner (ATP) of 
+									%br
+									the Project Management Institute®
+									
 					.promo-section.border-bottom.padding-bottom.padding-top
 						%p.body-large.dark-text-color.bold-font-name.promo-header
 							Course features
 						.row
-							.col-sm-6
-								%ul.list-checks.no-margin-bottom
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											Live, instructor-led certification training
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											PMI® ATP-approved curriculum
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											Official PMI® authorized courseware
-							.col-sm-6
-								%ul.list-checks.no-margin-bottom
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											Interactive online classroom experience
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											Support from enrollment to exam day
-									%li.half-margin-bottom{:style=>"font-size:1em;"}
-										%p.no-margin-bottom.dark-text-color
-											100% money-back guarantee
+							-2.times do
+								.col-sm-6
+									%ul.list-checks.no-margin-bottom
+										%li.half-margin-bottom{:style=>"font-size:1em;"}
+											%p.no-margin-bottom.dark-text-color
+												Live, instructor-led certification training
+										%li.half-margin-bottom{:style=>"font-size:1em;"}
+											%p.no-margin-bottom.dark-text-color
+												PMI® ATP-approved curriculum
+										%li.half-margin-bottom{:style=>"font-size:1em;"}
+											%p.no-margin-bottom.dark-text-color
+												Official PMI® authorized courseware
+					.promo-section.border-bottom.padding-bottom.padding-top
+						%p.body-large.dark-text-color.bold-font-name.promo-header
+							Credits and PDUs Earned
+						.row
+							.col-sm-12
+								-3.times do
+									.credits-box.margin-bottom.card.card-flat.padded
+										.credits-header
+											.credits-icon
+												%img{:src=>"/images/public/check.svg"}
+											.credits-title.bold-font-name.dark-text-color
+												How to Measure Project Performance
+
+										.credits-divider
+
+										.credits-grid
+											.credit-item
+												.credit-label 
+													Ways of working
+												.credit-hours 
+													3.00 hrs
+
+											.credit-item
+												.credit-label 
+													Power Skills
+												.credit-hours 
+													3.00 hrs
+
+											.credit-item
+												.credit-label 
+													Business Acumen
+												.credit-hours 
+													3.00 hrs
+
+											.credit-item.total
+												.credit-label
+													%img{src: "/images/public/credit-triangle.svg"}
+													Total
+												.credit-hours 
+													3.00 hrs
+					.promo-section.border-bottom.padding-bottom.padding-top
+						%p.body-large.dark-text-color.bold-font-name.promo-header
+							Credits and PDUs Earned
+						.row
+							.col-sm-12
+								-2.times do
+									.card.card-flat.padded.margin-bottom
+										.flex-media-object
+											.flex-media-item
+												%img.course-preview-thumb{:src=>"/images/public/course-card.png", :width=>"142px"}
+											.flex-media-body
+												%p.dark-text-color.bold-font-name.quarter-margin-bottom
+													SCRUM Immersion for the Agile PM
+												%p.dark-text-color.half-margin-bottom
+													%i.material-symbols-outlined{:style=>"font-size:16px; position:relative; top:3px;"}
+														history_2
+													
+													14 PDUs
+												%ul.list-default.no-margin-bottom
+													-3.times do
+														%li.half-margin-left
+															Learn to identify real world business needs
+
+					.promo-section.border-bottom.padding-bottom.padding-top
+						%p.body-large.dark-text-color.bold-font-name.promo-header
+							Why choose this course?
+						.row
+							-2.times do
+								.col-sm-6
+									-3.times do
+										.media
+											.pull-left
+												%i.material-symbols-outlined.primary-text-color{:style=>""}
+													bolt
 											
-					.promo-section.border-bottom.padding-bottom.padding-top
-						%p.body-large.dark-text-color.bold-font-name.promo-header
-							Why buy class vouchers?
-						.row
-							.media
-								.pull-left
-									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Fast, easy ordering
-										%span.text-color.regular-font-name
-											\: Purchase in minutes
-									%p.half-margin-bottom
-										Buy training for multiple employees in minutes—no scheduling back-and-forth.
-							.media
-								.pull-left
-									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Simple bulk pricing
-										%span.text-color.regular-font-name
-											\: Fixed per-seat pricing
-									%p.half-margin-bottom
-										Fixed per-seat pricing makes budgeting and reimbursement painless.
-							.media
-								.pull-left
-									%img.quarter-margin-left{:src=>"/images/public/icon-bolt.svg", :width=>"33px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Flexible for employees
-										%span.text-color.regular-font-name
-											\: Redeem anytime
-									%p.half-margin-bottom
-										Employees redeem vouchers when they’re ready and choose a class date that fits their schedule.
-					.promo-section.border-bottom.padding-bottom.padding-top
-						%p.body-large.dark-text-color.bold-font-name.promo-header
-							How it works
-						.row
-							.media
-								.pull-left
-									%img.half-margin-left{:src=>"/images/public/icon-1.svg", :width=>"30px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Choose your course type + quantity
-									%p.half-margin-bottom
-										Select the certification your team needs (PMP, CAPM, PgMP, etc.) and purchase 2+ seats.
-							.media
-								.pull-left
-									%img.half-margin-left{:src=>"/images/public/icon-2.svg", :width=>"30px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Receive voucher codes instantly
-									%p.half-margin-bottom
-										After checkout, you’ll receive voucher codes and redemption instructions by email.
-							.media
-								.pull-left
-									%img.half-margin-left{:src=>"/images/public/icon-3.svg", :width=>"30px"}
-								
-								.media-body.text-left
-									%p.no-margin-bottom.dark-text-color.bold-font-name
-										Employees enroll when ready
-									%p.half-margin-bottom
-										Employees redeem their code and enroll in a public live class date for the selected certification.
+											.media-body.text-left
+												%p.no-margin-bottom.dark-text-color.bold-font-name
+													60+ Hours of Interactive Lessons
+												%p.half-margin-bottom.body-small
+													Studio-quality, on-demand training you can complete in order or revisit anytime.
 					.promo-section.border-bottom.padding-bottom.padding-top
 						.panel.success-gradient.no-margin-bottom
 							.panel-body.padded
 								.text-center
 									%img{:src=>"/images/public/live/money-back.png", :width=>"156px"}
 									%p.bold-font-name.dark-text-color.half-margin-bottom.body-large
-										Buy with confidence—every voucher is backed by our money-back guarantee
+										Buy with confidence— each course is backed by our money-back guarantee
 									%p.dark-text-color.body-medium
 										%span.bold-font-name
 											94% 
@@ -330,7 +340,9 @@
 											"The purchase was easy and the access was instantaneous. Great work put into integrating billing, product and communication."
 				.pg-col.pg-buy-block.buy-block-container
 					.buy-block-wrapper
-						=partial('buy-block')
+						=partial('buy-block-pdu')
+					
+						
 
 			
 				

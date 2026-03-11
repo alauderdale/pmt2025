@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+
+  //add class to sticky buy block
+  $(window).on('scroll load', function() {
+  var heroBottom = $('#product-hero').offset().top + $('#product-hero').outerHeight();
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop >= heroBottom) {
+    $('.buy-block-tall').addClass('buy-block-scrolled');
+  } else {
+    $('.buy-block-tall').removeClass('buy-block-scrolled');
+  }
+});
+
+
+
   //collapse other panels when clicked
   var $myGroup = $('#videoGroup');
     $myGroup.on('show.bs.collapse','.collapse', function() {

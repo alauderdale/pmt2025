@@ -20,9 +20,9 @@
 }
 
 .pg-content{
-	flex: 0 0 58.333333%; max-width: 58.333333%;
+	flex: 0 0 59.333333%; max-width: 59.333333%;
 
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		flex: 0 0 100%; max-width: 100%;
 		order:2;
 	}
@@ -30,9 +30,9 @@
 }
 
 .pg-buy-block{
-	flex: 0 0 41.666667%; max-width: 41.666667%;
+	flex: 0 0 40.666667%; max-width: 40.666667%;
 
-	@include breakpoint(sm) {
+	@include breakpoint(md) {
 		flex: 0 0 100%; max-width: 100%;
 		order: 1;
 	}
@@ -41,7 +41,7 @@
 
 .product-header{
 	@include breakpoint(sm) {
-		padding-bottom: 300px;
+		
 	}
 }
 
@@ -51,12 +51,16 @@
 	position: relative;
 	top:-340px;
 	margin-bottom:-340px;
-	@include breakpoint(sm) {
-		top:-300px;
-		margin-bottom:-280px;
 
+	@include breakpoint(md) {
+		top:0;
+		margin-bottom:$baseline;
 	}
+
+
 }
+
+
 
 
 
@@ -92,8 +96,9 @@
 		font-family: $bold-font-name;
 		width:100px;
 		color: white;
-		padding:2px 0;
+		padding:0px 0;
 		rotate: 45deg;
+		z-index: 99;
 	}
 
 	.old-price-text{
@@ -151,9 +156,286 @@
 	}
 }
 
+//for tall buy blocks that need the thumbnail removed
+
+.buy-block-thumb-wrap {
+	height: 164px; // match the visible thumbnail area
+	overflow: hidden;
+	transition: height .3s ease;
+}
+
+.buy-block-thumb {
+	opacity: 1;
+	transform: scale(1);
+	transform-origin: top center;
+	transition: opacity .22s ease, transform .3s ease;
+}
+
+.buy-block-thumb img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+///for when the thumbnail image needs hiding
+
+.buy-block-tall{
+
+	&.buy-block-scrolled{
+
+		.buy-block-thumb-wrap {
+			height: 0;
+		}
+
+		.buy-block-thumb {
+			opacity: 0;
+			transform: scale(.96);
+			pointer-events: none;
+		}
+	}
+
+
+@include breakpoint(md) {
+			.buy-block-thumb-wrap{
+				height: auto!important;
+			}
+			.buy-block-thumb {
+				opacity: 1!important;
+				transform: none!important;
+			}
+		}
+
+
+}
+
 
 .promo-testimonial-header{
 	.media-body{
 		margin-top:8px;
 	}
+}
+
+
+
+.credits-box{
+ 	font-family: $regular-font-name;
+}
+
+.credits-header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.credits-icon{
+	img{
+		width: 30px;
+	}
+}
+
+.credits-title{
+	font-size: 16px;
+}
+
+.credits-divider{
+  height:1px;
+  background:$border-color;
+  margin:18px 0 22px;
+}
+
+.credits-grid{
+  display:flex;
+  justify-content:space-between;
+}
+
+.credit-item{
+
+}
+
+.credit-label{
+  font-size:14px;
+  margin-bottom:4px;
+  font-family: $medium-font-name;
+}
+
+.credit-hours{
+  font-size:16px;
+  font-weight:700;
+	color: $dark-text-color;
+	font-family: $bold-font-name;
+}
+
+.credit-item.total{
+  text-align:right;
+}
+
+.credit-item.total .credit-label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  justify-content:flex-end;
+}
+
+.credit-item.total img{
+  width:19px;
+}
+
+
+////included courses cards
+
+.course-preview-thumb{
+	border-radius: 6px;
+	border: 3px solid $border-color;
+}
+
+// radio selectors
+
+.pdu-options {
+	font-family: $medium-font-name;
+}
+
+.pdu-option {
+	margin-bottom: 6px;
+	position: relative;
+}
+
+.pdu-radio {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.pdu-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 16px;
+	border: 1px solid #d5d5d5;
+	border-radius: 8px;
+	background: #ffffff;
+	cursor: pointer;
+	transition: border-color .18s ease, box-shadow .18s ease, background-color .18s ease;
+	box-sizing: border-box;
+}
+
+.pdu-card:hover {
+	border-color: #c7c7c7;
+}
+
+.pdu-card-left {
+	display: flex;
+	align-items: center;
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.pdu-radio-ui {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	margin-right: 14px;
+	border: 2px solid #9a9a9a;
+	border-radius: 50%;
+	background: #ffffff;
+	flex: 0 0 18px;
+	box-sizing: border-box;
+}
+
+.pdu-radio-dot {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #1496d1;
+	transform: translate(-50%, -50%) scale(0);
+	transition: transform .16s ease;
+}
+
+.pdu-copy {
+	min-width: 0;
+}
+
+.pdu-top-line {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 2px;
+	line-height: 1;
+}
+
+.pdu-count {
+	font-size: 16px;
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: 0;
+	color: $dark-text-color;
+	font-family: $bold-font-name;
+}
+
+.pdu-save-pill {
+	display: inline-block;
+	padding: 3px 6px 2px;
+	border-radius: 4px;
+	background: #e7f0e4;
+	color: #557b25;
+	font-size: 12px;
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.pdu-title {
+	font-size: 12px;
+	line-height: 1.25;
+	color: $text-color;
+	font-family: $regular-font-name;
+}
+
+.pdu-card-right {
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+	margin-left: 12px;
+	white-space: nowrap;
+	flex: 0 0 auto;
+	line-height: 1;
+}
+
+.pdu-old-price {
+	margin-right: 6px;
+	font-size: 16px;
+	line-height: 1;
+	color: $light-text-color;
+	text-decoration: line-through;
+	text-decoration-thickness: 1px;
+	font-family: $regular-font-name;
+}
+
+.pdu-new-price {
+	font-size: 16px;
+	line-height: 1;
+	color: #23272f;
+	font-family: $bold-font-name;
+}
+
+.pdu-radio:checked + .pdu-card {
+	border: 2px solid #1496d1;
+	padding: 13px 15px;
+}
+
+.pdu-radio:checked + .pdu-card .pdu-radio-ui {
+	border-color: #1496d1;
+}
+
+.pdu-radio:checked + .pdu-card .pdu-radio-dot {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.pdu-radio:focus + .pdu-card {
+	box-shadow: 0 0 0 2px rgba(20, 150, 209, 0.12);
 }

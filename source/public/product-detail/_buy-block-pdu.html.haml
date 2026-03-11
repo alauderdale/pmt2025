@@ -1,0 +1,28 @@
+.buy-block.sale-tag.buy-block-tall
+	.buy-block-card
+		.buy-block-thumb-wrap
+			.buy-block-thumb
+				%img.full-width{:src=>"/images/public/pdu-thumb.png"}
+		.price.d-flex.justify-space-between.padding-top.quarter-padding-bottom
+			.price-left.medium-font-name
+				%span.line-through.light-text-color.body-large.quarter-margin-right.old-price-text
+					$1,398
+				%span.text-danger.price-text
+					$898
+				%span.dark-text-color.bold-font-name.body-medium.seat-text
+					\/seat
+				%br
+					%span.text-danger{:style=>"font-size:14px;"}
+						You save 
+						%span.bold-font-name
+							$114 
+						instantly!
+			.price-right
+				.label.label-success.label-save
+					Save 20%
+		.forms
+			=partial"radio-selectors"
+		%a.btn.btn-lg.btn-block.btn-default{:href=>"#"}
+			Add to cart
+	.text-center.half-margin-top
+		%img.max-width.hidden-xs{:src=>"/images/public/buy-block-sizzle.png", :width=>"270px"}

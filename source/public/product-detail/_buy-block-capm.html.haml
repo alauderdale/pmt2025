@@ -2,7 +2,7 @@
 	.buy-block-card
 		.buy-block-thumb-wrap
 			.buy-block-thumb
-				%img.full-width{:src=>"/images/public/pdu-thumb.png"}
+				%img.full-width{:src=>"/images/public/capm-thumb.png"}
 		#buy-block-anchor
 		.price.d-flex.justify-space-between
 			.price-left.medium-font-name
@@ -19,11 +19,18 @@
 			.price-right
 				.label.label-success.label-save
 					Save 28%
-		.forms
-			=partial"radio-selectors"
+
 		%a.btn.btn-lg.btn-block.btn-default.half-margin-bottom{:href=>"#"}
 			Buy now
 		%a.btn.btn-lg.btn-block.btn-primary-wire.half-margin-bottom{:href=>"#"}
 			Try a demo
+		.affirm-btn
+			%p.body-small
+				%span.bold-font-name
+					$32/mo.
+				with 
+				%img.affirm-logo{:src=>"/images/affirm-logo.svg"}
+				%a.bold-font-name.quarter-margin-left{:href=>"#"}
+					Show me how
 	.text-center.half-margin-top
 		%img.max-width.hidden-xs{:src=>"/images/public/buy-block-sizzle.png", :width=>"270px"}

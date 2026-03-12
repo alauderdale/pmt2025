@@ -392,6 +392,8 @@ img {
 .flex-media-object {
   display: flex;
   gap: 16px; }
+  .flex-media-object.flex-media-gap-sm {
+    gap: 8px; }
   .flex-media-object.flex-media-object-align-center {
     align-items: center; }
 
@@ -694,7 +696,8 @@ ul.list-default {
   ul.list-default li {
     font-size: .75em;
     margin-left: 24px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    line-height: 1.2em; }
 
 ul.list-primary-color {
   list-style-image: url(../images/bullet-blue.png);
@@ -705,7 +708,7 @@ ul.list-primary-color {
     margin-bottom: 5px; }
 
 ul.list-checks {
-  list-style-image: url(../images/check.png);
+  list-style-image: url(../images/check.svg);
   margin-bottom: 24px; }
   ul.list-checks li {
     font-size: .9em;
@@ -1643,6 +1646,13 @@ a {
     .btn.btn-default:hover {
       background-color: #ffc933;
       border-color: #ffc933; }
+  .btn.btn-primary-wire {
+    background-color: #fff;
+    border-color: #138abb;
+    color: #138abb; }
+    .btn.btn-primary-wire:hover {
+      background-color: #f3f9fc;
+      border-color: #0f6e96; }
   .btn.btn-info {
     background-color: #fff;
     border-color: #dddddd;
@@ -1702,6 +1712,55 @@ a {
     width: 20px; }
     .test-toggle-btn.active .btn-icon:after {
       content: "✓"; }
+
+.affirm-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center; }
+  .affirm-btn p {
+    margin: 0; }
+  .affirm-btn a {
+    text-decoration: underline; }
+  .affirm-btn .affirm-logo {
+    position: relative;
+    top: -4px; }
+
+.show-more-wrap .show-more-content {
+  max-height: 400px;
+  overflow: hidden; }
+
+.show-more-wrap.show-more-expanded .show-more-content {
+  max-height: none; }
+
+.show-more-wrap.show-more-expanded .show-more-action-wrap {
+  background: none; }
+  .show-more-wrap.show-more-expanded .show-more-action-wrap .show-more-toggle:before {
+    content: "Show less"; }
+  .show-more-wrap.show-more-expanded .show-more-action-wrap .show-more-toggle i {
+    rotate: 180deg; }
+
+.show-more-wrap .show-more-action-wrap {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0), white);
+  display: flex;
+  align-items: end;
+  height: 300px;
+  margin-top: -270px;
+  z-index: 99; }
+  .show-more-wrap .show-more-action-wrap .show-more-toggle:before {
+    content: "Show more"; }
 
 .class-schedule-cards h1, .class-schedule-cards h2, .class-schedule-cards h3, .class-schedule-cards h4, .class-schedule-cards h5, .class-schedule-cards h6, .class-schedule-cards p {
   margin: 0; }
@@ -2327,8 +2386,8 @@ img.contact-logo-mobile {
   margin-bottom: -340px; }
   @media (max-width: 992px) {
     .buy-block-container {
-      top: 0;
-      margin-bottom: 24px; } }
+      top: 0 !important;
+      margin-bottom: 24px !important; } }
 .buy-block-wrapper {
   position: sticky;
   top: 50px;
@@ -2347,16 +2406,21 @@ img.contact-logo-mobile {
     right: -25px;
     top: 10px;
     content: "Sale";
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     background: #A94442;
-    font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+    font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
     width: 100px;
     color: white;
     padding: 0px 0;
     rotate: 45deg;
     z-index: 99; }
+  .buy-block .price {
+    margin: 10px 0; }
+  .buy-block .price-numbers {
+    display: flex;
+    align-items: center; }
   @media (max-width: 992px) {
     .buy-block .old-price-text {
       font-size: 14px; } }
@@ -2375,9 +2439,11 @@ img.contact-logo-mobile {
     @media (max-width: 992px) {
       .buy-block .seat-text {
         font-size: 14px; } }
-  @media (max-width: 992px) {
-    .buy-block .label-save {
-      font-size: 12px; } }
+  .buy-block .label-save {
+    margin-right: 10px; }
+    @media (max-width: 992px) {
+      .buy-block .label-save {
+        font-size: 12px; } }
   @media (max-width: 992px) {
     .buy-block {
       padding: 0; } }
@@ -2391,7 +2457,8 @@ img.contact-logo-mobile {
     border-radius: 5px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    background: white; }
+    background: white;
+    position: relative; }
 
 .buy-block-thumb-wrap {
   height: 164px;
@@ -2424,19 +2491,46 @@ img.contact-logo-mobile {
     opacity: 1 !important;
     transform: none !important; } }
 
+#buy-block-anchor {
+  position: relative;
+  top: -45px;
+  width: 0px;
+  height: 0px; }
+
+.buy-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  border-top: 1px solid #DDDDDD;
+  opacity: 0;
+  transition: opacity .22s ease;
+  align-items: center;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.16); }
+  .buy-bar p {
+    line-height: 1.2em; }
+  @media (max-width: 992px) {
+    .buy-bar.buy-bar-scrolled {
+      opacity: 1; } }
 .promo-testimonial-header .media-body {
   margin-top: 8px; }
 
 .credits-box {
-  font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif; }
+  font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif;
+  border-width: 2px !important; }
 
 .credits-header {
   display: flex;
   align-items: center;
-  gap: 18px; }
+  gap: 10px; }
 
 .credits-icon img {
-  width: 30px; }
+  width: 28px; }
 
 .credits-title {
   font-size: 16px; }
@@ -2493,7 +2587,7 @@ img.contact-logo-mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 16px;
+  padding: 10px 16px;
   border: 1px solid #d5d5d5;
   border-radius: 8px;
   background: #ffffff;
@@ -2594,8 +2688,7 @@ img.contact-logo-mobile {
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
 
 .pdu-radio:checked + .pdu-card {
-  border: 2px solid #1496d1;
-  padding: 13px 15px; }
+  border: 2px solid #1496d1; }
 
 .pdu-radio:checked + .pdu-card .pdu-radio-ui {
   border-color: #1496d1; }

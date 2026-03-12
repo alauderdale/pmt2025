@@ -195,8 +195,12 @@ img{
   }
   .flex-media-body{
 
-
   }
+
+  &.flex-media-gap-sm{
+    gap:8px;
+  }
+
   &.flex-media-object-align-center{
     align-items: center;
   }

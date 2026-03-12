@@ -52,6 +52,15 @@ a{
 			border-color:tint($secondary-color,20%);
 		}
 	}
+	&.btn-primary-wire{
+		background-color:#fff;
+		border-color:$primary-color;
+		color:$primary-color;
+		&:hover{
+			background-color:tint($primary-color,95%);
+			border-color:shade($primary-color,20%);	
+		}
+	}
 	&.btn-info{
 		background-color:#fff;
 		border-color:$gray-color;
@@ -138,4 +147,75 @@ a{
       }
     }
   }
+}
+
+
+.affirm-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border: 1px solid $border-color;
+	padding: 10px;
+	border-radius: 6px;
+	text-align: center;
+	p{
+		margin: 0;
+	}
+	a{
+		text-decoration: underline;
+	}
+	.affirm-logo{
+		position: relative;
+		top:-4px;
+	}
+}
+
+
+//show more expander
+
+
+.show-more-wrap{
+
+	.show-more-content{
+		max-height: 400px;
+		overflow: hidden;	
+	}
+	&.show-more-expanded{
+		.show-more-content{
+			max-height: none;
+		}
+		.show-more-action-wrap{
+			background: none;
+
+			.show-more-toggle{
+				&:before{
+					content: "Show less";
+				}
+				i{
+					rotate: 180deg;
+				}
+			}
+
+
+		}
+	}
+
+	.show-more-action-wrap{
+		position: relative;
+		width: 100%;
+		@include linear-gradient (rgba(255,255,255,0), white);
+		// background: red;
+		display: flex;
+		align-items: end;
+		height: 300px;
+		margin-top: -270px;
+		z-index: 99;
+		.show-more-toggle{
+			&:before{
+				content: "Show more";
+			}
+		}
+	}
+
 }

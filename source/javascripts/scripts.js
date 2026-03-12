@@ -1,15 +1,29 @@
 $(document).ready(function(){
 
 
-  //add class to sticky buy block
-  $(window).on('scroll load', function() {
+var triggerOffset = 300;
+
+$(window).on('scroll load', function() {
   var heroBottom = $('#product-hero').offset().top + $('#product-hero').outerHeight();
   var scrollTop = $(window).scrollTop();
 
-  if (scrollTop >= heroBottom) {
+  if (scrollTop >= heroBottom - triggerOffset) {
     $('.buy-block-tall').addClass('buy-block-scrolled');
   } else {
     $('.buy-block-tall').removeClass('buy-block-scrolled');
+  }
+});
+
+
+  //add class to sticky buy bar
+  $(window).on('scroll load', function() {
+  var heroBottom = $('.buy-block').offset().top + $('.buy-block').outerHeight();
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop >= heroBottom) {
+    $('.buy-bar').addClass('buy-bar-scrolled');
+  } else {
+    $('.buy-bar').removeClass('buy-bar-scrolled');
   }
 });
 
@@ -34,6 +48,21 @@ $(document).ready(function(){
     $summary.toggleClass('summary-closed');
     $btn.toggleClass('expanded');
   });
+
+
+  // toggle show more expander
+
+
+  $(document).on('click', '.show-more-toggle', function (e) {
+    e.preventDefault();
+
+    var $summary = $('.show-more-wrap');
+    var $btn = $(this);
+
+    $summary.toggleClass('show-more-expanded');
+    $btn.toggleClass('show-more-action-expanded');
+  });
+
 
 
   //only show "scroll for more items" at the top of the scroll

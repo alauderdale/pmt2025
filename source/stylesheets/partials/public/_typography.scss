@@ -402,6 +402,7 @@ ul.list-default{
     font-size:.75em;
     margin-left:$baseline;
     margin-bottom:5px;
+    line-height: 1.2em;
   }
 }
 
@@ -416,7 +417,7 @@ ul.list-primary-color{
 }
 
 ul.list-checks{
-  list-style-image:url(../images/check.png);
+  list-style-image:url(../images/check.svg);
   margin-bottom:$baseline;
   li{
     font-size:.9em;

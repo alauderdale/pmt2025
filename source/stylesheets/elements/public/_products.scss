@@ -253,7 +253,9 @@
 		@include breakpoint(md) {
 			opacity: 1;
 		}
-
+	}
+	.btn{
+		padding: 10px 10px;
 	}
 
 }

@@ -2517,6 +2517,9 @@ img.contact-logo-mobile {
   @media (max-width: 992px) {
     .buy-bar.buy-bar-scrolled {
       opacity: 1; } }
+  .buy-bar .btn {
+    padding: 10px 10px; }
+
 .promo-testimonial-header .media-body {
   margin-top: 8px; }
 

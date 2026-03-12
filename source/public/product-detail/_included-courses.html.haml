@@ -8,13 +8,15 @@
 					.flex-media-item
 						%img.course-preview-thumb{:src=>"/images/public/course-card.png", :width=>"142px"}
 					.flex-media-body
-						%p.dark-text-color.bold-font-name.quarter-margin-bottom
+						%p.dark-text-color.bold-font-name.no-margin-bottom
 							Course title
-						%p.dark-text-color.half-margin-bottom
+						%p.dark-text-color.quarter-margin-bottom
 							%i.material-symbols-outlined{:style=>"font-size:16px; position:relative; top:3px;"}
 								history_2
 							
-							14 PDUs
+							%span.bold-font-name
+								14 
+							PDUs
 						%ul.list-default.no-margin-bottom
 							-3.times do
 								%li.half-margin-left

@@ -168,29 +168,29 @@
 
 //for tall buy blocks that need the thumbnail removed
 
-.buy-block-thumb-wrap {
-	height: 164px; // match the visible thumbnail area
-	overflow: hidden;
-	transition: height .3s ease;
-}
-
-.buy-block-thumb {
-	opacity: 1;
-	transform: scale(1);
-	transform-origin: top center;
-	transition: opacity .22s ease, transform .3s ease;
-}
-
-.buy-block-thumb img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-
-///for when the thumbnail image needs hiding
-
 .buy-block-tall{
+
+
+
+	.buy-block-thumb {
+		opacity: 1;
+		transform: scale(1);
+		transform-origin: top center;
+		transition: opacity .22s ease, transform .3s ease;
+	}
+
+	.buy-block-thumb img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+
+	.buy-block-thumb-wrap {
+		height: 164px; // match the visible thumbnail area
+		overflow: hidden;
+		transition: height .3s ease;
+	}
 
 	&.buy-block-scrolled{
 
@@ -206,14 +206,14 @@
 	}
 
 
-@include breakpoint(md) {
-			.buy-block-thumb-wrap{
-				height: auto!important;
-			}
-			.buy-block-thumb {
-				opacity: 1!important;
-				transform: none!important;
-			}
+	@include breakpoint(md) {
+				.buy-block-thumb-wrap{
+					height: auto!important;
+				}
+				.buy-block-thumb {
+					opacity: 1!important;
+					transform: none!important;
+				}
 		}
 
 

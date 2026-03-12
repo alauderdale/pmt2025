@@ -2460,21 +2460,21 @@ img.contact-logo-mobile {
     background: white;
     position: relative; }
 
-.buy-block-thumb-wrap {
-  height: 164px;
-  overflow: hidden;
-  transition: height .3s ease; }
-
-.buy-block-thumb {
+.buy-block-tall .buy-block-thumb {
   opacity: 1;
   transform: scale(1);
   transform-origin: top center;
   transition: opacity .22s ease, transform .3s ease; }
 
-.buy-block-thumb img {
+.buy-block-tall .buy-block-thumb img {
   display: block;
   width: 100%;
   height: auto; }
+
+.buy-block-tall .buy-block-thumb-wrap {
+  height: 164px;
+  overflow: hidden;
+  transition: height .3s ease; }
 
 .buy-block-tall.buy-block-scrolled .buy-block-thumb-wrap {
   height: 0; }

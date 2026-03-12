@@ -2417,7 +2417,7 @@ img.contact-logo-mobile {
     rotate: 45deg;
     z-index: 99; }
   .buy-block .price {
-    margin: 10px 0; }
+    margin: 15px 0 10px 0; }
   .buy-block .price-numbers {
     display: flex;
     align-items: center; }

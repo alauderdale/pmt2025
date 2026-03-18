@@ -53,16 +53,16 @@ $(window).on('scroll load', function() {
   // toggle show more expander
 
 
-  $(document).on('click', '.show-more-toggle', function (e) {
-    e.preventDefault();
+$(document).on('click', '.show-more-toggle', function (e) {
+  e.preventDefault();
 
-    var $summary = $('.show-more-wrap');
-    var $btn = $(this);
+  var $component = $(this).closest('.show-more-component');
+  var $summary = $component.find('.show-more-wrap');
+  var $btn = $(this);
 
-    $summary.toggleClass('show-more-expanded');
-    $btn.toggleClass('show-more-action-expanded');
-  });
-
+  $summary.toggleClass('show-more-expanded');
+  $btn.toggleClass('show-more-action-expanded');
+});
 
 
   //only show "scroll for more items" at the top of the scroll

@@ -1,23 +1,24 @@
 %p.body-large.dark-text-color.bold-font-name.promo-header.no-margin-bottom
 	Course curriculum title
-.show-more-wrap
-	.curriculum-wrap.show-more-content
-		.half-margin-bottom
-			-4.times do
-				.row
-					-2.times do
-						.col-sm-6
-							.curriculum-block.margin-bottom
-							%h6.no-margin
-								Milestone 1
-							%p.quarter-margin-bottom.bold-font-name.dark-text-color
-								Course Introduction
-							%ul.list-default.no-margin-bottom
-								-6.times do
-									%li.half-margin-left
-										Lesson 1 - Scrum Sprint Overview
-	.show-more-action-wrap
-		%p.no-margin-bottom.bold-font-name
-			%a.show-more-toggle{:href=>"#"}
-				%i.material-symbols-outlined{:style=>"position:relative; top:7px;"}
-					keyboard_arrow_down	
+.show-more-component
+	.show-more-wrap
+		.curriculum-wrap.show-more-content
+			.half-margin-bottom
+				-4.times do
+					.row
+						-2.times do
+							.col-sm-6
+								.curriculum-block.margin-bottom
+								%h6.no-margin
+									Milestone 1
+								%p.quarter-margin-bottom.bold-font-name.dark-text-color
+									Course Introduction
+								%ul.list-default.no-margin-bottom
+									-6.times do
+										%li.half-margin-left
+											Lesson 1 - Scrum Sprint Overview
+		.show-more-action-wrap
+			%p.no-margin-bottom.bold-font-name
+				%a.show-more-toggle{:href=>"#"}
+					%i.material-symbols-outlined{:style=>"position:relative; top:7px;"}
+						keyboard_arrow_down	

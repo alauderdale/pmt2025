@@ -1,0 +1,54 @@
+.buy-block.sale-tag
+	.buy-block-card
+		.buy-block-thumb-wrap
+			.buy-block-thumb
+				%img.full-width{:src=>"/images/public/pdu-thumb.png"}
+		#buy-block-anchor
+		%p.bold-font-name.half-margin-bottom.half-margin-top.body-large.visible-sm.visible-xs
+			On-Demand PDU Courses Available 24/7
+		%p.half-margin-top.no-margin-bottom
+			%i.material-symbols-outlined{:style=>"font-size:20px; position:relative; top:5px;"}
+				history
+			
+			%span.bold-font-name
+				60 
+			PDUs
+		.price-stack
+			.secret-deal-price-box
+				.secret-deal-price-row
+					.secret-deal-price-label
+						Regular price
+
+					.secret-deal-price-value.secret-deal-price-regular
+						%span.secret-deal-strike $598.00
+
+				.secret-deal-price-divider
+
+				.secret-deal-price-row
+					.secret-deal-price-label
+						Secret deal discount
+
+					.secret-deal-price-value.secret-deal-price-discount
+						%span.secret-deal-discount-percent -70%
+						%span.secret-deal-discount-amount $418 off
+
+				.secret-deal-price-divider
+
+				.secret-deal-price-row.secret-deal-price-total-row
+					.secret-deal-price-label.secret-deal-price-total-label
+						Today you pay
+
+					.secret-deal-price-value.secret-deal-price-total
+						%span.secret-deal-currency $
+						%span.secret-deal-total-number 180
+		%a.btn.btn-lg.btn-block.btn-default.half-margin-bottom{:href=>"#"}
+			Buy now
+		%a.btn.btn-lg.btn-block.btn-link.no-margin-bottom{:href=>"#"}
+			No thanks, I don’t want this deal
+	.half-margin-top
+		.buy-block-guarantee-badges.text-center
+			-2.times do
+				.guarantee-item
+					%img.max-width.hidden-xs.quarter-margin-bottom{:src=>"/images/public/badge-customer.svg", :width=>"130px"}
+					.text-center.no-margin-top.light-text-color.medium-font-name
+						Package included all 60 PDUs needed for your PMP renewal and are accepted by PMI.

@@ -1,0 +1,79 @@
+;;;
+
+"layout": "checkout",
+"title": "Checkout",
+"continue_text": "No thanks, proceed to next step"
+
+;;;
+
+
+=partial"secret-deal-header"
+#product-hero
+
+
+%section
+	.container
+		.product-grid
+			.pg-row					
+				.pg-col.pg-content
+					%h2.dark-text-color.bold-font-name.hidden-sm.hidden-xs
+						On-Demand PDU Course Available 24/7
+					.promo-section.border-bottom.padding-bottom
+						=partial"pmi-approved"
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"features"
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"credits-earned"
+					.promo-section.padding-top
+						=partial"reviews"	
+					.promo-section.border-bottom.padding-bottom
+						=partial"included-courses"
+						.course-price-summary
+							.course-price-summary-row
+								.course-price-summary-label
+									Retail value
+								.course-price-summary-value.course-price-summary-value-regular
+									%span.course-price-summary-currency 
+										$
+									%span.course-price-summary-strike 
+										598
+
+							.course-price-summary-row.course-price-summary-row-total
+								.course-price-summary-label.course-price-summary-label-total
+									Today you pay
+								.course-price-summary-value.course-price-summary-value-total
+									%span.course-price-summary-currency 
+										$
+									%span.course-price-summary-total 
+										180
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"why-course"
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"guarantee"
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"full-description"
+					.promo-section.border-bottom.padding-bottom.padding-top
+						=partial"faqs"
+					.promo-section.padding-bottom.padding-top
+						=partial"trusted-by"
+					
+				.pg-col.pg-buy-block.buy-block-container{:style=>"top:0px; margin-bottom:0px;"}
+					.buy-block-wrapper
+						=partial('buy-block-post-purchase-upsell')
+
+=partial"buy-bar"
+					
+						
+
+			
+				
+				
+				
+
+
+				
+				
+
+
+                           
+

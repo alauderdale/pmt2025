@@ -24,12 +24,12 @@
 
             .checkout-header-right
               %a.checkout-continue{ href: "#" } 
-                Continue shopping
+                = current_page.data.continue_text || "Custom link"
       /end menu
       #mainContents
         = yield
       /end main content
-      .checkout-footer
+      %footer.checkout-footer
         .container.checkout-footer-container
           .checkout-footer-inner
             .checkout-footer-left

@@ -1,0 +1,56 @@
+;;;
+
+"layout": "modal-display",
+"title": "PMP Bootcamp"
+
+;;;
+
+
+.modal{:style=>"position:relative; display:block;"}
+	.modal-dialog.modal-lg
+		.modal-content{:style=>"max-width:788px;"}
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button", :style=>"right:10px; top:10px; position:relative;"} 
+				×
+			.modal-body
+				.row
+					.col-lg-12	
+						.text-center.margin-bottom
+							%p.body-large.quarter-margin-bottom.dark-text-color.bold-font-name
+								Here’s a special one-time offer...
+							%h3.quarter-margin-bottom.dark-text-color
+								Add Practice Exams 
+								%span.bold-font-name.text-danger
+									save an extra $49
+							%p.body-large.half-margin-bottom.dark-text-color
+								The most advanced PMI-PBA exam simulator available
+							%p.body-large.dark-text-color
+								Now only 
+								%small.line-through.text-color
+									$99 
+								%span.text-danger.bold-font-name
+									$50
+								%span.label.label-success.label-save
+									Save 49%
+							.text-center
+								%img{:src=>"/images/public/post-purchase-exam-img.png", :width=>"300px"}
+						.text-center
+							%p.bold-font-name.dark-text-color.half-margin-bottom
+								Laser focus your study efforts with over 1,000 professionally authored PMI-PBA questions.
+							.d-flex.justify-center
+								%ul.list-default.text-left{:style=>"max-width:600px;"}
+									%li
+										Access from any web browser- online testing interface mimics the real PMP exam
+									%li
+										Detailed explanations and PMBOK® references for every PMP question
+									%li
+										Reports track your PMP knowledge and show where you need to study
+									%li
+										Includes over twenty condensed PMP mock exams, knowledge area tests, and more
+
+					.d-flex.justify-center.full-width
+						%a.btn.btn-default.half-margin-bottom{:href=>"/public/checkout"}
+							Add practice exams
+						%a.btn.btn-link.half-margin-bottom{:href=>"/public/checkout"}
+							No thanks, I just want the course
+				
+

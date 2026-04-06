@@ -210,6 +210,9 @@
 .justify-space-between {
   justify-content: space-between; }
 
+.justify-center {
+  justify-content: center; }
+
 .align-items-baseline {
   align-items: baseline; }
 
@@ -2472,7 +2475,7 @@ img.contact-logo-mobile {
   height: auto; }
 
 .buy-block-tall .buy-block-thumb-wrap {
-  height: 164px;
+  height: 174px;
   overflow: hidden;
   transition: height .3s ease; }
 

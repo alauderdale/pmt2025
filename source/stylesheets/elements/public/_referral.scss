@@ -36,11 +36,11 @@
     top: 0;
     right: 0;
     min-height: 390px;
-    min-width: 461px;
+    width: 461px;
     display: flex;
     @include breakpoint(md) {
         position: relative;
-        min-width: 100%;
+        width: 100%;
         margin-top:$baseline;
     }
     .referral-form-card-inner{
@@ -57,6 +57,9 @@
         }
         .form-subtitle{
             color: $text-color;
+        }
+        .form-text{
+            color: $dark-text-color;
         }
         .form-helper{
             color: $text-color;

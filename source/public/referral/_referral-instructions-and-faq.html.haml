@@ -1,0 +1,65 @@
+%section.gradient-bottom
+	.container
+		.row
+			.col-sm-12
+				%h2.dark-text-color.bold-font-name
+					Referring is easy
+				.row
+
+					.col-sm-4
+						.margin-bottom
+							.number-accent.half-margin-bottom
+								.number-accent-text
+									1
+							%p.body-large.bold-font-name.dark-text-color.no-margin-bottom
+								Send an invite
+							%p.no-margin-bottom
+								Send a quick invite to share your referral link.
+					.col-sm-4
+						.margin-bottom
+							.number-accent.half-margin-bottom
+								.number-accent-text
+									2
+							%p.body-large.bold-font-name.dark-text-color.no-margin-bottom
+								They enroll
+							%p.no-margin-bottom
+								Your friend signs up for a live PMTraining course.
+					.col-sm-4
+						.margin-bottom
+							.number-accent.half-margin-bottom
+								.number-accent-text
+									3
+							%p.body-large.bold-font-name.dark-text-color.no-margin-bottom
+								You get paid
+							%p.no-margin-bottom
+								You earn $50 once they enroll.
+
+
+
+%section
+	.container
+		.row
+			.col-md-4
+				.margin-bottom
+					%h2.bold-font-name.dark-text-color.no-margin-bottom
+						Frequently asked questions
+					%p.no-margin-bottom
+						View full
+						%a{:href=>"#"}
+							Terms & Conditions
+			.col-md-8
+				#accordion.panel-group.faq-accordian
+					-4.times do |count|
+						.panel.panel-default
+							.panel-heading
+								.panel-title
+									%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-#{count}"}
+										.icon-wrapper
+											%span.fa.fa-caret-down.faq-icon
+										.question-wrapper
+											%p.bold-font-name.dark-text-color.body-large
+												When do I get paid?
+							.panel-collapse.collapse{:id=>"collapse-#{count}"}
+								.panel-body
+									%p.no-margin-bottom
+										You’ll receive your $50 reward after your friend enrolls in a live course.

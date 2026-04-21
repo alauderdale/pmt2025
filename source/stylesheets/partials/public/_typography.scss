@@ -554,11 +554,28 @@ ul.check-list-large{
   }
 }
 
-//labels
-
 .label-save{
   color:shade($success-color,40%);
   font-family: $extra-bold-font-name;
   background: tint($success-color,70%);
 
+}
+
+///accent treatments
+
+
+.number-accent{
+  $circle-size: 60px;
+  display: flex;
+  width: $circle-size;
+  height: $circle-size;
+  background: tint($primary-color,80%);
+  font-family: $bold-font-name;
+  color: $dark-text-color;
+  border-radius: 100px;
+  align-items: center;     /* vertical center */
+  justify-content: center;
+  .number-accent-text{
+    font-size: 20px;
+  }
 }

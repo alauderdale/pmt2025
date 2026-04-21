@@ -1,0 +1,29 @@
+%h3.half-margin-bottom.form-title.bold-font-name
+	Share your referral link
+.quarter-margin-bottom.full-width
+	.referral-link-wrapper
+		.referral-link-input-wrapper
+			%input.form-control.referral-link-input{ type: "text", value: "pmtraining.com/r/8K3L9X", disabled: "disabled" }
+		.copy-link-action-wrapper
+			%a.body-small.bold-font-name.copy-link-action{:href=>"#"}
+				%i.material-symbols-outlined{:style=>"position:relative; top:8px;"}
+					content_copy
+				Copy referral link
+.referral-divider
+	%span 
+		Or send an invite
+.quarter-margin-bottom.full-width
+	.form-group.full-width
+		%p.body-small.bold-font-name.quarter-margin-bottom.form-label
+			Your friends email
+		%input.form-control{ type: "text", placeholder: "john@doe.com" }
+	.form-group.full-width
+		%p.body-small.bold-font-name.quarter-margin-bottom.form-label
+			Also send them a text
+			%span.light-text-color
+				(optional)
+		%input.form-control{ type: "text", placeholder: "333-333-3333" }
+%a.btn.btn-success.btn-lg.btn-block{:href=>"#"}
+	Invite & earn $50
+%p.body-small.form-helper.no-margin-bottom.half-margin-top
+	We’ll send a quick invite. No spam.

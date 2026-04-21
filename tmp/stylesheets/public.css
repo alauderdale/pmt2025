@@ -805,6 +805,20 @@ ul.check-list-large li i {
   font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
   background: #e5f2db; }
 
+.number-accent {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background: #d0e8f1;
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+  color: #171717;
+  border-radius: 100px;
+  align-items: center;
+  /* vertical center */
+  justify-content: center; }
+  .number-accent .number-accent-text {
+    font-size: 20px; }
+
 .margin-auto {
   margin: 0 auto; }
 
@@ -3454,6 +3468,115 @@ a.order-expander-outer {
 
 .confirm-panel {
   padding: 18px; }
+
+.referral-hero {
+  background: url(../images/public/referral-bg.svg) no-repeat center -50px; }
+  @media (max-width: 992px) {
+    .referral-hero {
+      background: none; } }
+  .referral-hero .referral-hero-text {
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 992px) {
+      .referral-hero .referral-hero-text {
+        align-items: center; } }
+    .referral-hero .referral-hero-text .earn-text {
+      max-width: 300px; }
+      @media (max-width: 992px) {
+        .referral-hero .referral-hero-text .earn-text {
+          max-width: 100%; } }
+.referral-form {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.referral-form-card {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 390px;
+  min-width: 461px;
+  display: flex; }
+  @media (max-width: 992px) {
+    .referral-form-card {
+      position: relative;
+      width: 100%;
+      margin-top: 24px; } }
+  .referral-form-card .referral-form-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    font-family: "museo_sans_500regular", Helvetica, Arial, sans-serif; }
+    .referral-form-card .referral-form-card-inner .form-title {
+      color: #171717; }
+    .referral-form-card .referral-form-card-inner .form-subtitle {
+      color: #545a5f; }
+    .referral-form-card .referral-form-card-inner .form-helper {
+      color: #545a5f; }
+    .referral-form-card .referral-form-card-inner .form-label {
+      color: #171717; }
+
+.referral-guy {
+  width: 162px;
+  position: absolute;
+  top: 20px;
+  left: 48px;
+  z-index: 9; }
+  @media (max-width: 1200px) {
+    .referral-guy {
+      left: -68px; } }
+  @media (max-width: 992px) {
+    .referral-guy {
+      display: none; } }
+.referral-link-input {
+  background: #FAFBFD !important; }
+
+.referral-link-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center; }
+  .referral-link-wrapper .copy-link-action {
+    line-height: 34px; }
+  .referral-link-wrapper .referral-link-input-wrapper {
+    width: calc(100% - 150px); }
+  .referral-link-wrapper .copy-link-action-wrapper {
+    width: 150px; }
+
+.referral-divider {
+  position: relative;
+  text-align: center;
+  margin: 8px 0;
+  color: #6b6f75;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  width: 100%; }
+  .referral-divider:before, .referral-divider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50% - 60px);
+    height: 1px;
+    background: #DDDDDD; }
+  .referral-divider:before {
+    left: 0; }
+  .referral-divider:after {
+    right: 0; }
+  .referral-divider span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 0 14px;
+    background: #fff; }
 
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {

@@ -1,0 +1,146 @@
+
+.referral-hero{
+    background: url(../images/public/referral-bg.svg)no-repeat center -50px;
+    @include breakpoint(md) {
+        background: none;
+    }
+    .referral-hero-text{
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(md) {
+            align-items: center;
+        }
+        .earn-text{
+            max-width: 300px;
+            @include breakpoint(md) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.referral-form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.referral-form-card{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: white;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    min-height: 390px;
+    min-width: 461px;
+    display: flex;
+    @include breakpoint(md) {
+        position: relative;
+        width: 100%;
+        margin-top:$baseline;
+    }
+    .referral-form-card-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        font-family: $medium-font-name;
+
+        .form-title{
+            color: $dark-text-color;
+        }
+        .form-subtitle{
+            color: $text-color;
+        }
+        .form-helper{
+            color: $text-color;
+        }
+        .form-label{
+            color: $dark-text-color;
+        }
+        
+    }
+}
+
+
+.referral-guy{
+    width:162px;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+    z-index: 9;
+    @include breakpoint(lg) {
+        left: -68px;
+    }
+    @include breakpoint(md) {
+        display: none;
+    }    
+}
+
+.referral-link-input{
+ background: #FAFBFD!important;
+}
+
+
+.referral-link-wrapper{
+    display: flex;
+    gap: 16px;
+    align-items:center ;
+    .copy-link-action{
+        line-height: 34px;
+    }
+    .referral-link-input-wrapper{
+        width:calc(100% - 150px);
+    }
+    .copy-link-action-wrapper{
+        width: 150px;
+    }
+}
+
+
+
+.referral-divider {
+    position: relative;
+    text-align: center;
+    margin: 8px 0;
+    color: #6b6f75;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    width: 100%;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(50% - 60px); // adjust if text width changes
+        height: 1px;
+        background: $border-color;
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        right: 0;
+    }
+
+    span {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding: 0 14px;
+        background: #fff; // match card bg
+    }
+}
+
+

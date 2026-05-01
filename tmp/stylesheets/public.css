@@ -1912,6 +1912,45 @@ a {
   border-radius: 10px;
   border: 1px solid #DDDDDD; }
 
+.exam-type-alert {
+  position: relative;
+  border: 2px solid #138abb;
+  background: #f8fbfd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 14px; }
+  .exam-type-alert i {
+    color: #138abb; }
+  .exam-type-alert:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 33%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #138abb; }
+    @media (max-width: 1200px) {
+      .exam-type-alert:before {
+        left: 41%; } }
+    @media (max-width: 992px) {
+      .exam-type-alert:before {
+        left: 50%; } }
+  .exam-type-alert:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 33%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #f8fbfd; }
+    @media (max-width: 1200px) {
+      .exam-type-alert:after {
+        left: 41%; } }
+    @media (max-width: 992px) {
+      .exam-type-alert:after {
+        left: 50%; } }
 .logo-sm {
   border-bottom: none; }
 
@@ -3019,7 +3058,8 @@ img.contact-logo-mobile {
 .class-details-list i {
   position: relative;
   top: -2px;
-  margin-right: 2px; }
+  margin-right: 4px;
+  font-size: 18px; }
 
 @media (max-width: 992px) {
   .buy-block-modal {

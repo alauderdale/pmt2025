@@ -1,0 +1,48 @@
+.exam-type-alert{
+  position: relative; // required
+  border: 2px solid $primary-color;
+  background: tint($primary-color, 97%);
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 14px; // give space for caret
+
+  i{
+    color: $primary-color;
+  }
+
+  // outer triangle (border)
+  &:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 33%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $primary-color;
+    @include breakpoint(lg) {
+    	left: 41%;
+    }
+    @include breakpoint(md) {
+    	left: 50%;
+    }
+  }
+
+  // inner triangle (background fill)
+  &:after{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 33%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid tint($primary-color, 97%);
+    @include breakpoint(lg) {
+    	left: 41%;
+    }
+    @include breakpoint(md) {
+    	left: 50%;
+    }
+  }
+}

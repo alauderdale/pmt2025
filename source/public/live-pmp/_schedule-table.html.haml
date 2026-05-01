@@ -81,7 +81,7 @@
         .btn.btn-info-dark.dropdown-toggle{"data-toggle" => "dropdown"}
           %span.btn-content-wrapper
             %span.text
-              Any month
+              All PMP classes
             %span.material-symbols-outlined.icon{:style=>"vertical-align:middle;"}
               keyboard_arrow_down
         %ul.dropdown-menu{:role => "menu"}
@@ -90,19 +90,19 @@
               .radio.quarter-margin-top.quarter-margin-bottom
                 %label
                   %input#optionsRadios1{ :name => "optionsRadios", :type => "radio", :value => "option1"}/
-                  Any month
+                  All PMP classes
           %li
             %a{:href => "#"} 
               .radio.quarter-margin-top.quarter-margin-bottom
                 %label
                   %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
-                  January
+                  Current
           %li
             %a{:href => "#"} 
               .radio.quarter-margin-top.quarter-margin-bottom
                 %label
                   %input#optionsRadios3{:name => "optionsRadios", :type => "radio", :value => "option3"}/
-                  February
+                  New
       %a.clear-filters{:href=>"#"}
         Clear all
     .filters-col
@@ -125,6 +125,7 @@
           %li
             %a.quarter-padding-top.quarter-padding-bottom{:href => "#"} 
               Option
+  =partial'/public/live-pmp/exam-type-alert'
   .class-schedule-cards
     .class-card
       .card-col.title

@@ -1,0 +1,46 @@
+;;;
+
+"layout": "modal-display",
+"title": "PMP Bootcamp"
+
+;;;
+
+
+.modal{:style=>"position:relative; display:block;"}
+	.modal-dialog.modal-lg
+		.modal-content.overflow-hidden
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button", :style=>"right:10px; top:10px; position:absolute; background:white;"} 
+				×
+			.modal-body.no-padding
+				%section.invert-section.invert-darker.product-header#product-hero.padding-top.padding-bottom.hidden-sm.hidden-xs
+					.padding-left.padding-right
+						.product-grid
+							.pg-row
+								.pg-col.pg-content
+									%h1.bold-font-name.no-margin-bottom{:style=>"font-size:39px;"}
+										Live Online PMP® Class
+									%h2.bold-font-name.no-margin-bottom.light-accent-text-color
+										Mon / Wed Evenings
+				%section.no-padding-top.half-padding-bottom
+					.padding-left.padding-right
+						.product-grid
+							.pg-row
+								.pg-col.pg-content
+									.promo-section.border-bottom.padding-bottom.padding-top
+										=partial"features"
+									.promo-section.padding-top
+										=partial"class-details"
+
+									
+									
+								.pg-col.pg-buy-block.buy-block-container
+									.buy-block-wrapper.no-padding
+										.buy-block-modal
+											=partial('buy-block-live-course')
+				.padded.no-padding-top
+					%p.body-small.medium-font-name.no-margin-bottom
+						%span.bold-font-name
+							Delivered over six weeks, in 2-hour sessions, on each Monday & Wednesday! Guaranteed to pass, this PMP class includes everything you need to get certified. 
+						Official PMI class materials, required Contact Hours, practice exam portal, and much more. Instant email confirmation and enrollment info following registration. Veteran instructor Christine Fertl will be conducting this class live.
+				
+

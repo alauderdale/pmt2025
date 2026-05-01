@@ -27,6 +27,12 @@
 		order:2;
 	}
 
+	&.pg-content-modal{
+
+			
+
+	}
+
 }
 
 .pg-buy-block{
@@ -871,4 +877,27 @@
 		display: grid;
 	}
 
+}
+
+
+//course details list
+
+.class-details-list{
+	i{
+		position: relative;
+		top:-2px;
+		margin-right: 2px;
+
+	}
+}
+
+
+//modal product details
+
+
+.buy-block-modal{
+	
+	@include breakpoint(md) {
+		padding-top: 50px;
+	}
 }

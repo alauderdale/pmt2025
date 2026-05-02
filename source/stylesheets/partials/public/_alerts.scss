@@ -6,6 +6,8 @@
   border-radius: 4px;
   margin-top: 14px; // give space for caret
 
+
+
   i{
     color: $primary-color;
   }
@@ -45,4 +47,29 @@
     	left: 50%;
     }
   }
+
+
+  .exam-alert-close{
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.6;
+    border: none;
+    background: none;
+
+    i{
+      font-size: 20px;
+      color: $dark-text-color;
+    }
+
+    &:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+
+
 }

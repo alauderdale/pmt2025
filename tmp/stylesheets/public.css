@@ -1951,6 +1951,22 @@ a {
     @media (max-width: 992px) {
       .exam-type-alert:after {
         left: 50%; } }
+  .exam-type-alert .exam-alert-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.6;
+    border: none;
+    background: none; }
+    .exam-type-alert .exam-alert-close i {
+      font-size: 20px;
+      color: #171717; }
+    .exam-type-alert .exam-alert-close:hover {
+      opacity: 1;
+      cursor: pointer; }
+
 .logo-sm {
   border-bottom: none; }
 

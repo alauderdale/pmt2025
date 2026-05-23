@@ -310,7 +310,7 @@ img {
 
 .bg-cover {
   background: no-repeat center center fixed;
-  -webkit-background-size: cover;
+  -webkit-background-d-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
@@ -404,7 +404,7 @@ img {
     align-items: center; }
 
 .base-border-radius {
-  border-radius: 6px; }
+  border-radius: 6px !important; }
 
 @font-face {
   font-family: 'socialicoregular';
@@ -3651,6 +3651,30 @@ a.order-expander-outer {
     z-index: 1;
     padding: 0 14px;
     background: #fff; }
+
+img.corporate-training-video-thumb {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  @media (max-width: 1200px) {
+    img.corporate-training-video-thumb {
+      width: 135%; } }
+  @media (max-width: 992px) {
+    img.corporate-training-video-thumb {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      margin-top: 24px; } }
+.corporate-training-hero {
+  overflow: hidden; }
+
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
 
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {

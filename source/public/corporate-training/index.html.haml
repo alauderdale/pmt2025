@@ -1,147 +1,246 @@
 ;;;
-
 "layout": "public",
-"title": "Corporate Training",
-"activeclass": "training",
-"subtitle": "Corporate Training Options"
-
+"title": "Home", 
+"activeclass": "home"
 ;;;
 
-=partial"/public/shared/page-head-small", locals:{headerClass:"training-pmp-header"}
+
+
+
+=partial'/public/corporate-training/slider'
+%section
+	.container
+		.row
+			.col-lg-12
+				.text-center
+					%h4.bold-font-name.dark-text-color
+						Trusted by the world’s smartest teams
+					%img.max-width{:src => "../images/home-logos.png"}
+
+
+
+%section.padding-top
+	.container
+		.ps-row.reverse
+			.ps-flex-col.image-col
+				%img.spot-image{:src => "../images/public/corporate_training/bad.png"}
+			.ps-flex-col
+				%h2.lg.bold-font-name.dark-text-color.half-margin-bottom.title
+					Sending employees to train on their own only gets you so far
+
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								Employees train independently 
+							with inconsistent methodologies
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								Teams struggle
+							with alignment and communication
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-clear.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large
+							%span.extra-bold-font-name
+								Professional development often
+							feels reactive instead of strategic
+				
+		.ps-row
+			.ps-flex-col.image-col
+				%img.spot-image{:src => "../images/public/corporate_training/good.png"}
+			.ps-flex-col
+				%h2.lg.bold-font-name.dark-text-color.half-margin-bottom.title
+					Train together. Perform better together.
+
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Align teams around proven 
+							project management practices
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Increase employee engagement
+							and long-term retention
+				.media.d-flex
+					.pull-left
+						%img.bullet{:src=>"../images/icon-check.svg"}
+					.media-body
+						%p.no-margin-bottom.dark-text-color.body-large{:style=>"line-height:1.2em;"}
+							%span.extra-bold-font-name
+								Build internal expertise
+							through structured upskilling
+		.ps-row.no-padding-bottom
+			.center-button-container
+				%a.btn.btn-default.btn-lg{:href=>"#request-information"}
+					Request corporate training
+
+
+
+
+
+
+
+			
+%section.gradient-top
+	.container
+		.row
+			.col-lg-12
+				%h2.lg.bold-font-name.dark-text-color.margin-top.double-margin-bottom.text-center
+					Why Organizations Choose PMTraining
+		.row
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-work.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Private Team Training
+				%p
+					Dedicated live training built exclusively for your organization and schedule.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-instruct.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Virtual or Onsite Delivery
+				%p
+					Train distributed or in-person teams with flexible delivery options.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-laptop.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Expert Instructors
+				%p
+					Learn from experienced, PMI-authorized instructors with real-world expertise.
+			.col-sm-3.text-center-sm
+				%img.half-margin-bottom{:src=>"../images/icon-top.svg"}
+				%p.body-large.dark-text-color.bold-font-name.quarter-margin-bottom
+					Certification-Focused
+				%p
+					Prepare employees for industry-recognized certifications with proven training programs.
+
+
+%section.invert-section.invert-darker
+	.container
+		.row
+			.col-lg-12
+				%h2.lg.bold-font-name.quarter-margin-bottom.text-center
+					Corporate Training That Delivers Results
+				%p.body-large.bold-font-name.text-center
+					Upskill teams wit 
+					%span{:style=>"color:#FDE0AA;"}
+						expert-led
+					certification training 
+					%span{:style=>"color:#FDE0AA;"}
+						tailored to your organization. 
+					
+		.row.padding-bottom.quarter-padding-top
+			.col-lg-12
+				#path-component
+					.tabs-container
+						%ul.nav.nav-tabs.tabs-simple.light-tabs.d-flex.justify-center
+							%li.active
+								%a{:href=>"#"}
+									Expert training
+							%li
+								%a{:href=>"#"}
+									Exceptional Tools
+							%li
+								%a{:href=>"#"}
+									Boost performance
+							%li
+								%a{:href=>"#"}
+									Enroll into any Class
+					.path-content
+						.row
+							.col-sm-6
+								%img.full-width{:src => "../images/public/corporate_training/expert.png"}
+
+							.col-sm-6
+								.double-padding-top.padding-bottom
+									%h2.bold-font-name.margin-bottom
+										Experts in Certification Training
+									%p.body-large.bold-font-name
+										700+ companies and 100,000+ students trust PMTraining for expert-led project management certification training.
+									%ul.margin-bottom.hero-list
+										%li.bold-font-name
+											Improve team performance and alignment
+										%li.bold-font-name
+											Invest in employee growth and retention
+										%li.bold-font-name
+											Private onsite or virtual team training
+										%li.bold-font-name
+											Private onsite or virtual team training
+									%a.btn.btn-default.btn-lg{:href=>"#request-information"}
+										Learn more
+								
+
+
+
+%section.gradient-bottom
+	.container
+		.row.padding-top
+			.col-md-2
+			.col-md-8
+				%h2.lg.text-center.dark-text-color.medium-font-name
+					See why 
+					%span.bold-font-name
+						1,000,000+ 
+					professionals trust PMTraining
+			.col-md-2
+		.row.padding-bottom.padding-top
+			.col-lg-12
+				.trust-widget{:style=>"width:100%; height:130px; background:#DFF0F6;"}
 
 
 %section
 	.container
 		.row
-			.col-md-7
-				%h2
-					Prepare Your Students to Pass.
-				%p
-					PMTraining corporate solutions include 
-					%strong
-						volume purchase options, customized instructor-led training,
-					and 
-					%strong
-						branded trainer sites 
-					that we host and support for your students. Use our tools in combination with your training curriculum, or as a standalone course.   
-				%p
-					Organizations who rely on our training products include:
-				%ul.list-default
-					%li
-						Training providers and bootcamps
-					%li
-						Universities and public sector agencies
-					%li
-						Corporate training departments and PMI Chapters
-					%li
-						Training websites and online trainers
-			.col-md-5 
-				=image_tag"public/corporate_training/1.png", :class=>"img-responsive margin-auto double-margin-bottom" 
-		%hr
-		.row
-			.col-md-7
-				%h2
-					Instructor-led Training by Our PMP Experts
-				%p
-					Looking for a live in-person or live online PMP training solution? PMTraining offers multiple options for instructor-led classes delivered by PMP Subject Matter Experts. 
-				%p
-					On-site and virtual classes are available, including all materials, software, contact hours, and PDUs. 
-				%a.btn.btn-default.margin-bottom{:href=>"/public/about/contact"}
-					Contact Us to Receive a Quote
-			.col-md-5 
-				=image_tag"public/corporate_training/2.png", :class=>"img-responsive margin-auto double-margin-bottom" 
-		%hr
-		.row
-			.col-md-7
-				%h2
-					Volume Discounts for Multiple Students
-				%p
-					Take advantage of discounts when registering multiple students for PMP exam preparation products and courses. Students will receive exceptional exam preparation with straighforward volume payment options. 
-				%p
-					Our volume discount purchase program includes:
-				%ul.list-default
-					%li
-						Discounted pricing for multiple student licenses
-					%li
-						Group rates on distance learning classes
-					%li
-						Accounts provisioned instantly
-					%li
-						New students notified immediately with access instructions
-				%a.btn.btn-default.margin-bottom{:href=>"/public/corporate-training/corporate-discount"}
-					Visit our Volume Discount Order Form
-			.col-md-5 
-				=image_tag"public/corporate_training/3.png", :class=>"img-responsive margin-auto double-margin-bottom" 
-		%hr
-		.row
-			.col-md-7
-				%h2
-					A Private, Branded Training Site for Your Students
-				%p
-					If you provide training to your own students, a private branded exam site by PMTraining will offer all of student management tools you will need. Enroll your students through your own instructor portal and pay only for those students you register on a monthly basis. Ideal for training organizations and resellers, our platform provides:
-				%ul.list-default
-					%li
-						Corporate branded exam prep site, hosted by us
-					%li
-						Enroll students whenever you like
-					%li
-						View student performance reports and trends
-					%li
-						Create custom tests for your classes
-					%li
-						Enroll students in On-Demand courseware
-					%li
-						Customer support provided by our team
-					%li
-						Simple setup and clear, automated billing
-				%a.btn.btn-default.margin-bottom{:href=>"/public/corporate-training/private-portal"}
-					Learn More & Register
-			.col-md-5 
-				=image_tag"public/img-hosted-branded.jpg", :class=>"img-responsive margin-auto double-margin-bottom" 
-		%hr
-			%h6.text-center.triple-margin-bottom
-				Other Exam and Assessment Products from SSI Logic
-		.row
-			.col-md-7
-				%p
-					Our volume discount and private, branded site options are offered through our entire portfolio of practice exam and job testing web products. Visit all of our products to learn more:
-				%ul.list-default
-					%li
-						%a{href:"http://www.pmtraining.com/", :target=>"_blank"}
-							PMP Exam
-						Preparation
-					%li
-						%a{href:"http://www.trainagile.com/", :target=>"_blank"}
-							Agile Training 
-						and Preparation
-					%li
-						%a{href:"http://www.itilprime.com/", :target=>"_blank"}
-							ITIL Foundation Exam 
-						Preparation
-					%li
-						%a{href:"http://www.pmtraining.com/", :target=>"_blank"}
-							CISSP Exam
-						http://www.cisspexampractice.com/
-					%li
-						%a{href:"http://www.wellhire.com/", :target=>"_blank"}
-							Job Testing
-						and Employee Assessments
-					%li
-						%a{href:"/public/about/contact", :target=>"_blank"}
-							Contact Us
-						for information about any of our products
+			.col-md-4
+				%h2.lg.dark-text-color.bold-font-name.text-center-sm
+					Frequently asked questions
+			.col-md-8
+				#accordion.panel-group.faq-accordian
+					-4.times do |count|
+						.panel.panel-default
+							.panel-heading
+								.panel-title
+									%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-#{count}"}
+										.icon-wrapper
+											%span.fa.fa-caret-down.faq-icon
+										.question-wrapper
+											%p.bold-font-name.dark-text-color.body-large
+												What types of corporate training do you offer?
+							.panel-collapse.collapse{:id=>"collapse-#{count}"}
+								.panel-body
+									%p.no-margin-bottom
+										We offer private PMP®, CAPM®, Agile, Scrum, PgMP®, and custom project management training programs for organizations of all sizes.
+							
 
-			.col-md-5 
+
+
+%section.invert-section.invert-darker#request-information
+	.container
+		.row.padding-top.padding-bottom
+			.col-lg-12
 				.text-center
-					=image_tag"public/logo_ssi-1.jpg", :class=>"img-responsive margin-auto double-margin-bottom img-thumbnail" 
-					%p
-						Professional. Measurable. Realistic.
-						%strong
-							Exam Preparation Solutions
-						%br
-						%a{href:"http://www.ssilogic.com/", target:"_blank"}
-							Visit SSI Logic
-
-
+					%h2.bold-font-name.quarter-margin-bottom
+						Request Corporate Training Information
+					%p.body-large
+						Tell us about your training needs.  we’ll be in touch shortly.
+		.row
+			.col-md-2
+			.col-md-8
+				.form-container.padded.panel.base-border-radius
+			.col-md-2
 
 				

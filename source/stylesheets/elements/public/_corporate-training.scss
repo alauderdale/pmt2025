@@ -1,0 +1,28 @@
+img.corporate-training-video-thumb{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	@include breakpoint(lg) {
+		width: 135%;
+	}
+	@include breakpoint(md) {
+		position: relative;
+		width: 100%;
+		max-width: 400px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-top: $baseline;
+	}
+}
+
+.corporate-training-hero{
+	overflow: hidden;
+
+}
+
+.center-button-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}

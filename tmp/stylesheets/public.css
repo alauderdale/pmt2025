@@ -3676,6 +3676,40 @@ img.corporate-training-video-thumb {
   justify-content: center;
   width: 100%; }
 
+.stats-strip {
+  padding-top: 28px; }
+  .stats-strip__inner {
+    background: #e8f7fc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    padding: 18px 28px; }
+  .stats-strip .stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    font-family: "museo_sans_500regular", Helvetica, Arial, sans-serif; }
+    .stats-strip .stat strong {
+      font-size: 35px;
+      line-height: 1;
+      font-weight: 800;
+      color: #1384b2; }
+    .stats-strip .stat span {
+      color: #171717;
+      font-size: 20px;
+      font-weight: 500; }
+
+@media (max-width: 767px) {
+  .stats-strip__inner {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start; }
+  .stats-strip .stat strong {
+    font-size: 26px; } }
+
 @media (max-width: 1200px) {
   .main-nav ul.main-links li {
     margin-right: 0;

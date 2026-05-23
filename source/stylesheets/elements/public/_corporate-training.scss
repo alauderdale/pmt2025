@@ -26,3 +26,56 @@ img.corporate-training-video-thumb{
 	justify-content: center;
 	width: 100%;
 }
+
+
+///stats section
+
+
+.stats-strip {
+  padding-top: 28px;
+
+  &__inner {
+    background: #e8f7fc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    padding: 18px 28px;
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    font-family: $medium-font-name;
+
+    strong {
+      font-size: 35px;
+      line-height: 1;
+      font-weight: 800;
+      color: $link-color;
+    }
+
+    span {
+      color: $dark-text-color;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-strip {
+    &__inner {
+      flex-direction: column;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .stat strong {
+      font-size: 26px;
+    }
+  }
+}

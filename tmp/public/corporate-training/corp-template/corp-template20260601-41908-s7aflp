@@ -7,16 +7,16 @@
 <title>
 title
 </title>
-<link href="../../stylesheets/public.css" rel="stylesheet" />
-<link href='../../images/favicon.ico' rel='shortcut icon'>
-<link href='../../images/favicon.ico' rel='shortcut icon'>
+<link href="/stylesheets/public.css" rel="stylesheet" />
+<link href='/images/favicon.ico' rel='shortcut icon'>
+<link href='/images/favicon.ico' rel='shortcut icon'>
 <link href='https://fonts.googleapis.com' rel='preconnect'>
 <link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
 <link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap' rel='stylesheet'>
 <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
-<script src="../../javascripts/lib/jquery.js"></script><script src="../../javascripts/lib/bootstrap.js"></script><script src="../../javascripts/lib/jquery.fancybox.pack.js"></script><script src="../../javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="../../javascripts/lib/highcharts/highcharts.js"></script><script src="../../javascripts/lib/slick.js"></script><script src="../../javascripts/lib/highcharts/modules/exporting.js"></script><script src="../../javascripts/lib/footable/footable.js"></script><script src="../../javascripts/lib/footable/footable.filter.js"></script><script src="../../javascripts/scripts.js"></script>
+<script src="/javascripts/lib/jquery.js"></script><script src="/javascripts/lib/bootstrap.js"></script><script src="/javascripts/lib/jquery.fancybox.pack.js"></script><script src="/javascripts/lib/helpers/jquery.fancybox-media.js"></script><script src="/javascripts/lib/highcharts/highcharts.js"></script><script src="/javascripts/lib/slick.js"></script><script src="/javascripts/lib/highcharts/modules/exporting.js"></script><script src="/javascripts/lib/footable/footable.js"></script><script src="/javascripts/lib/footable/footable.filter.js"></script><script src="/javascripts/scripts.js"></script>
 
-<body class='public public_corporate-training public_corporate-training_index'>
+<body class='public public_corporate-training public_corporate-training_corp-template'>
 <nav class='navbar navbar-default visible-xs navbar-fixed-top' id='mobile-main-nav' role='navigation'>
 <div class='container-fluid'>
 <div class='navbar-header'>
@@ -329,7 +329,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -387,7 +387,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -438,7 +438,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -490,7 +490,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -541,7 +541,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -646,7 +646,7 @@ USD $
 <div class='pull-left'>
 <a class='logo_two' href='/'></a>
 </div>
-<img src="../../images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
+<img src="/images/pmi_logo.png" class=" hidden-sm pull-right quarter-margin-left" width="60px" style="position:relative; top:-8px;" alt="" />
 <nav class='pull-right'>
 <ul class='list-inline sub-links'>
 <li>
@@ -716,7 +716,7 @@ Sign up now
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_practice.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -774,7 +774,7 @@ Student Testimonials
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_live.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -825,7 +825,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_demand.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -877,7 +877,7 @@ Another Link
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_training.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -928,7 +928,7 @@ Try a Demo
 </div>
 <div class='col-sm-7'>
 <div class='padded'>
-<img src="../../images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
+<img src="/images/public/dropdowns/dropdown_scrum.png" class="img-responsive" alt="" />
 </div>
 </div>
 </div>
@@ -1030,585 +1030,189 @@ USD $
 
 <!-- end menu -->
 <div id='mainContents'>
-<section class='invert-darker no-padding-top no-padding-bottom invert-section corporate-training-hero'>
+<section class='invert-section page-header-section training-pmp-header'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-6 col-md-push-6'>
-<a href=''>
-<img class='corporate-training-video-thumb' src='../images/public/corporate_training/video-thumb.png'>
-</a>
-</div>
-<div class='col-md-6 col-md-pull-6'>
-<div class='padding-top padding-bottom'>
-<h4 class='bold-font-name quarter-margin-bottom overhang light-accent-text-color'>
-Private Corporate Training for High-Performing Teams
-</h4>
-<h1 class='bold-font-name margin-bottom'>
-Train Project Teams That Deliver Better Results
-</h1>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-Improve team performance and alignment
-</li>
-<li class='bold-font-name'>
-Invest in employee growth and retention
-</li>
-<li class='bold-font-name'>
-Private onsite or virtual team training
-</li>
-</ul>
-<img class='max-width' src='../images/home-divider.svg'>
-<div class='media d-flex align-items-center margin-bottom' style='max-width:400px;'>
-<div class='pull-left'>
-<img src='../images/pmi-logo.svg'>
-</div>
-<div class='media-body'>
-<p class='media-heading no-margin-bottom bold-font-name'>
-Premier Authorized Training Partner (ATP) of the Project Management Institute®
-</p>
-</div>
-</div>
-<div class='btns'>
-<a class='btn btn-default btn-lg half-margin-bottom quarter-margin-right' href='#request-information'>
-Request information
-</a>
-</div>
-</div>
+<div class='col-lg-12'>
+<h2 class='no-margin-bottom pull-left'>
+Corporate Training
+</h2>
+<h6 class='no-margin-bottom pull-right hidden-xs half-margin-top extra-bold-font-name'>
+
+</h6>
 </div>
 </div>
 </div>
 </section>
 
-<section>
+<section class='extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-lg-12'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
 <div class='text-center'>
-<h4 class='bold-font-name dark-text-color'>
-Trusted by the world’s smartest teams
-</h4>
-<img class='max-width' src='../images/home-logos.png'>
-</div>
-</div>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+mollitia commodi repellat quia magni qui officiis et tempore praesentium quis sed facilis doloremque illum pariatur amet consequuntur eum sed
+</p>
+<a class='btn btn-default' href='#'>
+Start now
+</a>
 </div>
 <div class='row'>
-<div class='col-lg-12'>
-<div class='stats-strip'>
-<div class='stats-strip__inner'>
-<div class='stat'>
-<strong>
-20%
-</strong>
-<span>More productivity</span>
+<div class='col-lg-12 margin-top'>
+<img src="/images/public/corporate_training/hero.png" class="img-responsive margin-auto double-margin-top" width="535px" alt="" />
 </div>
-<div class='stat'>
-<strong>
-30%
-</strong>
-<span>
-Higher retention
-</span>
 </div>
-<div class='stat'>
-<strong>
-97%
-</strong>
-<span>
-Employee engagement
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='padding-top'>
-<div class='container'>
-<div class='ps-row reverse'>
-<div class='ps-flex-col image-col'>
-<img class='spot-image' src='../images/public/corporate_training/bad.png'>
-</div>
-<div class='ps-flex-col'>
-<h2 class='lg bold-font-name dark-text-color half-margin-bottom title'>
-Sending employees to train on their own only gets you so far
-</h2>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-Employees train independently
-</span>
-with inconsistent methodologies
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-Teams struggle
-</span>
-with alignment and communication
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-clear.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large'>
-<span class='extra-bold-font-name'>
-Professional development often
-</span>
-feels reactive instead of strategic
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class='ps-row'>
-<div class='ps-flex-col image-col'>
-<img class='spot-image' src='../images/public/corporate_training/good.png'>
-</div>
-<div class='ps-flex-col'>
-<h2 class='lg bold-font-name dark-text-color half-margin-bottom title'>
-Train together. Perform better together.
-</h2>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Align teams around proven
-</span>
-project management practices
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Increase employee engagement
-</span>
-and long-term retention
-</p>
-</div>
-</div>
-<div class='media d-flex'>
-<div class='pull-left'>
-<img class='bullet' src='../images/icon-check.svg'>
-</div>
-<div class='media-body'>
-<p class='no-margin-bottom dark-text-color body-large' style='line-height:1.2em;'>
-<span class='extra-bold-font-name'>
-Build internal expertise
-</span>
-through structured upskilling
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class='ps-row no-padding-bottom'>
-<div class='center-button-container'>
-<a class='btn btn-default btn-lg' href='#request-information'>
-Request corporate training
-</a>
-</div>
-</div>
-</div>
-</section>
-<section class='gradient-top'>
-<div class='container'>
-<div class='row'>
-<div class='col-lg-12'>
-<h2 class='lg bold-font-name dark-text-color margin-top double-margin-bottom text-center'>
-Why Organizations Choose PMTraining
-</h2>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-work.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Private Team Training
-</p>
-<p>
-Dedicated live training built exclusively for your organization and schedule.
-</p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-instruct.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Virtual or Onsite Delivery
-</p>
-<p>
-Train distributed or in-person teams with flexible delivery options.
-</p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-laptop.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Expert Instructors
-</p>
-<p>
-Learn from experienced, PMI-authorized instructors with real-world expertise.
-</p>
-</div>
-<div class='col-sm-3 text-center-sm'>
-<img class='half-margin-bottom' src='../images/icon-top.svg'>
-<p class='body-large dark-text-color bold-font-name quarter-margin-bottom'>
-Certification-Focused
-</p>
-<p>
-Prepare employees for industry-recognized certifications with proven training programs.
-</p>
-</div>
-</div>
-</div>
-</section>
-<section class='invert-section invert-darker'>
-<div class='container'>
-<div class='row'>
-<div class='col-lg-12'>
-<h2 class='lg bold-font-name quarter-margin-bottom text-center'>
-Corporate Training That Delivers Results
-</h2>
-<p class='body-large bold-font-name text-center'>
-Upskill teams wit
-<span style='color:#FDE0AA;'>
-expert-led
-</span>
-certification training
-<span style='color:#FDE0AA;'>
-tailored to your organization.
-</span>
-</p>
-</div>
-</div>
-<div class='row padding-bottom quarter-padding-top'>
-<div class='col-lg-12'>
-<div id='path-component'>
-<div class='tabs-container'>
-<ul class='nav nav-tabs tabs-simple light-tabs d-flex justify-center'>
-<li class='active'>
-<a href='#'>
-Expert training
-</a>
-</li>
-<li>
-<a href='#'>
-Exceptional Tools
-</a>
-</li>
-<li>
-<a href='#'>
-Boost performance
-</a>
-</li>
-<li>
-<a href='#'>
-Enroll into any Class
-</a>
-</li>
-</ul>
-</div>
-<div class='path-content'>
-<div class='row'>
-<div class='col-sm-6'>
-<img class='full-width' src='../images/public/corporate_training/experts.png'>
-</div>
-<div class='col-sm-6'>
-<div class='double-padding-top padding-bottom'>
-<h2 class='bold-font-name margin-bottom'>
-Trusted Certification Training for Teams
-</h2>
-<p class='body-large bold-font-name'>
-700+ organizations and 100,000+ professionals have relied on PMTraining to deliver industry-leading certification programs.
-</p>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-PMI-aligned curriculum taught by expert instructors
-</li>
-<li class='bold-font-name'>
-Flexible online, onsite, and private team training
-</li>
-<li class='bold-font-name'>
-Personalized student support and guidance
-</li>
-<li class='bold-font-name'>
-All materials included with transparent pricing
-</li>
-</ul>
-<a class='btn btn-default btn-lg' href='#request-information'>
-Learn more
-</a>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-6'>
-<img class='max-width' src='../images/public/corporate_training/tools.png'>
-</div>
-<div class='col-sm-6'>
-<div class='double-padding-top padding-bottom'>
-<h2 class='bold-font-name margin-bottom'>
-Learning That Continues Beyond the Classroom
-</h2>
-<p class='body-large bold-font-name'>
-Every PMTraining class includes powerful online tools designed to improve retention, engagement, and exam readiness.
-</p>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-Personalized student learning portal
-</li>
-<li class='bold-font-name'>
-Practice exams and performance reporting
-</li>
-<li class='bold-font-name'>
-Course materials available on any device
-</li>
-<li class='bold-font-name'>
-Progress tracking for students and instructors
-</li>
-</ul>
-<a class='btn btn-default btn-lg' href='#request-information'>
-Learn more
-</a>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-6'>
-<img class='max-width' src='../images/public/corporate_training/superstar.png'>
-</div>
-<div class='col-sm-6'>
-<div class='double-padding-top padding-bottom'>
-<h2 class='bold-font-name margin-bottom'>
-Build a More Capable Project Team
-</h2>
-<p class='body-large bold-font-name'>
-Help your team gain the skills and certifications needed to deliver stronger project outcomes.
-</p>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-Certification paths aligned with industry standards
-</li>
-<li class='bold-font-name'>
-Flexible training options for teams of any size
-</li>
-<li class='bold-font-name'>
-Proven learning experience with expert instruction
-</li>
-<li class='bold-font-name'>
-Trusted by organizations across the globe
-</li>
-</ul>
-<a class='btn btn-default btn-lg' href='#request-information'>
-Learn more
-</a>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-6'>
-<img class='max-width' src='../images/public/corporate_training/flex.png'>
-</div>
-<div class='col-sm-6'>
-<div class='double-padding-top padding-bottom'>
-<h2 class='bold-font-name margin-bottom'>
-Flexible Enrollment for Modern Teams
-</h2>
-<p class='body-large bold-font-name'>
-Give employees the freedom to choose the class schedule that works best for them—while maintaining centralized oversight.
-</p>
-<ul class='margin-bottom hero-list'>
-<li class='bold-font-name'>
-Access to 100+ live class options
-</li>
-<li class='bold-font-name'>
-Lowest available corporate pricing
-</li>
-<li class='bold-font-name'>
-Branded enrollment portal for your organization
-</li>
-<li class='bold-font-name'>
-Simple purchase-order and enrollment management
-</li>
-</ul>
-<a class='btn btn-default btn-lg' href='#request-information'>
-Learn more
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class='gradient-bottom'>
-<div class='container'>
-<div class='row padding-top'>
-<div class='col-md-2'></div>
-<div class='col-md-8'>
-<h2 class='lg text-center dark-text-color medium-font-name'>
-See why
-<span class='bold-font-name'>
-1,000,000+
-</span>
-professionals trust PMTraining
-</h2>
 </div>
 <div class='col-md-2'></div>
 </div>
-<div class='row padding-bottom padding-top'>
-<div class='col-lg-12'>
-<div class='trust-widget' style='width:100%; height:130px; background:#DFF0F6;'></div>
-</div>
-</div>
 </div>
 </section>
-<section>
+<section class='off-blue extra-padding'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-4'>
-<h2 class='lg dark-text-color bold-font-name text-center-sm'>
-Frequently asked questions
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/2.png" class="img-responsive margin-auto double-margin-top margin-bottom" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
 </h2>
-</div>
-<div class='col-md-8'>
-<div class='panel-group faq-accordian' id='accordion'>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-0'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What types of corporate training do you offer?
+<p class='lead2'>
+eos placeat et sunt vel iste maxime ut sit aut dolor aut commodi sint sit et et corrupti quo nulla
 </p>
-</div>
+<p class='bold-font-name'>
+Our volume discount purchase program includes:
+</p>
+<ul class='list-default'>
+<li>
+nulla ducimus ut dolorem vel aliquid
+</li>
+<li>
+doloremque dolor mollitia asperiores asperiores vero
+</li>
+<li>
+corrupti quae dolorem itaque quod nostrum
+</li>
+<li>
+distinctio molestias libero quam facilis illo
+</li>
+</ul>
+<a class='link-underline' href='#'>
+Call to action for this feature
 </a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-0'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-We offer private PMP®, CAPM®, Agile, Scrum, PgMP®, and custom project management training programs for organizations of all sizes.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-1'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What types of corporate training do you offer?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-1'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-We offer private PMP®, CAPM®, Agile, Scrum, PgMP®, and custom project management training programs for organizations of all sizes.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-2'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What types of corporate training do you offer?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-2'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-We offer private PMP®, CAPM®, Agile, Scrum, PgMP®, and custom project management training programs for organizations of all sizes.
-</p>
-</div>
-</div>
-</div>
-<div class='panel panel-default'>
-<div class='panel-heading'>
-<div class='panel-title'>
-<a class='collapsed' data-parent='#accordion' data-toggle='collapse' href='#collapse-3'>
-<div class='icon-wrapper'>
-<span class='fa fa-caret-down faq-icon'></span>
-</div>
-<div class='question-wrapper'>
-<p class='bold-font-name dark-text-color body-large'>
-What types of corporate training do you offer?
-</p>
-</div>
-</a>
-</div>
-</div>
-<div class='panel-collapse collapse' id='collapse-3'>
-<div class='panel-body'>
-<p class='no-margin-bottom'>
-We offer private PMP®, CAPM®, Agile, Scrum, PgMP®, and custom project management training programs for organizations of all sizes.
-</p>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
 </section>
-<section class='invert-section invert-darker' id='request-information'>
+<section class='extra-padding'>
 <div class='container'>
-<div class='row padding-top padding-bottom'>
-<div class='col-lg-12'>
+<div class='row'>
+<div class='col-md-6'>
+<div class='padded'>
+<img src="/images/public/corporate_training/template/3.png" class="img-responsive margin-auto double-margin-top" width="565px" alt="" />
+</div>
+</div>
+<div class='col-md-6'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+alias ullam odit voluptatem sit voluptatem et dolor ut laudantium sequi fuga quis deleniti voluptas et facilis odio doloremque suscipit
+</p>
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
+<div class='half-padding-top'></div>
+<hr>
+<blockquote class='half-margin-bottom no-padding'>
+<em>
+“Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.”
+</em>
+</blockquote>
+<p class='bold-font-name'>
+John Doe, CEO Big Company worldwide
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class='off-blue extra-padding'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6 col-md-push-6'>
+<img src="/images/public/corporate_training/template/4.png" class="img-responsive margin-auto double-margin-top" width="454px" alt="" />
+</div>
+<div class='col-md-6 col-md-pull-6'>
+<h2>
+I’m the headline for this feature
+</h2>
+<p class='lead2'>
+laboriosam corporis consequatur voluptas delectus repellendus voluptatem eos assumenda quasi nostrum aperiam rem quidem numquam itaque et nobis necessitatibus et
+</p>
+<p class='bold-font-name'>
+Our volume discount purchase program includes:
+</p>
+<ul class='list-default'>
+<li>
+sed explicabo doloremque earum consequatur minima
+</li>
+<li>
+sunt vel illo enim quo nobis
+</li>
+<li>
+harum magnam dicta quae vel et
+</li>
+<li>
+temporibus saepe tempora totam minus voluptatem
+</li>
+</ul>
+<a class='link-underline' href='#'>
+Call to action for this feature
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class='extra-padding invert-section'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
 <div class='text-center'>
-<h2 class='bold-font-name quarter-margin-bottom'>
-Request Corporate Training Information
+<h2>
+Get started today
 </h2>
-<p class='body-large'>
-Tell us about your training needs.  we’ll be in touch shortly.
+<p class='lead2'>
+Morbi ornare odio felis, sed luctus metus rhoncus ac. Suspendisse ullamcorper lorem massa, sed vulputate mauris tristique et.
 </p>
 </div>
-</div>
-</div>
 <div class='row'>
-<div class='col-md-2'></div>
-<div class='col-md-8'>
-<div class='form-container padded panel base-border-radius'></div>
+<div class='col-lg-1'></div>
+<div class='col-lg-10'>
+<div class='form'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Name'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Phone'>
+</div>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Email'>
+</div>
+<div class='form-group'>
+<textarea class='form-control input-lg' placeholder='Additional comments' rows='8'></textarea>
+</div>
+<a class='btn btn-default btn-block btn-lg' href='#'>
+Submit
+</a>
+</div>
+</div>
+<div class='col-lg-1'></div>
+</div>
 </div>
 <div class='col-md-2'></div>
 </div>
@@ -1621,7 +1225,7 @@ Tell us about your training needs.  we’ll be in touch shortly.
 <div class='container'>
 <div class='row'>
 <div class='col-sm-3'>
-<img src="../../images/logo_no_tag.png" alt="" />
+<img src="/images/logo_no_tag.png" alt="" />
 <p>
 <small>
 ©
@@ -1631,7 +1235,7 @@ SSILogic
 2014
 </small>
 </p>
-<img src="../../images/pmi_logo_3.png" class="pmi-logo" alt="" />
+<img src="/images/pmi_logo_3.png" class="pmi-logo" alt="" />
 <p class='bold-font-name'>
 <small>
 #3962

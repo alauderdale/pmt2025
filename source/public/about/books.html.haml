@@ -1,61 +1,150 @@
 ;;;
 
 "layout": "public",
-"title": "More SSL Logic Products",
-"right_title": "", 
-"activeclass": "about",
-"subtitle": "More SSL Logic Products",
-"subnav_data": "about_subnav",
-"testiminial_data": "testimonials",
-"product_data": "products"
+"title": "More SSL Logic Products"
 
 ;;;
 
-=partial"/public/shared/page-head-small", locals:{headerClass:"about-pmp-header"}
 
-
-%section.no-padding-bottom
+%section.invert-darker.no-padding-top.no-padding-bottom.invert-section.books-hero
 	.container
-		.row
-			.col-lg-12
-				=partial"/public/shared/subnav"
+		.flex-row
+			.flex-col-sm-7
+				.padding-top.padding-bottom
+					%h1.bold-font-name.margin-bottom
+						Books & Study Materials
 
+					%ul.margin-bottom.hero-list
+						%li.bold-font-name
+							1,000,000+ Professionals Trained
+						%li.bold-font-name
+							4.8/5 Avg. Student Rating
+						%li.bold-font-name
+							Trusted by Fortune 500 Teams
 
+					%img.max-width{:src => "/images/home-divider.svg"}
+
+					.media.d-flex.align-items-center.margin-bottom{:style => "max-width:400px;"}
+						.pull-left
+							%img{:src => "/images/pmi-logo.svg"}
+
+						.media-body
+							%p.media-heading.no-margin-bottom.bold-font-name
+								Premier Authorized Training Partner (ATP) of the Project Management Institute®
+			.flex-col-sm-5
+				.books-hero-img-container
+					%img.books-hero-img.max-width{:src => "/images/public/books-hero.png"}
+
+%section.no-padding-top
+	.container
+		.flex-row
+			.flex-col-12
+				.filters.margin-top.margin-bottom
+					.d-flex.align-items-center.flex-wrap
+						%span.half-margin-right 
+							Filter by exam type
+
+						%ul.list-inline.no-margin-bottom.book-filter-list
+							%li.active
+								%a{:href => "#"} All exams
+							%li
+								%a{:href => "#"} PMP
+							%li
+								%a{:href => "#"} PgMP
+							%li
+								%a{:href => "#"} ITIL
+							%li
+								%a{:href => "#"} CAPM
+							%li
+								%a{:href => "#"} PMI-ACP
+	.container
+		.flex-row
+			-12.times do
+				.flex-col-md-3.flex-col-6
+					.book-card
+						%a{:href => "#"}
+							%img.book-cover.max-width{:src => "/images/public/book-thumb.png", :alt => "PMP Exam Prep"}
+
+						%a.btn.btn-default.btn-block.bold-font-name.quarter-margin-top{:href => "#", :target => "_blank"}
+							Buy on Amazon
+
+						%h4.book-title
+							PMP Exam Prep Questions, Answers & Explanations
+
+						.book-rating
+							%i.fa.fa-star
+							%i.fa.fa-star
+							%i.fa.fa-star
+							%i.fa.fa-star
+							%i.fa.fa-star
+
+						%p.book-format
+							Kindle + Paperback
+
+						.book-tags
+							%span.book-tag
+								700+ Questions
+
+							%span.book-tag
+								Detailed Explanations
+
+.container
+	%hr
+
+-# logos
 %section
 	.container
 		.row
+			.col-lg-12
+				.text-center
+					%h4.bold-font-name.dark-text-color
+						Trusted by the world’s smartest teams
+					%img.max-width{:src => "/images/home-logos.png"}
+
+
+-# testimonials
+%section.gradient-bottom
+	.container
+		.row.padding-top
+			.col-md-2
 			.col-md-8
-				%h2
-					SSI Logic Recommended Products
-				%p
-					SSI Logic's high quality of exam preparation products are relied on by thousands of PMP students across the U.S., Canada, Europe, Australia, and India because they work. Below you will find a list of our top preparation resources: 
-				%p
-					Learn more about the SSI Logic 
-					%a{:href=>"/public/about"}
-						exam preparation philosophy
-					, or visit the 
-					%a{:href=>"http://www.ssilogic.com/", :target=>"_blank"}
-						SSI Logic website 
-					for a complete list of all exam prep tools.
-				%h2
-					Books by SSI Logic
-				%hr
-				- data.send(current_page.data.product_data).books.each do |p|
-					=partial"public/about/product", locals: {p: p}
-				%h2
-					Our Websites
-				%hr
-				- data.send(current_page.data.product_data).sites.each do |p|
-					=partial"public/about/product", locals: {p: p}
-				%h2
-					iPhone Apps by SSI Logic
-				%hr
-				- data.send(current_page.data.product_data).apps.each do |p|
-					=partial"public/about/product", locals: {p: p}
-			.col-md-1
-			.col-md-3
-				=partial"/public/shared/logo-slider"
-				%h6.text-center
-					What Our Students Say 
-				=partial"/public/shared/testimonial-list", locals: {test_num: 21}
-			
+				%h2.lg.text-center.dark-text-color.medium-font-name
+					See why 
+					%span.bold-font-name
+						1,000,000+ 
+					students trust PM Training™ to pass the PMP
+			.col-md-2
+		.row.padding-bottom.padding-top
+			.col-lg-12
+				.trust-widget{:style=>"width:100%; height:130px; background:#DFF0F6;"}
+
+
+
+-# FAQs
+%section
+	.container
+		.row
+			.col-md-4
+				%h2.lg.dark-text-color.bold-font-name.text-center-sm
+					Frequently asked questions
+			.col-md-8
+				#accordion.panel-group.faq-accordian
+					-4.times do |count|
+						.panel.panel-default
+							.panel-heading
+								.panel-title
+									%a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse-#{count}"}
+										.icon-wrapper
+											%span.fa.fa-caret-down.faq-icon
+										.question-wrapper
+											%p.bold-font-name.dark-text-color.body-large
+												Are PMTraining books updated for the latest certification exams?
+							.panel-collapse.collapse{:id=>"collapse-#{count}"}
+								.panel-body
+									%p.no-margin-bottom
+										PMTraining study materials are designed to align with current certification exam objectives and industry standards. Refer to each book's product page for specific edition and exam coverage details.
+
+
+
+
+      
